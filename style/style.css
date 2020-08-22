@@ -7,6 +7,9 @@ p {
 	margin-left:100px;
 	margin-right:100px;
 }
+
+/* header stuff */
+
 .aref {
 	color: #CA4926;
 }
@@ -28,9 +31,12 @@ p {
 	float:left;
 }
 
+/* hamburger */
+
 #container {
 	margin-top:0px;
-  	float:right;
+  	float:left;
+  	margin-left:140px;
 }
 .bar1, .bar2, .bar3 {
   	width: 100px;
@@ -47,10 +53,12 @@ p {
 	border-style:double;
 	border-width:10px;
 }
+
+/* main content */
+
 .first-section {
-	text-align:left;
-	float:right;
-	margin-left:400px;
+	text-align:center;
+	float:left;
 	margin-top:0px;
 	color: #5A1806;
 	font-family: 'Red Rose', cursive;
