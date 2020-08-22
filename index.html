@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <script>
+function hamburger() {
+  var button = document.getElementById("container");
+  var content = document.getElementById("container-content");
+
+if (button.value === "on") {
+    content.style.display = "block";
+    button.value = "off";
+  }
+  else {
+    content.style.display = "none";
+    button.value = "on";
+  }
+
+}
+</script>
 	<title>Julian Ranieri</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
@@ -9,12 +25,12 @@
 <h1 class="h1">
 		JulianRanieri.com
 		</h1>
-<div id="container" class="dropdown">
+<div id="container" class="dropdown" onclick="hamburger()" value="on">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
 
-  <div class="dropdown-content">
+  <div class="container-content" id=container-content>
     <p>
     	<a class="aref" href="#">One</a>
     </p>
@@ -29,6 +45,7 @@
 </header>
 
 <section class="first-section">
+
 <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -39,12 +56,6 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 <p id="okay"></p>
 
-<script>
-function myHello(name) {
-  return "sorry " + name;
-}
-document.getElementById("okay").innerHTML = myHello("james");
-</script>
 </section>
 
 
