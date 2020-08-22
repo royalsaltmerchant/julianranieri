@@ -50,6 +50,7 @@ p {
  	transition: 0.4s;
 }
 #container-content {
+	margin-left:-100px;
 	display: none;
 	position: absolute;
 	background-color: #FFFFFF;
