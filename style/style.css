@@ -3,6 +3,7 @@ body {
 	background-image: linear-gradient(to right, #F5DDBD, #B8E7E1);
 	margin-top:0px;
 	margin-left:0px;
+	padding:0px;
 }
 p {
 	font-size:25px;
@@ -30,7 +31,7 @@ p {
 	color: black;
 	width:auto;
 	font-size:35px;
-	padding:10px;
+	padding:0px;
 	margin-left:10px;
 }
 
@@ -61,7 +62,6 @@ p {
 
 .first-section {
 	text-align:center;
-	width:auto;
 	float:left;
 	margin-top:0px;
 	margin-left:0px;
