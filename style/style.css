@@ -19,8 +19,7 @@ p {
 }
 .main-header {
 	background-image: linear-gradient(to right, #F5DDBD, #B8E7E1);
-	margin-top:0px;
-	margin-left:0px;
+
 	width:auto;
 	border-style:double;
 	border-width:20px;
@@ -30,8 +29,7 @@ p {
 	color: black;
 	width:auto;
 	font-size:35px;
-	padding:0px;
-	margin-left:10px;
+
 }
 
 /* hamburger */
