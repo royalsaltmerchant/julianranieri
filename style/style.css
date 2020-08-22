@@ -19,7 +19,7 @@ p {
 }
 .main-header {
 	background-image: linear-gradient(to right, #F5DDBD, #B8E7E1);
-	padding:0px;
+	padding:10px;
 	margin-top:0px;
 	margin-left:50px;
 	width:auto;
