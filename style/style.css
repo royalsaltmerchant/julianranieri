@@ -71,4 +71,11 @@ p {
 	border-top-width:0px;
 	border-radius:40px;
 }
+.jokes {
+	float:left;
+}
 
+#but {
+  font-size: 50px;
+  background-color: red;
+}
