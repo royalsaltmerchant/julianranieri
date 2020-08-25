@@ -72,12 +72,10 @@ p {
 	border-radius:40px;
 }
 .firstsection-list {
-    list-style: none;
+    list-style-type: none;
     text-align: center;
 }
-.main-h {
-    text-align:center;
-}
+
 .jokes {
 }
 
