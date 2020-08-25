@@ -24,10 +24,11 @@ p {
 	width:auto;
 	border-style:double;
 	border-width:20px;
-	float:left;
+	
 }
 .h1 {
-	color: black;
+	text-align: center;
+    color: black;
 	width:auto;
 	font-size:35px;
 	padding:0px;
@@ -38,7 +39,7 @@ p {
 
 #container {
   	width:auto;
-  	margin-left:20px;
+  	margin-left:300px;
 }
 .bar1, .bar2, .bar3 {
   	width: 100px;
@@ -70,6 +71,9 @@ p {
 	border-left-width:0px;
 	border-top-width:0px;
 	border-radius:40px;
+}
+.firstsection-list {
+    list-style: none;
 }
 .jokes {
 	float:left;
