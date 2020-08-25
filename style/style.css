@@ -50,11 +50,11 @@ p {
  	transition: 0.4s;
 }
 #container-content {
-	margin-left:-40px;
+	margin-left:-250px;
 	display: none;
 	position: absolute;
 	background-color: #FFFFFF;
-	border-radius: 40px;
+	border-radius: 60px;
 	border-style:double;
 	border-width:10px;
 }
