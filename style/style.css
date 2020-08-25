@@ -48,7 +48,7 @@ p {
  	transition: 0.4s;
 }
 #container-content {
-	margin-left:-75px;
+	margin-left:-40px;
 	display: none;
 	position: absolute;
 	background-color: #FFFFFF;
