@@ -2,43 +2,6 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <script>
-  function hamburger() {
-  var button = document.getElementById("container");
-  var content = document.getElementById("container-content");
-
-  if (button.value === "on") {
-    content.style.display = "block";
-    button.value = "off";
-  }
-  else {
-    content.style.display = "none";
-    button.value = "on";
-  }
-  }
-  </script>
-
-  <script>
-    function redBut() {
-  var but = document.getElementById("but")
-  
-  if (but.value === "off") {
-    but.style.backgroundColor = "blue";
-    but.value = "on";
-    but.style.fontSize = "70px";
-    alert ("why would you do such a thing?");
-    but.textContent = "What is wrong with you? Press me again!";
-  }
-  else if (but.value === "on") {
-    but.style.backgroundColor = "red";
-    but.value = "off";
-    but.style.fontSize = "50px";
-    but.textContent = "Warning! Don't Press this!"
-  }
-}
-</script>
-
 	<title>Julian Ranieri</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Red+Rose&display=swap" rel="stylesheet">
@@ -70,7 +33,7 @@
 
     <p> <u>Julian Ranieri</u>
     </p>
-    <p>SF Bay Area Web Design:
+    <p>SF Bay Area, Web Development:
     </p>
     
     <ul class="firstsection-list">
@@ -96,8 +59,14 @@
     </h1>
 
 <section class="jokes">
+  <h1>Button Alert:</h1>
   <button id="but" onclick="redBut()" type="button" value="off">Warning! Don't Press this!
 </button>
+<br>
+<br>
+<h1>Example API CALL:</h1>
+<iframe class="apipractice" src="https://royalsaltmerchant.github.io/apipractices/">
+</iframe>
 </section>
     
 <hr>    
@@ -111,5 +80,38 @@
     Jumpingafterrain@gmail.com
     </p>
 </section>
+<script>
+  function hamburger() {
+  var button = document.getElementById("container");
+  var content = document.getElementById("container-content");
 
+  if (button.value === "on") {
+    content.style.display = "block";
+    button.value = "off";
+  }
+  else {
+    content.style.display = "none";
+    button.value = "on";
+  }
+  }
+</script>
+<script>
+  function redBut() {
+  var but = document.getElementById("but")
+  
+  if (but.value === "off") {
+    but.style.backgroundColor = "blue";
+    but.value = "on";
+    alert ("why would you do such a thing?");
+    but.textContent = "What is wrong with you? Press me again!";
+  }
+  else if (but.value === "on") {
+    but.style.backgroundColor = "red";
+    but.value = "off";
+    but.textContent = "Warning! Don't Press this!"
+  }
+}
+</script>
+<script src="js/helloworld.js">
+</script>
 </html>
