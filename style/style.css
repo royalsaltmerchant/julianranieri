@@ -29,7 +29,9 @@ li {
 /* header stuff */
 
 .aref {
-	color: #913513ac;
+	color: #370f00ac;
+	font-size: 20px;
+	text-decoration: none;
 }
 .main-header {
 	padding:10px;
@@ -61,13 +63,14 @@ li {
  	transition: 0.4s;
 }
 #container-content {
-	margin-left:-250px;
+	padding:10px;
+	margin-left:-50px;
 	display: none;
 	position: absolute;
-	background-color: #FFFFFF;
+	background-color: papayawhip;
 	border-radius: 60px;
-	border-style:double;
-	border-width:10px;
+	border-style:solid;
+	border-width:2px;
 }
 
 /* main content */
