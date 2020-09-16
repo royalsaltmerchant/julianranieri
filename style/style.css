@@ -6,7 +6,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	
+	flex-wrap: wrap;
 }
 p {
 	font-size:30px;
@@ -74,10 +74,21 @@ li {
 
 /* main content */
 
+.second-section {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+}
+
 .pfirst {
 	font-size: 20px;
-	margin-left:100px;
-	margin-right:100px;
+	margin:auto;
+	max-width: 300px;
+}
+
+.me {
+	width:300px;
 }
 
 /* foot */
