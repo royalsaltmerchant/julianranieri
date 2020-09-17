@@ -44,10 +44,14 @@ li {
 	border-color:#0C372D;
 	border-radius: 100px;
 	background-color: papayawhip;
+	animation-name: maincontent;
+	animation-duration: 3s;
 }
 .h1 {
 	font-size: 20px;
-
+	animation-name: h1;
+	animation-duration: 6s;
+	animation-iteration-count: infinite;
 }
 
 /* hamburger */
@@ -80,6 +84,31 @@ li {
 	margin-top: 75px;
 }
 
+.advert {
+	animation-name: h1;
+	animation-duration: 3s;
+}
+
+.firstsection-list {
+	animation-name: list;
+	animation-duration: 1s;
+}
+
+.pfirst {
+	font-size: 20px;
+	margin:auto;
+	max-width: 300px;
+	animation-name: me;
+	animation-duration: 2s;
+}
+
+.me {
+	width:300px;
+	max-height: 400px;
+	animation-name: me;
+	animation-duration: 2s;
+}
+
 .second-section {
 	display: flex;
 	flex-wrap: wrap;
@@ -87,15 +116,9 @@ li {
 	justify-content: center;
 }
 
-.pfirst {
-	font-size: 20px;
-	margin:auto;
-	max-width: 300px;
-}
-
-.me {
-	width:300px;
-	max-height: 400px;
+.projects {
+	animation-name: maincontent;
+	animation-duration: 3s;
 }
 
 /* foot */
@@ -105,5 +128,55 @@ li {
 	width:100%;
 	background-color: beige;
 	word-wrap: break-word;
-	
+	animation-name: footer;
+	animation-duration: 2s;
+}
+
+/* animations */
+@keyframes me {
+	from {
+		opacity: 0;
+		margin-left: -1000px;
+	}
+	to {
+		opacity: 1;
+		margin-left: 0px;
+	}
+}
+
+@keyframes list {
+	from {
+		opacity: 0;
+		margin-right: -1000px;
+	}
+	to {
+		opacity: 1;
+		margin-right: 0px;
+	}
+}
+
+@keyframes maincontent {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes footer {
+	from {
+		margin-top: -1000px;
+		opacity: 0;
+	}
+	to {
+		margin-top: 0px;
+		opacity: 1;
+	}
+}
+
+@keyframes h1 {
+	0%   { color: #0C372D; }
+	50%  { color: #ffddb0; }
+	100% { color: #0C372D; }
 }
