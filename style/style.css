@@ -11,9 +11,6 @@ body {
 	animation-duration: 60s;
 	animation-iteration-count: infinite;
 }
-p {
-	font-size:30px;
-}
 
 /* header stuff */
 
@@ -83,6 +80,7 @@ p {
 }
 
 .advert {
+	font-size: 30px;
 	animation-name: h1;
 	animation-duration: 3s;
 }
@@ -137,6 +135,7 @@ p {
 	margin:0px;
 	padding:0px;
 	width:100%;
+	font-size: 30px;
 	background-color: beige;
 	word-wrap: break-word;
 	animation-name: footer;
@@ -200,5 +199,8 @@ p {
 	}
 	.menuli {
 		letter-spacing: 0;
+	}
+	.footer {
+		font-size: 25px;
 	}
 }
