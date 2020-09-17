@@ -192,3 +192,13 @@ p {
 	50%  { background-color: rgba(232, 255, 116, 0.2); }
 	100% { background-color: rgba(116, 255, 218, 0.2); }
 }
+
+/* media query */
+@media screen and (max-width: 600px) {
+	#container-content {
+		margin-left: -300px;
+	}
+	.menuli {
+		letter-spacing: 0;
+	}
+}
