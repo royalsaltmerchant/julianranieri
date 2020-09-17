@@ -107,6 +107,7 @@ body {
 }
 
 .codeli {
+	margin: 5px;
 	padding:20px;
 	border-radius: 100px;
 	animation-name: listglow;
