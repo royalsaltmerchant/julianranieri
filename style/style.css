@@ -73,6 +73,11 @@ body {
 	cursor: pointer;
 }
 
+.menuli:hover {
+	background-color: powderblue;
+	border-radius: 100px;
+}
+
 /* main content */
 
 .first-section {
@@ -103,6 +108,11 @@ body {
 	letter-spacing: 5px;
 }
 
+.codeli:hover {
+	border-radius: 0px;
+	transition: 0.3s;
+}
+
 .second-section {
 	display: flex;
 	flex-wrap: wrap;
@@ -115,6 +125,12 @@ body {
 	max-height: 400px;
 	animation-name: me;
 	animation-duration: 2s;
+}
+
+.me:hover {
+	border-radius: 100px;
+	transition: 0.5s;
+	opacity: 0.8;;
 }
 
 .pfirst {

@@ -14,10 +14,6 @@ function hamburger() {
     }
 //end hamburger
 
-//scroll
-
-
-//end scroll
 
 //slideshow
     var slideIndex = 1;
