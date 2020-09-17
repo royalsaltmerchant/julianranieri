@@ -81,3 +81,9 @@
   .demo:hover {
     opacity: 1;
   }
+
+  @media screen and (max-width: 600px) {
+    .container {
+      width: 450px;
+    }
+  }
