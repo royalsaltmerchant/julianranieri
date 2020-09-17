@@ -89,6 +89,7 @@ li {
 
 .me {
 	width:300px;
+	height: auto;
 }
 
 /* foot */
@@ -97,4 +98,6 @@ li {
 	padding:0px;
 	width:100%;
 	background-color: beige;
+	word-wrap: break-word;
+	
 }
