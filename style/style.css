@@ -117,7 +117,7 @@ body {
 }
 
 .codeli:hover {
-	border-radius: 0px;
+	border-radius: 10px;
 	transition: 0.3s;
 }
 
@@ -133,12 +133,13 @@ body {
 	max-height: 400px;
 	animation-name: me;
 	animation-duration: 2s;
+	border-radius: 100px;
 }
 
 .me:hover {
-	border-radius: 100px;
+	opacity: 0.8;
+	border-radius: 10px;
 	transition: 0.5s;
-	opacity: 0.8;;
 }
 
 .pfirst {
@@ -152,6 +153,12 @@ body {
 .projects {
 	animation-name: maincontent;
 	animation-duration: 3s;
+}
+
+iframe {
+	border-radius: 10px;
+	width: 400px;
+	height: 300px;
 }
 
 /* foot */
