@@ -10,30 +10,32 @@
 <h1 class="h1">
 		JulianRanieri.com
 		</h1>
-<div id="container" class="dropdown" onclick="hamburger()" value="on">
+<div class="container" id="container" onclick="hamburger()">
   <div class="bar1"></div>
   <div class="bar2"></div>
   <div class="bar3"></div>
 
-  <ul class="container-content" id=container-content>
-    <li class="menuli">
-    	<a class="aref" href="index.html">Home</a>
-    </li>
+  <div class="container-content" id="container-content">
+    <p class="menup">
+      <a class="aref" href="index.html">Home</a>
+    </p>
     <hr>
-    <li class="menuli">
-    	<a class="aref" href="#projects">Projects</a>
-    </li>
+    <p class="menup">
+      <a class="aref" href="#projects">Projects</a>
+    </p>
     <hr>
-    <li class="menuli"> 
-    	<a class="aref" href="#contact">Contact</a>
-    </li>
+    <p class="menup"> 
+      <a class="aref" href="#contact">Contact</a>
+    </p>
     <hr>
-    <li class="menuli">
+    <p class="menup">
     	<a class="aref" href="slideshow.html">SlideShow</a>
-    </li>
-  </ul>
+    </p>
+  </div>
+
 </div>
 </header>
+<div id="whole">
 <br>
 <section class="first-section">
 
@@ -51,6 +53,10 @@
         <li class="codeli">
             JavaScript
         </li>
+        <br>
+        <li class="codeli">
+            React
+        </li>
     </ul>
 </section>
 <br>
@@ -62,12 +68,14 @@
   </p>
 </section>
 <br>
+<hr>
 <section class="projects" id="projects">
-<h1>Weather App built with React</h1>
+<h1 class="advert"><u>Projects</u></h1>
+<h1>Weather App</h1>
 <iframe class="apipractice" src="https://royalsaltmerchant.github.io/reactpractice/">
 </iframe>
 </section>
-<hr>  
+<br>  
 <section class="footer"> 
   <h1 class="h1" id="contact">
     Contact:
@@ -88,4 +96,5 @@
 <script src="script.js">
 </script>
 
+</div>
 </html>

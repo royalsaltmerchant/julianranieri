@@ -1,10 +1,11 @@
 body {
+	margin: 0;
+	padding: 0;
 	font-family: 'Encode Sans Expanded';
 	color: #0C372D;
 	background-color: #ffddb0;
 	display:flex;
 	flex-direction: column;
-	align-items: center;
 	text-align: center;
 	flex-wrap: wrap;
 	animation-name: backcolor;
@@ -12,35 +13,35 @@ body {
 	animation-iteration-count: infinite;
 }
 
+hr {
+	width: 500px;
+	color: gray;
+}
 /* header stuff */
 
 .aref {
-	color: #370f00ac;
+	color: #7b2201ac;
 	font-size: 20px;
 	text-decoration: none;
 }
 .main-header {
-	position: fixed;
-	padding:10px;
+	padding: 10px;
+	background-color: beige;
 	display:flex;
 	flex-direction: row;
-	flex-wrap:wrap;
 	justify-content: center;
-	border-radius: 100px;
+	align-content: center;
 	border-style: inset;
 	border-top-width: 0px;
 	border-left-width: 0px;
-	border-right-width: 1px;
+	border-right-width: 0px;
 	border-bottom-width: 1px;
-	border-right-color: #0C372D;
 	border-bottom-color: #0C372D;
-	background-color: papayawhip;
 	animation-name: maincontent;
 	animation-duration: 3s;
-	opacity: 0.9;
 }
 .h1 {
-	font-size: 20px;
+	font-size: 22px;
 	animation-name: h1;
 	animation-duration: 60s;
 	animation-iteration-count: infinite;
@@ -48,39 +49,56 @@ body {
 
 /* hamburger */
 
-#container {
+.container {
   	width:auto;
 	margin-left:50px;
 	cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
+	border-radius: 100px;
   	width: 50px;
   	height: 5px;
 	background-color: #0C372D;
- 	margin: 10px 0;
+	margin: 10px 0;
 	transition: 0.4s;
 }
-#container-content {
-	list-style-type: none;
-	display: none;
-	position: absolute;
-	background-color: papayawhip;
-	opacity: .8;
-	border-radius: 100px;
-	justify-content: center;
-	margin:10px;
-	margin-left:-365px;
-	margin-top:15px;
-	padding:10px;
+
+.change .bar1 {
+	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-45deg) translate(-9px, 6px);
+}
+  
+.change .bar2 {
+	opacity: 0;
+}
+  
+.change .bar3 {
+	-webkit-transform: rotate(45deg) translate(-8px, -8px);
+	transform: rotate(45deg) translate(-8px, -8px);
 }
 
-.menuli {
-	padding:10px;
-	letter-spacing: 5px;
+#container-content {
+	display: none;
+	padding: 0px;
+	flex-direction: column;
+	position: absolute;
+	background-color: thistle;
+	width: 100%;
+	left: 0;
+  	top: 0;
+	z-index: 1;
+	opacity: .8;
+	justify-content: center;
+	margin-top: 8%;
+}
+
+.menup {
+	padding: 25px;
+	letter-spacing: 10px;
 	cursor: pointer;
 }
 
-.menuli:hover {
+.menup:hover {
 	background-color: powderblue;
 	border-radius: 100px;
 }
@@ -88,7 +106,7 @@ body {
 /* main content */
 
 .first-section {
-	margin-top: 100px;
+	margin-top: 30px;
 }
 
 .advert {
@@ -104,12 +122,12 @@ body {
 	justify-content: center;
 	margin:0px;
 	padding:0px;
+	margin-top: -40px;
+	margin-bottom: -10px;
 }
 
 .codeli {
-	margin: 5px;
 	padding:20px;
-	border-radius: 100px;
 	animation-name: listglow;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
@@ -123,8 +141,10 @@ body {
 
 .second-section {
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: center;
+	margin: auto;
+	align-items: center;
 	justify-content: center;
 }
 
@@ -144,7 +164,7 @@ body {
 
 .pfirst {
 	font-size: 20px;
-	margin:auto;
+	padding: 30px;
 	max-width: 300px;
 	animation-name: me;
 	animation-duration: 2s;
@@ -163,14 +183,16 @@ iframe {
 
 /* foot */
 .footer {
-	margin:0px;
-	padding:0px;
-	width:100%;
-	font-size: 30px;
+	padding: 10px;
+	font-size: 22px;
 	background-color: beige;
 	word-wrap: break-word;
-	animation-name: footer;
-	animation-duration: 2s;
+	border-style: inset;
+	border-top-width: 1px;
+	border-left-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-top-color: #0C372D;
 }
 
 /* animations */
@@ -194,17 +216,6 @@ iframe {
 	}
 }
 
-@keyframes footer {
-	from {
-		margin-top: -1000px;
-		opacity: 0;
-	}
-	to {
-		margin-top: 0px;
-		opacity: 1;
-	}
-}
-
 @keyframes h1 {
 	0%   { color: #0C372D; }
 	50%  { color: #cb7300; }
@@ -218,20 +229,14 @@ iframe {
 }
 
 @keyframes listglow {
-	0%   { background-color: rgba(116, 255, 218, 0.2); }
-	50%  { background-color: rgba(232, 255, 116, 0.2); }
-	100% { background-color: rgba(116, 255, 218, 0.2); }
+	0%   { color: rgb(148, 240, 216); }
+	50%  { color: rgb(211, 232, 118); }
+	100% { color: rgb(148, 240, 216); }
 }
 
 /* media query */
 @media screen and (max-width: 600px) {
 	#container-content {
-		margin-left: -300px;
-	}
-	.menuli {
-		letter-spacing: 0;
-	}
-	.footer {
-		font-size: 25px;
+		margin-top: 20%;
 	}
 }
