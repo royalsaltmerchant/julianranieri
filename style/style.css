@@ -119,6 +119,7 @@ hr {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: center;
 	margin:0px;
 	padding:0px;
@@ -127,16 +128,12 @@ hr {
 }
 
 .codeli {
+	font-size: 15px;
 	padding:20px;
 	animation-name: listglow;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	letter-spacing: 5px;
-}
-
-.codeli:hover {
-	border-radius: 10px;
-	transition: 0.3s;
 }
 
 .second-section {
