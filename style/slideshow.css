@@ -1,6 +1,6 @@
   
   /* Position the image container (needed to position the left and right arrows) */
-  .container {
+  .slidecontainer {
     position: relative;
     margin-top: 150px;
     margin-bottom: 100px;
