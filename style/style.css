@@ -175,7 +175,7 @@ hr {
 
 iframe {
 	border-radius: 10px;
-	width: 400px;
+	width: 500px;
 	height: 500px;
 }
 
@@ -236,5 +236,8 @@ iframe {
 @media screen and (max-width: 600px) {
 	#container-content {
 		margin-top: 20%;
+	}
+	iframe {
+		width: 400px;
 	}
 }
