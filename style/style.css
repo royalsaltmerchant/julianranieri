@@ -171,8 +171,19 @@ a {
 }
 
 .projects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 	animation-name: maincontent;
 	animation-duration: 3s;
+}
+
+.project-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
 }
 
 iframe {
