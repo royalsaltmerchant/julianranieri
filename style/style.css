@@ -39,7 +39,7 @@ a {
 	justify-content: space-between;
 	animation-name: maincontent;
 	animation-duration: 3s;
-	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
+	box-shadow: 0px 3px 5px 2px rgb(103, 103, 103);
 }
 .h1 {
 	font-size: 22px;
@@ -153,7 +153,7 @@ a {
 	animation-name: me;
 	animation-duration: 2s;
 	border-radius: 100px;
-	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
+	box-shadow: 3px 3px 5px 1px rgb(103, 103, 103);
 }
 
 .me:hover {
@@ -188,9 +188,9 @@ a {
 
 iframe {
 	border-radius: 10px;
-	width: 500px;
-	height: 500px;
-	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
+	width: 350px;
+	height: 350px;
+	box-shadow: 3px 3px 5px 1px rgb(103, 103, 103);
 }
 
 /* foot */
@@ -205,7 +205,7 @@ iframe {
 	border-right-width: 0px;
 	border-bottom-width: 0px;
 	border-top-color: #0C372D;
-	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
+	box-shadow: 0px -3px 5px 2px rgb(103, 103, 103);
 }
 
 /* animations */
