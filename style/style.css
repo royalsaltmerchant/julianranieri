@@ -19,6 +19,10 @@ hr {
 	width: 400px;
 	color: gray;
 }
+
+a {
+	text-decoration: none;
+}
 /* header stuff */
 
 .aref {
@@ -26,6 +30,7 @@ hr {
 	font-size: 20px;
 	text-decoration: none;
 }
+
 .main-header {
 	padding: 20px;
 	background-color: beige;
