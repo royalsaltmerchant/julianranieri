@@ -4,6 +4,7 @@ body {
 	overflow-x: hidden;
 	font-family: 'Encode Sans Expanded';
 	color: #0C372D;
+	text-shadow: 0.8px 0.8px rgb(109, 108, 108);
 	background-color: #ffddb0;
 	display:flex;
 	flex-direction: column;
@@ -26,20 +27,14 @@ hr {
 	text-decoration: none;
 }
 .main-header {
-	padding: 10px;
+	padding: 20px;
 	background-color: beige;
 	display:flex;
 	flex-direction: row;
-	justify-content: center;
-	align-content: center;
-	border-style: inset;
-	border-top-width: 0px;
-	border-left-width: 0px;
-	border-right-width: 0px;
-	border-bottom-width: 1px;
-	border-bottom-color: #0C372D;
+	justify-content: space-between;
 	animation-name: maincontent;
 	animation-duration: 3s;
+	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
 }
 .h1 {
 	font-size: 22px;
@@ -112,6 +107,7 @@ hr {
 
 .advert {
 	font-size: 30px;
+	text-shadow: 2px 2px rgb(109, 108, 108);
 	animation-name: h1;
 	animation-duration: 3s;
 }
@@ -152,6 +148,7 @@ hr {
 	animation-name: me;
 	animation-duration: 2s;
 	border-radius: 100px;
+	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
 }
 
 .me:hover {
@@ -177,6 +174,7 @@ iframe {
 	border-radius: 10px;
 	width: 500px;
 	height: 500px;
+	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
 }
 
 /* foot */
@@ -191,6 +189,7 @@ iframe {
 	border-right-width: 0px;
 	border-bottom-width: 0px;
 	border-top-color: #0C372D;
+	box-shadow: 3px 3px 5px 6px rgb(103, 103, 103);
 }
 
 /* animations */
