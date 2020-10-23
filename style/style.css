@@ -136,7 +136,6 @@ a {
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	letter-spacing: 5px;
-	line-height: 150%;
 }
 
 .second-section {
@@ -206,7 +205,7 @@ iframe {
 	border-right-width: 0px;
 	border-bottom-width: 0px;
 	border-top-color: #0C372D;
-	box-shadow: 0px -3px 5px 2px rgb(103, 103, 103);
+	box-shadow: 0px -1px 5px 2px rgb(103, 103, 103);
 }
 
 /* animations */
