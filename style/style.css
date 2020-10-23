@@ -136,6 +136,7 @@ a {
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
 	letter-spacing: 5px;
+	line-height: 150%;
 }
 
 .second-section {
