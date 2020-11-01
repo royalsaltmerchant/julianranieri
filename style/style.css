@@ -4,7 +4,7 @@ body {
 	overflow-x: hidden;
 	font-family: 'Encode Sans Expanded';
 	color: #0C372D;
-	text-shadow: 0.8px 0.8px rgb(140, 77, 77);
+	text-shadow: 0.8px 0.8px rgb(171, 171, 171);
 	background-color: #ffddb0;
 	text-align: center;
 	animation-name: backcolor;
@@ -119,6 +119,7 @@ a {
 } */
 
 .advert {
+	margin: 10px;
 	font-size: 30px;
 	animation-name: h1;
 	animation-duration: 3s;
@@ -132,8 +133,6 @@ a {
 	justify-content: center;
 	margin:0px;
 	padding:0px;
-	margin-top: -30px;
-	margin-bottom: -10px;
 }
 
 .codeli {
