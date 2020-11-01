@@ -48,7 +48,7 @@ a {
 	color: beige;
 	text-shadow: 0px 15px rgb(36, 36, 36);
 	font-size: 50px;
-	margin-right: 200px;
+	/* margin-right: 200px; */
 }
 
 /* header stuff */
@@ -282,8 +282,11 @@ iframe {
 	.project-item {
 		padding: 0px;
 	}
-	.landing-text {
-		margin: auto;
+	/* .landing-text {
+		margin-right: 0px;
 		font-size: 35px;
 	}
+	.landing {
+		background-position: -800px;
+	} */
 }
