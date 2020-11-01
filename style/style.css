@@ -3,9 +3,9 @@ body {
 	padding: 0;
 	overflow-x: hidden;
 	font-family: 'Encode Sans Expanded';
-	color: #0C372D;
+	color: #092922;
 	text-shadow: 0.8px 0.8px rgb(171, 171, 171);
-	background-color: #ffddb0;
+	/* background-color: #ffddb0; */
 	text-align: center;
 	animation-name: backcolor;
 	animation-duration: 60s;
@@ -18,7 +18,7 @@ hr {
 }
 
 a {
-	color: #7b2201ac;
+	color: #7b2101;
 	text-decoration: none;
 }
 
@@ -29,15 +29,40 @@ a {
 	animation-iteration-count: infinite;
 }
 
+/* landing */
+.landing {
+	width: auto;
+	height: 500px;
+	background-image: url("/9CE0BAA4-4B4F-4F49-83D7-A6211E26BE7C.JPG");
+	background-size: cover;
+	background-position: right;
+	background-attachment: fixed;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.landing-text {
+	font-family: 'Eagle Lake';
+	color: beige;
+	text-shadow: 0px 15px rgb(36, 36, 36);
+	font-size: 50px;
+	margin-right: 200px;
+}
+
 /* header stuff */
 
 .main-header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	background-color: beige;
-	display:flex;
+	display:none;
 	flex-direction: row;
 	justify-content: space-between;
 	animation-name: maincontent;
@@ -256,5 +281,9 @@ iframe {
 	}
 	.project-item {
 		padding: 0px;
+	}
+	.landing-text {
+		margin: auto;
+		font-size: 35px;
 	}
 }
