@@ -282,11 +282,10 @@ iframe {
 	.project-item {
 		padding: 0px;
 	}
-	/* .landing-text {
-		margin-right: 0px;
+	.landing-text {
 		font-size: 35px;
 	}
 	.landing {
-		background-position: -800px;
-	} */
+		display: none;
+	}
 }
