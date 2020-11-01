@@ -22,7 +22,7 @@ function scrollFunction() {
     var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
     var header = document.getElementById('header')
 
-    if (winScroll > 100) {
+    if (winScroll > 10) {
         header.style.display = 'flex'
     } else {
         header.style.display = 'none'
