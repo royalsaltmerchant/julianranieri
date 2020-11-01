@@ -114,10 +114,6 @@ a {
 
 /* main content */
 
-/* .first-section {
-	margin-top: 10px;
-} */
-
 .advert {
 	margin: 10px;
 	font-size: 30px;
@@ -257,5 +253,8 @@ iframe {
 @media screen and (max-width: 600px) {
 	#container-content {
 		margin-top: 20%;
+	}
+	.project-item {
+		padding: 0px;
 	}
 }
