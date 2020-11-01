@@ -18,7 +18,8 @@ hr {
 }
 
 a {
-	color: #7b2101;
+	color: #ff8400;
+	text-shadow: 1px 1px #08221d;
 	text-decoration: none;
 }
 
@@ -158,6 +159,7 @@ a {
 .codeli {
 	font-size: 15px;
 	padding:20px;
+	text-shadow: 1px 1px #08221d;
 	animation-name: listglow;
 	animation-duration: 4s;
 	animation-iteration-count: infinite;
@@ -197,6 +199,10 @@ a {
 }
 
 .projects {
+	background-image: url('/403B3565-AE27-4F69-A481-82100C57AF7C.JPG');
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
