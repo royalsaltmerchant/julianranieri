@@ -28,10 +28,10 @@ function scrollFunction() {
         header.style.display = 'none'
     }
 
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 300) {
-        document.getElementById("magic-text1").className = "slideUp";
-    }
-    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 400) {
-        document.getElementById("magic-text2").className = "slideUp";
-    }
+    // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 300) {
+    //     document.getElementById("magic-text1").className = "slideUp";
+    // }
+    // if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 400) {
+    //     document.getElementById("magic-text2").className = "slideUp";
+    // }
 }
