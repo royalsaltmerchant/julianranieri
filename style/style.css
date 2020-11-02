@@ -8,7 +8,7 @@ body {
 	/* background-color: #ffddb0; */
 	text-align: center;
 	animation-name: backcolor;
-	animation-duration: 60s;
+	animation-duration: 40s;
 	animation-iteration-count: infinite;
 }
 
@@ -18,16 +18,13 @@ hr {
 }
 
 a {
-	color: #ff8400;
-	text-shadow: 1px 1px #08221d;
+	color: #9a0036;
+	text-shadow: 0.8px 0.8px #ffffff;
 	text-decoration: none;
 }
 
-.h1 {
-	font-size: 22px;
-	animation-name: h1;
-	animation-duration: 60s;
-	animation-iteration-count: infinite;
+h1 {
+	font-size: 25px;
 }
 
 /* landing */
@@ -65,6 +62,7 @@ a {
 	display: none;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
 	animation-name: maincontent;
 	animation-duration: 2s;
 	box-shadow: 0px 3px 10px 2px rgb(80, 80, 80);
@@ -140,9 +138,10 @@ a {
 /* main content */
 
 .advert {
-	margin: 10px;
-	font-size: 30px;
-	animation-name: h1;
+	padding: 0px;
+	margin: 0px;
+	font-size: 40px;
+	animation-name: advert;
 	animation-duration: 3s;
 }
 
@@ -199,17 +198,20 @@ a {
 }
 
 .projects {
+	color: black;
+	text-shadow: 0.8px 0.8px rgb(255, 255, 255);
 	background-image: url('/403B3565-AE27-4F69-A481-82100C57AF7C.JPG');
 	background-size: cover;
-	background-position: center;
+	background-position: center top;
 	background-attachment: fixed;
+}
+
+.projects-div {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	animation-name: maincontent;
-	animation-duration: 3s;
 }
 
 .project-item {
@@ -261,10 +263,10 @@ iframe {
 	}
 }
 
-@keyframes h1 {
-	0%   { color: #0C372D; }
-	50%  { color: #cb7300; }
-	100% { color: #0c372d; }
+@keyframes advert {
+	0% {color: #092922;}
+	50% {color: #ff8400;}
+	100% {color:  #092922;}
 }
 
 @keyframes backcolor {
