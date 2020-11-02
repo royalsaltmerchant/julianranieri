@@ -201,6 +201,9 @@ h1 {
 	text-shadow: 0.8px 0.8px rgb(255, 255, 255);
 	background-image: url('/403B3565-AE27-4F69-A481-82100C57AF7C.JPG');
 	background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
 	background-position: center top;
 	background-attachment: fixed;
 }
