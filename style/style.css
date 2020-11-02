@@ -176,8 +176,6 @@ h1 {
 .me {
 	width:300px;
 	max-height: 400px;
-	animation-name: me;
-	animation-duration: 2s;
 	border-radius: 100px;
 	box-shadow: 3px 3px 5px 1px rgb(103, 103, 103);
 }
@@ -192,8 +190,6 @@ h1 {
 	font-size: 20px;
 	padding: 30px;
 	max-width: 300px;
-	animation-name: me;
-	animation-duration: 2s;
 }
 
 .projects {
@@ -240,6 +236,10 @@ iframe {
 	background-color: beige;
 	word-wrap: break-word;
 	box-shadow: -5px -5px 10px 2px rgb(103, 103, 103);
+}
+
+.contact {
+	font-size: 40px;
 }
 
 /* animations */
