@@ -35,15 +35,24 @@ h1 {
 	background-attachment: fixed;
 	text-align: center;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 
-.landing-text {
-	color: rgb(255, 255, 255);
-	text-shadow: 2px 2px rgb(36, 36, 36);
+.landing h1 {
+	color: white;
+	text-shadow: 0.8px 0.8px black;
 	font-size: 60px;
-	/* margin-right: 200px; */
+	padding: 10px;
+	margin: 0px;
+}
+
+.landing h2 {
+	color: white;
+	text-shadow: 0.8px 0.8px black;
+	margin: 0px;
+	font-size: 40px;
 }
 
 /* header stuff */
