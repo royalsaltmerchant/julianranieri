@@ -18,7 +18,6 @@ hr {
 
 a {
 	color: #9a0036;
-	text-shadow: 0.8px 0.8px #ffffff;
 	text-decoration: none;
 }
 
@@ -197,8 +196,6 @@ h1 {
 }
 
 .projects {
-	color: black;
-	text-shadow: 0.8px 0.8px rgb(255, 255, 255);
 	background-image: url('/IMG_1275.jpg');
 	background-size: cover;
 	-webkit-background-size: cover;
