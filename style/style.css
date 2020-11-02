@@ -7,7 +7,7 @@ body {
 	/* background-color: #ffddb0; */
 	text-align: center;
 	animation-name: backcolor;
-	animation-duration: 40s;
+	animation-duration: 20s;
 	animation-iteration-count: infinite;
 }
 
@@ -27,11 +27,11 @@ h1 {
 
 /* landing */
 .landing {
-	width: auto;
+	width: 100%;
 	height: 100vh;
 	background-image: url("/graffitijules.jpg");
 	background-size: cover;
-	background-position: center;
+	background-position: center center;
 	background-attachment: fixed;
 	text-align: center;
 	display: flex;
@@ -193,11 +193,11 @@ h1 {
 }
 
 .projects {
-	background-image: url('/IMG_1275.jpg');
-	background-size: cover;
+	background-image: url('/oriental.png');
+	/* background-size: cover;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
-  	-o-background-size: cover;
+  	-o-background-size: cover; */
 	background-position: center top;
 	background-attachment: fixed;
 }
@@ -231,6 +231,7 @@ iframe {
 
 /* foot */
 .footer {
+	line-height: 90%;
 	padding: 5px;
 	font-size: 22px;
 	background-color: beige;
@@ -240,6 +241,10 @@ iframe {
 
 .contact {
 	font-size: 40px;
+}
+
+.tinytext {
+	font-size: 12px;
 }
 
 /* animations */
@@ -270,6 +275,7 @@ iframe {
 }
 
 @keyframes backcolor {
+	
 	0%   { background-color: #ffddb0; }
 	50%  { background-color: #8ca7a3; }
 	100% { background-color: #ffddb0; }
@@ -295,7 +301,5 @@ iframe {
 	.landing {
 		display: none;
 	}
-	.projects {
-		background-image: none;
-	}
+	
 }
