@@ -296,5 +296,9 @@ iframe {
 	}
 	.landing {
 		display: none;
+		background-attachment:scroll;
+	}
+	.projects {
+		background-attachment:scroll;
 	}
 }
