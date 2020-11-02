@@ -40,6 +40,11 @@ h1 {
 	align-items: center;
 }
 
+.landing-text {
+	animation-name: maincontent;
+	animation-duration: 4s;
+}
+
 .landing h1 {
 	color: white;
 	text-shadow: 0.8px 0.8px black;
@@ -153,6 +158,10 @@ h1 {
 	animation-duration: 3s;
 }
 
+.first-section {
+	visibility: hidden;
+}
+
 .firstsection-list {
 	list-style-type: none;
 	display: flex;
@@ -174,6 +183,7 @@ h1 {
 }
 
 .second-section {
+	visibility: hidden;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -212,6 +222,7 @@ h1 {
 }
 
 .projects-div {
+	visibility: hidden;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -256,6 +267,42 @@ iframe {
 	font-size: 12px;
 }
 
+/* slide up */
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+
+.slideUp2 {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+	visibility: visible;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+  }
+
+.slideUp3 {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+	visibility: visible;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+  } 
+
 /* animations */
 @keyframes me {
 	from {
@@ -296,6 +343,28 @@ iframe {
 	100% { color: rgb(148, 240, 216); }
 }
 
+@keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
 /* media query */
 @media screen and (max-width: 600px) {
 	#container-content {
@@ -310,5 +379,10 @@ iframe {
 	.landing {
 		display: none;
 	}
-	
+	.first-section, .second-section, .projects-div {
+		visibility: visible;
+	}
+	.slideUp, .slideUp2, .slideUp3 {
+		animation-duration: 0s;
+	}
 }

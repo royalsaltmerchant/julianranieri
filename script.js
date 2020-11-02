@@ -28,10 +28,13 @@ function scrollFunction() {
         header.style.display = 'none'
     }
 
-    // if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 300) {
-    //     document.getElementById("magic-text1").className = "slideUp";
-    // }
-    // if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 400) {
-    //     document.getElementById("magic-text2").className = "slideUp";
-    // }
+    if (document.body.scrollTop > 350 || document.documentElement.scrollTop > 350) {
+        document.getElementById("first-section").className = "slideUp";
+    }
+    if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+        document.getElementById("second-section").className = "slideUp2";
+    }
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("projects-div").className = "slideUp3";
+    }
 }
