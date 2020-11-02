@@ -30,7 +30,7 @@ h1 {
 .landing {
 	width: auto;
 	height: 100vh;
-	background-image: url("/greenboxjules.jpg");
+	background-image: url("/graffitijules.jpg");
 	background-size: cover;
 	background-position: center;
 	background-attachment: fixed;
@@ -199,7 +199,7 @@ h1 {
 .projects {
 	color: black;
 	text-shadow: 0.8px 0.8px rgb(255, 255, 255);
-	background-image: url('/403B3565-AE27-4F69-A481-82100C57AF7C.JPG');
+	background-image: url('/IMG_1275.jpg');
 	background-size: cover;
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
@@ -297,7 +297,7 @@ iframe {
 	.landing {
 		display: none;
 	}
-	.projects {
-		background-attachment:scroll;
-	}
+	/* .projects {
+		background-image: none;
+	} */
 }
