@@ -52,6 +52,7 @@ h1 {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
+	z-index: 200; /* useful to keep href working on container content in hamburger */
 	padding-left: 30px;
 	padding-right: 30px;
 	padding-top: 10px;
@@ -123,7 +124,7 @@ h1 {
 .menup {
 	font-size: 40px;
 	width: 100%;
-	margin: 0;
+	/* margin: 0; */
 	padding: 20px;
 	letter-spacing: 10px;
 	cursor: pointer;
