@@ -2,8 +2,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: 'Encode Sans Expanded';
-	color: #092922;
-	text-shadow: 0.8px 0.8px rgb(171, 171, 171);
+	color: #071f1a;
+	text-shadow: 0.8px 0.8px rgb(184, 184, 184);
 	/* background-color: #ffddb0; */
 	text-align: center;
 	animation-name: backcolor;
@@ -17,7 +17,7 @@ hr {
 }
 
 a {
-	color: #9a0036;
+	color: #002067;
 	text-decoration: none;
 }
 
@@ -78,7 +78,7 @@ h1 {
 	border-radius: 100px;
   	width: 50px;
   	height: 5px;
-	background-color: #0C372D;
+	background-color: #07221c;
 	margin: 10px 0;
 	transition: 0.4s;
 }
