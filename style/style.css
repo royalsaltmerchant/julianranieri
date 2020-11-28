@@ -60,6 +60,57 @@ h1 {
 	font-size: 40px;
 }
 
+/* scroll down button inside landing */
+.demo a {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    z-index: 2;
+    display: inline-block;
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    color: white;
+    font : normal 400 20px/1 'Josefin Sans', sans-serif;
+    letter-spacing: .1em;
+    text-decoration: none;
+    transition: opacity .3s;
+    transition-duration: 0.4s;
+  }
+  .demo a:hover {
+    opacity: .5;
+  }
+
+#section02 a {
+    padding-top: 60px;
+    
+  }
+  #section02 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 46px;
+    height: 46px;
+    margin-left: -23px;
+    border: 2px solid white;
+    border-radius: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 3px 10px rgb(36, 36, 36);
+  }
+  #section02 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 16px;
+    height: 16px;
+    margin: -12px 0 0 -8px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+
 /* header stuff */
 
 .main-header {
@@ -377,12 +428,37 @@ iframe {
 		font-size: 35px;
 	}
 	.landing {
-		display: none;
+		background-position: left;
+        background-attachment:scroll
+	}
+	.landing h1 {
+		font-size: 40px;
+	}
+	.landing h2 {
+		font-size: 20px;
 	}
 	.first-section, .second-section, .projects-div {
 		visibility: visible;
 	}
 	.slideUp, .slideUp2, .slideUp3 {
 		animation-duration: 0s;
+	}
+}
+@media screen and (height: 1024px) {
+	.landing {
+		background-position: left;
+        background-attachment:scroll
+	}
+}
+@media screen and (height: 768px) {
+	.landing {
+		background-position: left;
+        background-attachment:scroll
+	}
+}
+@media screen and (height: 1366px) {
+	.landing {
+		background-position: left;
+        background-attachment:scroll
 	}
 }
