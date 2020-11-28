@@ -417,7 +417,7 @@ iframe {
   }
 
 /* media query */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	#container-content {
 		margin-top: 20%;
 	}
