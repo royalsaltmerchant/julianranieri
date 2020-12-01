@@ -41,5 +41,5 @@ function scrollFunction() {
 
 // scroll from landing to main body
 function scrollFromLanding() {
-    window.scrollTo({ top: 650, behavior: 'smooth' })
+    window.scrollTo({ top: 660, behavior: 'smooth' })
   }
