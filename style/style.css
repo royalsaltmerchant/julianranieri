@@ -299,9 +299,9 @@ iframe {
 	width: auto;
 	height: auto;
 	max-width: 400px;
-	max-height: 400px;
+	max-height: 500px;
 	min-width: 350px;
-	min-height: 350px;
+	min-height: 450px;
 	box-shadow: 3px 3px 5px 1px rgb(103, 103, 103);
 }
 
