@@ -17,7 +17,8 @@ hr {
 }
 
 a {
-	color: #0f4bcd;
+	color: #0033b3;
+	text-shadow: 0.8px 0.8px rgb(125, 125, 125);
 	text-decoration: none;
 	transition: 0.4s;
 }
@@ -27,7 +28,7 @@ a:hover {
 }
 
 h1 {
-	font-size: 25px;
+	font-size: 24px;
 }
 
 /* landing */
@@ -123,10 +124,8 @@ h1 {
 	position: sticky;
 	top: 0;
 	z-index: 200; /* useful to keep href working on container content in hamburger */
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
 	background-color: beige;
 	display: none;
 	flex-direction: row;
@@ -141,15 +140,14 @@ h1 {
 
 .container {
   	width:auto;
-	margin-left:50px;
 	cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
 	border-radius: 100px;
-  	width: 50px;
-  	height: 5px;
+  	width: 45px;
+  	height: 4px;
 	background-color: #07221c;
-	margin: 10px 0;
+	margin: 8px 0;
 	transition: 0.4s;
 }
 
@@ -217,7 +215,7 @@ h1 {
 .advert {
 	padding: 0px;
 	margin: 0px;
-	font-size: 40px;
+	font-size: 35px;
 	animation-name: advert;
 	animation-duration: 3s;
 }
@@ -324,7 +322,7 @@ iframe {
 }
 
 .contact {
-	font-size: 40px;
+	font-size: 35px;
 }
 
 .tinytext {
