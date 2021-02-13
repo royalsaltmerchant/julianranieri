@@ -48,22 +48,22 @@ h1 {
 
 .landing-text {
 	animation-name: maincontent;
-	animation-duration: 4s;
+	animation-duration: 6s;
 }
 
 .landing h1 {
 	color: rgb(255, 255, 255);
-	text-shadow: 1px 1px black;
-	font-size: 40px;
+	text-shadow: 2px 1px black;
+	font-size: 45px;
 	padding: 10px;
 	margin: 0px;
 }
 
 .landing h2 {
 	color: white;
-	text-shadow: 0.8px 0.8px black;
+	text-shadow: 2px 1px black;
 	margin: 0px;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 /* scroll down button inside landing */
