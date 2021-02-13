@@ -44,5 +44,6 @@ function scrollFunction() {
 
 // scroll from landing to main body
 function scrollFromLanding() {
-    window.scrollTo({ top: 690, behavior: 'smooth' })
+    var advert = document.getElementById("advert")
+    advert.scrollIntoView({ behavior: 'smooth' })
   }
