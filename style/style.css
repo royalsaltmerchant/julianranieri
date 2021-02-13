@@ -456,6 +456,9 @@ iframe {
 	.slideUp, .slideUp2, .slideUp3 {
 		animation-duration: 0s;
 	}
+	.business-card {
+		height: auto;
+	}
 }
 @media screen and (height: 1024px) {
 	.landing {
