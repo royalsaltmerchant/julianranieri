@@ -44,6 +44,6 @@ function scrollFunction() {
 
 // scroll from landing to main body
 function scrollFromLanding() {
-    var advert = document.getElementById("advert")
-    advert.scrollIntoView({ behavior: 'smooth' })
+    var businessCard = document.getElementById("business-card")
+    businessCard.scrollIntoView({ behavior: 'smooth' })
   }
