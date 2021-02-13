@@ -261,9 +261,8 @@ h1 {
 }
 
 .me:hover {
-	opacity: 0.8;
-	border-radius: 10px;
-	transition: 0.5s;
+	animation-name: meHover;
+	animation-duration: 2s;
 }
 
 .pfirst {
@@ -373,6 +372,21 @@ iframe {
 	to {
 		opacity: 1;
 		margin-left: 0px;
+	}
+}
+
+@keyframes meHover {
+	0% {
+		opacity: 1;
+		border-radius: 100px;
+	}
+	50% {
+		opacity: 0.8;
+		border-radius: 10px;
+	}
+	100% {
+		opacity: 1;
+		border-radius: 100px;
 	}
 }
 
