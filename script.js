@@ -40,6 +40,9 @@ function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 1000) {
         document.getElementById("projects-div2").className = "slideUp3";
     }
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 1000) {
+        document.getElementById("projects-div3").className = "slideUp3";
+    }
 }
 
 // scroll from landing to main body
