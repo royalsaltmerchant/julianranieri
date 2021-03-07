@@ -271,6 +271,12 @@ h1 {
 	max-width: 300px;
 }
 
+.psecond {
+	font-size: 20px;
+	margin-top: 0px;
+	max-width: 300px;
+}
+
 .projects {
 	background-image: url('/oriental.png');
 	/* background-size: cover;
