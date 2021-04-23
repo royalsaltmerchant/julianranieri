@@ -447,7 +447,7 @@ iframe {
   }
 
 /* media query */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
 	#container-content {
 		margin-top: 20%;
 	}
@@ -472,8 +472,8 @@ iframe {
 	.business-card {
 		height: auto;
 	}
-}
-@media screen and (width: 1024px) and (height: 768px) {
+} */
+/* @media screen and (width: 1024px) and (height: 768px) {
 	.landing {
       background-attachment:scroll;
 			background-size: cover;
@@ -508,4 +508,4 @@ iframe {
 		-moz-background-size: cover;
 		-o-background-size: cover;
 	}
-}
+} */
