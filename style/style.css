@@ -460,10 +460,10 @@ iframe {
 	.landing {
 		background-position: left;
 		background-attachment:scroll;
-		background-size: contain;
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 	}
 	.landing-text {
 		font-size: 35px;
