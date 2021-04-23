@@ -460,6 +460,10 @@ iframe {
 	.landing {
 		background-position: left;
 		background-attachment:scroll;
+		background-size: contain;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
 	}
 	.landing-text {
 		font-size: 35px;
@@ -484,39 +488,39 @@ iframe {
 	.landing {
 		background-position: left;
 		background-attachment:scroll;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+		background-size: contain;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
 	}
 }
 @media screen and (width: 768px) and (height: 1024px) {
 	.landing {
 		background-position: left;
 		background-attachment:scroll;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+		background-size: contain;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
 	}
 }
 @media screen and (width: 1024px) and (height: 1366px) {
 	.landing {
 		background-position: left;
 		background-attachment:scroll;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+		background-size: contain;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
 	}
 }
 @media screen and (width: 1366px) and (height: 1024px) {
 	.landing {
 		background-position: left;
 		background-attachment:scroll;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
+		background-size: contain;
+		-webkit-background-size: contain;
+		-moz-background-size: contain;
+		-o-background-size: contain;
 	}
 }
