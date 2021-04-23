@@ -37,6 +37,9 @@ h1 {
 	height: 100vh;
 	background-image: url("/graffitijules.jpg");
 	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-position: center center;
 	background-attachment: fixed;
 	text-align: center;
