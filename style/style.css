@@ -454,6 +454,10 @@ iframe {
 	.project-item {
 		padding: 0px;
 	}
+	.landing {
+		background-position: left;
+		background-attachment:scroll;
+	}
 	.landing-text {
 		font-size: 35px;
 	}
