@@ -479,24 +479,27 @@ iframe {
 }
 @media screen and (width: 1024px) and (height: 768px) {
 	.landing {
-      background-attachment:scroll;
-			background-size: cover;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
+		background-position: left;
+		background-attachment:scroll;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 	}
 }
 @media screen and (width: 768px) and (height: 1024px) {
 	.landing {
-      background-attachment:scroll;
-			background-size: cover;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
+		background-position: left;
+		background-attachment:scroll;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
 	}
 }
 @media screen and (width: 1024px) and (height: 1366px) {
 	.landing {
+		background-position: left;
 		background-attachment:scroll;
 		background-size: cover;
 		-webkit-background-size: cover;
@@ -506,6 +509,7 @@ iframe {
 }
 @media screen and (width: 1366px) and (height: 1024px) {
 	.landing {
+		background-position: left;
 		background-attachment:scroll;
 		background-size: cover;
 		-webkit-background-size: cover;
