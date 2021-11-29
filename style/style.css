@@ -72,7 +72,6 @@ h1 {
 /* scroll down button inside landing */
 .demo a {
     position: absolute;
-    bottom: 20px;
     left: 50%;
     z-index: 2;
     display: inline-block;
@@ -90,7 +89,7 @@ h1 {
   }
 
 #section02 a {
-    padding-top: 60px;
+    margin-top: 40px;
     
   }
   #section02 a span {
@@ -236,7 +235,7 @@ h1 {
 }
 
 .codeli {
-	font-size: 12px;
+	font-size: 15px;
 	padding:12px;
 	text-shadow: 1px 1px #08221d;
 	animation-name: listglow;
@@ -269,9 +268,9 @@ h1 {
 }
 
 .pfirst {
-	font-size: 20px;
+	font-size: 25px;
 	padding: 30px;
-	max-width: 300px;
+	max-width: 600px;
 }
 
 .psecond {
