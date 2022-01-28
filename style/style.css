@@ -1,14 +1,10 @@
 body {
 	margin: 0;
 	padding: 0;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #071f1a;
-	text-shadow: 0.8px 0.8px rgb(184, 184, 184);
-	/* background-color: #ffddb0; */
-	text-align: center;
-	animation-name: backcolor;
-	animation-duration: 20s;
-	animation-iteration-count: infinite;
+	font-family: serif;
+	color: #3d6960;
+	background-color: #f5faff;
+	text-shadow: 0.8px 0px rgb(99, 42, 42);
 }
 
 hr {
@@ -16,215 +12,113 @@ hr {
 	max-width: 400px;
 }
 
+p, u, b, a {
+	font-size: 25px;
+	max-width: 600px;
+	letter-spacing: 2px;
+}
+
 a {
-	color: #0033b3;
-	text-shadow: 0.8px 0.8px rgb(125, 125, 125);
+	color: #1a65d6d2;
 	text-decoration: none;
 	transition: 0.4s;
 }
 
 a:hover {
-	color: rgb(154, 11, 11);
+	color: rgb(126, 229, 255);
 }
-
-h1 {
-	font-size: 24px;
-}
-
-/* landing */
-.landing {
-	width: 100%;
-	height: 100vh;
-	background-image: url("/beachjules.JPG");
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-position: center center;
-	background-attachment: fixed;
-	text-align: center;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.landing-text {
-	animation-name: maincontent;
-	animation-duration: 6s;
-}
-
-.landing h1 {
-	color: rgb(255, 255, 255);
-	text-shadow: 2px 1px black;
-	font-size: 45px;
-	padding: 10px;
-	margin: 0px;
-}
-
-.landing h2 {
-	color: white;
-	text-shadow: 2px 1px black;
-	margin: 0px;
-	font-size: 20px;
-}
-
-/* scroll down button inside landing */
-.demo a {
-    position: absolute;
-    left: 50%;
-    z-index: 2;
-    display: inline-block;
-    -webkit-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    color: white;
-    font : normal 400 20px/1 'Josefin Sans', sans-serif;
-    letter-spacing: .1em;
-    text-decoration: none;
-    transition: opacity .3s;
-    transition-duration: 0.4s;
-  }
-  .demo a:hover {
-    opacity: .5;
-  }
-
-#section02 a {
-    margin-top: 40px;
-    
-  }
-  #section02 a span {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    width: 46px;
-    height: 46px;
-    margin-left: -23px;
-    border: 2px solid white;
-    border-radius: 100%;
-    box-sizing: border-box;
-    box-shadow: 0px 3px 10px rgb(36, 36, 36);
-  }
-  #section02 a span::after {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    content: '';
-    width: 16px;
-    height: 16px;
-    margin: -12px 0 0 -8px;
-    border-left: 2px solid white;
-    border-bottom: 2px solid white;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    box-sizing: border-box;
-  }
 
 /* header stuff */
 
-.main-header {
+header {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 0;
 	z-index: 200; /* useful to keep href working on container content in hamburger */
 	padding-left: 25px;
 	padding-right: 25px;
-	background-color: beige;
-	display: none;
+	background-color: rgba(252, 242, 229, 0.623);
+	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 	align-items: center;
-	animation-name: maincontent;
-	animation-duration: 2s;
-	box-shadow: 0px 3px 10px 2px rgb(80, 80, 80);
 }
 
 /* hamburger */
 
-.container {
-  	width:auto;
+.ham-container {
+  width:auto;
 	cursor: pointer;
 }
 .bar1, .bar2, .bar3 {
 	border-radius: 100px;
-  	width: 45px;
-  	height: 4px;
-	background-color: #07221c;
+	background-color: #3d6960;
+  width: 45px;
+  height: 4px;
 	margin: 8px 0;
 	transition: 0.4s;
 }
 
-.change .bar1 {
+.ham-change .bar1 {
 	-webkit-transform: rotate(-45deg) translate(-9px, 6px);
 	transform: rotate(-45deg) translate(-9px, 6px);
 }
   
-.change .bar2 {
+.ham-change .bar2 {
 	opacity: 0;
 }
   
-.change .bar3 {
+.ham-change .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-8px, -8px);
 }
 
-#container-content {
-	display: none;
-	padding: 0px;
-	flex-direction: column;
+#ham-container-content {
 	position: absolute;
-	background-color: thistle;
-	width: 100%;
-	left: 0;
-  	top: 0;
-	z-index: 1;
-	opacity: .8;
+	display: none;
 	justify-content: center;
 	text-align: center;
 	align-items: center;
-	margin-top: 8%;
+	width: 100%;
+	padding: 0px;
+	flex-direction: column;
+	background-color: rgb(255, 239, 255);
+	left: 0;
+	z-index: 1;
+	opacity: .8;
 }
 
-#container-content hr {
+#ham-container-content hr {
 	width: 100%;
 	max-width: 100%;
 	padding: 0;
 	margin: 0;
 }
 
-.menup {
+.menu-item {
 	font-size: 40px;
 	width: 100%;
-	/* margin: 0; */
 	padding: 20px;
-	letter-spacing: 10px;
-	cursor: pointer;
-}
-
-.menup:hover {
-	background-color: powderblue;
+	letter-spacing: 15px;
 }
 
 /* main content */
 
-.business-card {
+.opening-section {
 	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 
-.advert {
-	margin-top: 40px;
-	margin-bottom: -5px;
-	font-size: 35px;
+.name {
+	text-align: center;
+	font-size: 40px;
+	letter-spacing: 5px;
 	animation-name: advert;
 	animation-duration: 3s;
 }
 
-.first-section {
-	visibility: hidden;
-}
-
-.firstsection-list {
+.code-container {
 	list-style-type: none;
 	display: flex;
 	flex-direction: row;
@@ -235,24 +129,22 @@ h1 {
 }
 
 .codeli {
-	font-size: 15px;
+	font-size: 16px;
 	padding:12px;
-	text-shadow: 1px 1px #08221d;
 	animation-name: listglow;
-	animation-duration: 4s;
+	animation-duration: 8s;
 	animation-iteration-count: infinite;
 	letter-spacing: 5px;
 }
 
-.second-section {
+.about {
 	margin: 0;
-	visibility: hidden;
+	padding: 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: auto;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
 
 .me {
@@ -267,109 +159,13 @@ h1 {
 	animation-duration: 2s;
 }
 
-.pfirst {
-	font-size: 25px;
-	padding: 30px;
-	max-width: 600px;
-}
-
-.psecond {
-	font-size: 20px;
-	margin-top: 0px;
-	max-width: 300px;
-}
-
 .projects {
-	background-image: url('/oriental.png');
-	/* background-size: cover;
-	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover; */
-	background-position: center top;
-	background-attachment: fixed;
-}
-
-.projects-div {
-	visibility: hidden;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
-
-.project-item {
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 20px;
-}
-
-iframe {
-	border-radius: 10px;
-	width: auto;
-	height: auto;
-	max-width: 400px;
-	max-height: 500px;
-	min-width: 350px;
-	min-height: 450px;
-	box-shadow: 3px 3px 5px 1px rgb(103, 103, 103);
-}
-
-/* foot */
-.footer {
-	line-height: 90%;
-	padding: 5px;
-	font-size: 22px;
-	background-color: beige;
-	word-wrap: break-word;
-	box-shadow: -5px -5px 10px 2px rgb(103, 103, 103);
-}
-
-.contact {
-	font-size: 35px;
-}
-
-.tinytext {
-	font-size: 12px;
-}
-
-/* slide up */
-.slideUp {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-
-.slideUp2 {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-	visibility: visible;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	margin: auto;
 	align-items: center;
 	justify-content: center;
-  }
-
-.slideUp3 {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-	visibility: visible;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-  } 
+}
 
 /* animations */
 @keyframes me {
@@ -398,128 +194,16 @@ iframe {
 	}
 }
 
-@keyframes maincontent {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
-}
-
 @keyframes advert {
-	0% {color: #092922;}
-	50% {color: #ff8400;}
-	100% {color:  #092922;}
-}
-
-@keyframes backcolor {
-	
-	0%   { background-color: #ffddb0; }
-	50%  { background-color: #8ca7a3; }
-	100% { background-color: #ffddb0; }
+	0% {color: #3d6960; letter-spacing: 5px;}
+	50% {color: rgb(255, 207, 74); letter-spacing: 6px;}
+	100% {color: #3d6960; letter-spacing: 5px;}
 }
 
 @keyframes listglow {
-	0%   { color: rgb(148, 240, 216); }
-	50%  { color: rgb(211, 232, 118); }
-	100% { color: rgb(148, 240, 216); }
-}
-
-@keyframes slideUp {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-  
-  @-webkit-keyframes slideUp {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-
-/* media query */
-@media screen and (max-width: 768px) {
-	#container-content {
-		margin-top: 20%;
-	}
-	.project-item {
-		padding: 0px;
-	}
-	.landing {
-		background-position: center;
-		background-attachment:scroll;
-		background-size: cover;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-	}
-	.landing-text {
-		font-size: 35px;
-	}
-	.landing h1 {
-		font-size: 40px;
-	}
-	.landing h2 {
-		font-size: 20px;
-	}
-	.first-section, .second-section, .projects-div {
-		visibility: visible;
-	}
-	.slideUp, .slideUp2, .slideUp3 {
-		animation-duration: 0s;
-	}
-	.business-card {
-		height: auto;
-	}
-}
-@media screen and (width: 1024px) and (height: 768px) {
-	.landing {
-		background-position: center;
-		background-attachment:scroll;
-		background-size: contain;
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
-	}
-}
-@media screen and (width: 768px) and (height: 1024px) {
-	.landing {
-		background-position: center;
-		background-attachment:scroll;
-		background-size: contain;
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
-	}
-}
-@media screen and (width: 1024px) and (height: 1366px) {
-	.landing {
-		background-position: center;
-		background-attachment:scroll;
-		background-size: contain;
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
-	}
-}
-@media screen and (width: 1366px) and (height: 1024px) {
-	.landing {
-		background-position: center;
-		background-attachment:scroll;
-		background-size: contain;
-		-webkit-background-size: contain;
-		-moz-background-size: contain;
-		-o-background-size: contain;
-	}
+	0%   { color: #00ffbb; }
+	25%  { color: rgb(255, 187, 0); }
+	50% { color: rgb(253, 143, 253); }
+	75%  { color: rgb(255, 195, 29); }
+	100%   { color: #00ffbb; }
 }

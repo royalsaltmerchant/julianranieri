@@ -1,156 +1,66 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Julian Ranieri</title>
-        <link rel="stylesheet" type="text/css" href="style/style.css">
-        <link href='https://fonts.googleapis.com/css?family=Encode Sans Expanded' rel='stylesheet'>
-
-    </head>
-    <!-- header -->
-    <header class="main-header" id="header">
-        <h1>Julian Ranieri</h1>
-        <div class="container" id="container" onclick="hamburger()">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-
-            <div class="container-content" id="container-content">
-                    <a class="menup" href="index.html">Home</a>
-                <hr>
-                    <a class="menup" href="#projects">Projects</a>
-                <hr>
-                    <a class="menup" href="#contact">Contact</a>
-            </div>
-
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Julian Ranieri</title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+  </head>
+  <body>
+    <header>
+      <h2><a href="mailto:jumpingafterrain@gmail.com">Jumpingafterrain@gmail.com</a></h2>
+      <div class="ham-container" id="ham-container" onclick="hamburger()">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+        <div id="ham-container-content">
+          <a class="menu-item" href="index.html">Home</a>
+          <hr>
+          <a class="menu-item" href="#projects">Projects</a>
+          <hr>
+          <a class="menu-item" href="./JulianRanieriResumeWeb.pdf">Resume</a>
         </div>
+      </div>
     </header>
-    <!-- landing -->
-    <div class="landing">
-        <div class="landing-text">
-        <!-- <h2>This is</h2> -->
-        <h1>Welcome!</h1>
-        </div>
-        <div id="section02" class="demo">
-            <a onclick="scrollFromLanding()" ><span></span></a>
-        </div>
-    </div>
-    <!--main content-->
     <div id="whole">
-        <div class="business-card" id="business-card">
-            <section class="first-section" id="first-section">
-                <h1 class="advert" id="advert">
-                    Julian Ranieri
-                <ul class="firstsection-list">
-                    <li class="codeli">
-                        HTML
-                    </li>
-                    <br>
-                    <li class="codeli">
-                        CSS
-                    </li>
-                    <br>
-                    <li class="codeli">
-                        JavaScript
-                    </li>
-                    <li class="codeli">
-                        Python
-                    </li>
-                </ul>
-            </section>
-            <section class="second-section" id="second-section">
-                <img src="smaller.jpg" class="me">
-                <p class="pfirst">
-                    This San Francisco local is here to bring you the necessities in web development, with full-stack tools such as: React.js and Python's Flask framework.
-                    <br><br>
-                    <a href="#projects">Check out Julian's web apps!</a>
-                    <br><br>
-                    His progress has led him to develop API endpoints and mobile infrastructure for
-                    <a href="https://www.audiopile.cloud/">audiopile.cloud</a>
-                    and other clients.
-                    <br><br>
-                    <a href="#contact">Contact Julian for his services</a>
-                </p>
-            </section>
+      <section class="opening-section" id="opening-section">
+        <div>
+          <h1 class="name" id="name">
+              Julian Ranieri
+          <ul class="code-container">
+            <li class="codeli">
+                Software
+            </li>
+            <li class="codeli">
+                Developer
+            </li>
+          </ul>
         </div>
-        <!--projects-->
-        <section class="projects" id="projects">
-            <br>
-            <br>
-            <h1 style="font-size: 40px;">Web Projects</h1>
-            <div class="projects-div" id="projects-div">
-                <div class="project-item">
-                    <h1>
-                        <a href="https://www.zennit.app/">Zennit</a>
-                    </h1>
-                    <p class="psecond">Zennit, social blogging site, is built with React and Flask. It implements tools like: React-Router and Redux!</p>
-                    <iframe class="apipractice" src="https://www.zennit.app/" frameborder="0"></iframe>
-                </div>
-                <div class="project-item">
-                    <h1>
-                        <a href="https://royalsaltmerchant.github.io/animeapi/">Anime Search App</a>
-                    </h1>
-                    <p class="psecond">Anime search, built with React, accesses the "Jikan" API to find anime information through the database of "MyAnimeList"! </p>
-                    <iframe class="apipractice" src="https://royalsaltmerchant.github.io/animeapi/" frameborder="0"></iframe>
-                </div>
-                <div class="project-item">
-                    <h1>
-                        <a href="https://royalsaltmerchant.github.io/reactpractice/">Weather App</a>
-                    </h1>
-                    <p class="psecond">This is a simple world weather search, built with React. It implements "Google Places" API and "OpenWeatherMap" API!</p>
-                    <iframe class="apipractice" src="https://royalsaltmerchant.github.io/reactpractice/" frameborder="0"></iframe>
-                </div>
-                <br>
-            </div>
-            <div class="projects-div" id="projects-div2">
-                <div class="project-item">
-                    <h1>
-                        <a href="https://www.sfaudioguild.com">SF Audio Guild</a>
-                    </h1>
-                    <iframe class="apipractice" src="https://www.sfaudioguild.com" frameborder="0"></iframe>
-                </div>
-                <div class="project-item">
-                    <h1>
-                        <a href="https://victoriaharpist.com/">Victoria Haprist</a>
-                    </h1>
-                    <iframe class="apipractice" src="https://victoriaharpist.com/" frameborder="0"></iframe>
-                </div>
-            </div>
-            <br>
-            <br>
-            <br>
-        </section>
-        <!-- <br>   -->
-        <section class="footer" id="contact">
-            <h1 class="contact">
-                Contact:
-            </h1>
-            <h3>
-              Email:
-            </h3>
-            <p>
-                <a href="mailto:jumpingafterrain@gmail.com">Jumpingafterrain@gmail.com</a>
-            </p>
-            <h3>
-                GitHub:
-            </h3>
-            <p>
-                <a href="https://github.com/royalsaltmerchant/">
-                    github.com/royalsaltmerchant
-                </a>
-            </p>
-            <h3>
-                Resume:
-            </h3>
-            <p>
-                <a href="./Julian_Ranieri_Resume.pdf">
-                    Julian's Resume
-                </a>
-            </p>
-            <p class="tinytext">*Background in "Examples" section is from <a href="https://www.toptal.com/designers/subtlepatterns">www.toptal.com/designers/subtlepatterns</a> Made by <a href="http://www.webperts.com/">Webperts</a>*</p>
-        </section>
-
-        <script src="script.js"></script>
-
+        <div class="about" id="about">
+          <img src="smaller.jpg" class="me">
+          <div>
+            <p style="margin-left: 10px;">I'm a <a href="https://en.wikipedia.org/wiki/San_Francisco_Bay_Area">California Bay Area</a> Software Developer.</p>
+            <p style="margin-left: 20px;">I provide essential services for full-stack web and mobile development.</p>
+            <p style="margin-left: 25px;">I use modern tools such as:</p>
+            <p style="margin-left: 20px;"><a href="https://reactjs.org/">React</a> & <a href="https://reactnative.dev/">React-Native</a>, <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a>, <a href="https://www.postgresql.org/">PostgreSQL</a>, <a href="https://aws.amazon.com/">Amazon Web Services</a>.</p>
+            <p style="margin-left: 10px;"><a href="#projects">Check out some of my personal projects.</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="projects" id="projects">
+        <u>Solo</u>
+        <br />
+        <p><a href="https://www.zennit.app/">Zennit</a></p>
+        <p><a href="https://www.sfaudioguild.com/">SF Audio Guild</a></p>
+        <br />
+        <u>Collaborations</u>
+        <br />
+        <p><a href="https://www.audiopile.cloud/">Audiopile</a></p>
+        <p><a href="https://zenmarrow.com/">Zen Marrow</a></p>
+      </section>
     </div>
+  </body>
+  
+  <script src="script.js"></script>
 </html>
