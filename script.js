@@ -28,9 +28,11 @@ function Header(props) {
         <div class="bar2"></div>
         <div class="bar3"></div>
         <div id="ham-container-content">
-          <a class="menu-item" href="index.html">Home</a>
+          <a class="menu-item" href="index.html">About</a>
           <hr>
           <a class="menu-item" href="#projects">Projects</a>
+          <hr>
+          <a class="menu-item" href="https://github.com/royalsaltmerchant">Github</a>
           <hr>
           <a class="menu-item" href="./JulianRanieriResumeWeb.pdf">Resume</a>
         </div>
