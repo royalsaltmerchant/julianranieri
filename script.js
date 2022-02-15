@@ -20,7 +20,8 @@ function Header(props) {
   this.render = function() {
     this.elem = document.getElementById(this.props.id)
     
-    var html = `
+
+    var html = /*html*/ `
       <a class="email" href="mailto:jumpingafterrain@gmail.com">Jumpingafterrain@gmail.com</a>
       <div class="ham-container" id="ham-container" onclick="hamburger()">
         <div class="bar1"></div>
