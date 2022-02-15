@@ -152,6 +152,8 @@ header {
 	max-height: 350px;
 	border-radius: 100px;
 	box-shadow: 3px 3px 5px 1px rgb(103, 103, 103);
+	animation-name: me;
+	animation-duration: 1.5s;
 }
 
 .me:hover {
