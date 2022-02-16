@@ -115,6 +115,7 @@ header {
 	font-size: 40px;
 	letter-spacing: 5px;
 	animation-name: advert;
+	animation-delay: 1.7s;
 	animation-duration: 3s;
 }
 
@@ -145,8 +146,8 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	animation-name: slide;
-	animation-duration: 1.5s;
+	/* animation-name: slide;
+	animation-duration: 1.5s; */
 }
 
 .me {
@@ -154,12 +155,13 @@ header {
 	max-height: 350px;
 	border-radius: 100px;
 	box-shadow: 3px 3px 5px 1px rgb(103, 103, 103);
+	animation-name: meHover;
+	animation-duration: 3s;
+	animation-delay: 1.7s;
 }
 
-.me:hover {
-	animation-name: meHover;
-	animation-duration: 2s;
-}
+/* .me:hover {
+} */
 
 .projects {
 	min-height: 100vh;
@@ -170,7 +172,7 @@ header {
 }
 
 /* animations */
-@keyframes slide {
+/* @keyframes slide {
 	from {
 		opacity: 0;
 		margin-left: -1000px;
@@ -179,7 +181,7 @@ header {
 		opacity: 1;
 		margin-left: 0px;
 	}
-}
+} */
 
 @keyframes meHover {
 	0% {

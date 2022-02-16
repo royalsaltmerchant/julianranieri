@@ -12,3 +12,20 @@ function hamburger() {
       whole.style.opacity = 1;
   }
 }
+
+// name animation
+function namePlay() {
+  var nameElem = document.getElementById('name');
+  var nameHtml = document.getElementById('name').innerHTML;
+  var nameArray = [...nameHtml]
+  var html = nameElem.innerHTML = ''
+  nameArray.forEach(function(item, index) {
+    setTimeout(function() {
+      console.log(item)
+      var newHtml = html += item
+      nameElem.innerHTML = newHtml
+    }, 100 * (index + 1))
+  })
+}
+
+namePlay()
