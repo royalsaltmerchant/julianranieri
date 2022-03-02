@@ -1,68 +1,73 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julian Ranieri</title>
-    <link rel="stylesheet" type="text/css" href="style/style.css">
-  </head>
-  <body>
-    <header id="header">
-      <a class="email" href="mailto:jumpingafterrain@gmail.com">Jumpingafterrain@gmail.com</a>
-      <div class="ham-container" id="ham-container" onclick="hamburger()">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <div id="ham-container-content">
-          <a class="menu-item" href="index.html">About</a>
-          <hr>
-          <a class="menu-item" href="#projects">Projects</a>
-          <hr>
-          <a class="menu-item" href="https://github.com/royalsaltmerchant">Github</a>
-          <hr>
-          <a class="menu-item" href="./JulianRanieriResumeWeb.pdf">Resume</a>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/347d905637.js" crossorigin="anonymous"></script>
+  <title>Julian Ranieri</title>
+</head>
+<body>
+  <section>
+    <div class="showcase">
+      <!-- slide out side bar -->
+      <div id="mobile-menu"></div>
+
+      <div class="container">
+        <nav>
+          <div style="display: flex; align-items: center;">
+            <i class="fa fa-code" style="padding-right: 10px; font-size: larger; color: rgb(103, 220, 255);"></i>
+            <h1 class="logo name" id="name">Julian Ranieri</h1><div class="blinking-text"></div>
+          </div>
+          <!-- web nav -->
+          <ul class="web-nav">
+            <li><a onclick="scrollToProjects()"><i class="fa fa-code-fork"></i> Projects</a></li>
+            <li><a href="JulianRanieriResumeWeb.pdf"><i class="fa fa-file"></i> Resume</a></li>
+          </ul>
+          <!-- mobile nav -->
+          <i id="hamburger" style="font-size: 30px; cursor: pointer;" class="fa fa-bars mobile-nav"></i>
+        </nav>
+  
+        <div class="showcase-content">
+          <div class="text-container">
+            <h1>Software Development</h1>
+            <p>
+              I provide essential services for full-stack web and mobile app development with languages such as HTML, CSS, JavaScript and Python.
+            </p>
+            <br>
+            <p>
+              For complex applications, I use modern tools such as:
+            </p>
+            <ul>
+              <li>React/React-Native</li>
+              <li>Python-Flask</li>
+              <li>Node.JS</li>
+              <li>Amazon Web Services</li>
+              <li>PostgreSQL</li>
+              <li>Docker</li>
+            </ul>
+          </div>
+          <img
+            src="computer2.png"
+          />
         </div>
       </div>
-    </header>
-    <div id="whole">
-      <section class="opening-section" id="opening-section">
-        <div>
-          <h1 style="padding-bottom: 0; margin-bottom: 0;" class="name" id="name">Julian Ranieri</h1>
-          <ul class="code-container">
-            <li class="codeli">
-                Software
-            </li>
-            <li class="codeli">
-                Developer
-            </li>
-          </ul>
-        </div>
-        <div class="about" id="about">
-          <img src="smaller.webp" class="me">
-          <div>
-            <p style="margin-left: 10px;">I'm a <a href="https://en.wikipedia.org/wiki/San_Francisco_Bay_Area">California Bay Area</a> Software Developer.</p>
-            <p style="margin-left: 20px;">I provide essential services for full-stack web and mobile development.</p>
-            <p style="margin-left: 25px;">For complex web applications, I use modern tools such as:</p>
-            <p style="margin-left: 20px;"><a href="https://reactjs.org/">React</a> & <a href="https://reactnative.dev/">React-Native</a>, <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask</a>, <a href="https://www.docker.com/">Docker</a>, and <a href="https://aws.amazon.com/">Amazon Web Services</a>.</p>
-            <p style="margin-left: 10px;"><a href="#projects">Check out some of my personal projects.</a></p>
-          </div>
-        </div>
-      </section>
-      <section class="projects" id="projects">
-        <u>Creations</u>
-        <br />
-        <p><a href="https://www.zennit.app/">Zennit</a></p>
-        <p><a href="https://www.sfaudioguild.com/">SF Audio Guild</a></p>
-        <p><a href="https://victoriaharpist.com/index.html">Victoria Hughes</a></p>
-        <br />
-        <u>Collaborations</u>
-        <br />
-        <p><a href="https://www.audiopile.cloud/">Audiopile</a></p>
-        <p><a href="https://zenmarrow.com/">Zen Marrow</a></p>
-      </section>
     </div>
-  </body>
-  
-  <script src="script.js"></script>
+  </section>
+  <section class="projects" id="projects">
+    <div class="projects-content">
+      <h1>Creations</h1>
+      <a href="https://www.zennit.app/">Zennit</a>
+      <a href="https://www.sfaudioguild.com/">SF Audio Guild</a>
+      <a href="https://victoriaharpist.com/index.html">Victoria Hughes</a>
+    </div>
+    <div class="projects-content">
+      <h1>Collaborations</h1>
+      <a href="https://www.audiopile.cloud/">Audiopile</a>
+      <a href="https://zenmarrow.com/">Zen Marrow</a>
+    </div>
+  </section>
+  <script src="js/app.js"></script>
+</body>
 </html>
