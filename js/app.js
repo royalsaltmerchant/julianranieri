@@ -34,6 +34,8 @@ function SideBar(props) {
         <div class="sidebar-items" id="sidebar-items">
           <a onclick="scrollToProjects()"><div class="sidebar-items-item">Projects<i class="fa fa-code-fork"></i></div></a>
           <hr>
+          <a href="https://github.com/royalsaltmerchant"><div class="sidebar-items-item">Github<i class="fa fa-github"></i></div></a>    
+          <hr>
           <a href="JulianRanieriResumeWeb.pdf"><div class="sidebar-items-item">Resume<i class="fa fa-file"></i></div></a>    
         </div>
       </div>
