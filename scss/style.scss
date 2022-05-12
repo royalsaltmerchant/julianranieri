@@ -16,6 +16,7 @@ body {
   font-family: $font-stack;
   line-height: 1.6;
   text-shadow: rgb(66, 66, 66) 0.8px 0.8px;
+  overscroll-behavior: none;
 }
 
 section {
