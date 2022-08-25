@@ -13,7 +13,7 @@ body {
 section {
   height: 100vh; }
 
-img {
+.computer-img {
   margin-top: 100px;
   width: 41vw; }
 
@@ -30,10 +30,14 @@ a {
   filter: invert(77%) sepia(96%) saturate(300%) hue-rotate(37deg) brightness(108%) contrast(101%); }
 
 .name-icon {
-  margin: 0px;
   height: 22px;
   width: 22px;
   filter: invert(68%) sepia(68%) saturate(520%) hue-rotate(169deg) brightness(103%) contrast(109%); }
+
+.mobile-nav {
+  height: 50px;
+  width: 50px;
+}
 
 .sidebar {
   width: 200px;

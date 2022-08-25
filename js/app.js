@@ -32,11 +32,11 @@ function SideBar(props) {
     var html =  /* html */`
       <div class="sidebar" id="sidebar">
         <div class="sidebar-items" id="sidebar-items">
-          <a onclick="scrollToProjects()"><div class="sidebar-items-item">Projects<i class="fa fa-code-fork"></i></div></a>
+          <a onclick="scrollToProjects()"><div class="sidebar-items-item">Projects<img class="icon" src="icons/code-fork-symbol-svgrepo-com.svg"/></i></div></a>
           <hr>
-          <a href="https://github.com/royalsaltmerchant"><div class="sidebar-items-item">Github<i class="fa fa-github"></i></div></a>    
+          <a href="https://github.com/royalsaltmerchant"><div class="sidebar-items-item">Github<img class="icon" src="icons/github-svgrepo-com.svg"/></div></a>    
           <hr>
-          <a href="resume_compressed.pdf"><div class="sidebar-items-item">Resume<i class="fa fa-file"></i></div></a>    
+          <a href="resume_compressed.pdf"><div class="sidebar-items-item">Resume<img class="icon" src="icons/pdf-svgrepo-com.svg"/></div></a>    
         </div>
       </div>
     `
