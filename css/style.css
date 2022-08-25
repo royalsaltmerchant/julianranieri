@@ -23,8 +23,17 @@ a {
   a:hover {
     color: #eafd42; }
 
-i {
-  color: #91ff37; }
+.icon {
+  margin: 0px;
+  height: 18px;
+  width: 18px;
+  filter: invert(77%) sepia(96%) saturate(300%) hue-rotate(37deg) brightness(108%) contrast(101%); }
+
+.name-icon {
+  margin: 0px;
+  height: 22px;
+  width: 22px;
+  filter: invert(68%) sepia(68%) saturate(520%) hue-rotate(169deg) brightness(103%) contrast(109%); }
 
 .sidebar {
   width: 200px;
