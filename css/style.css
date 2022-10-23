@@ -4,7 +4,7 @@
   padding: 0; }
 
 body {
-  background-color: #e7f5ff;
+  background-color: #041624;
   font-family: "Trebuchet MS", sans-serif;
   line-height: 1.6;
   text-shadow: #424242 0.8px 0.8px;
@@ -65,7 +65,7 @@ a {
       justify-content: space-between; }
 
 .showcase {
-  background-image: linear-gradient(#476486 50%, #e7f5ff);
+  background-image: linear-gradient(#476486 50%, #041624);
   color: #fff;
   height: 800px; }
   .showcase nav {
@@ -111,13 +111,13 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #476486;
+  color: #799fcb;
   text-shadow: none; }
   .projects a {
     color: #d30051;
     font-weight: bold; }
   .projects a:hover {
-    color: #4264fd; }
+    color: #8299ff; }
   .projects-content {
     display: flex;
     flex-direction: column;
