@@ -1,76 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/app.js" defer></script>
-  <title>Julian Ranieri</title>
-</head>
-<body>
-  <section>
-    <div class="showcase">
-      <!-- slide out side bar -->
-      <div id="mobile-menu"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/app.js" defer></script>
+    <title>Julian Ranieri</title>
+  </head>
+  <body>
+    <section>
+      <div class="showcase">
+        <!-- slide out side bar -->
+        <div id="mobile-menu"></div>
 
-      <div class="container">
-        <nav>
-          <div style="display: flex; align-items: center;">
-            <img class="name-icon" style="margin-right: 5px; margin-bottom: 5px;" src="icons/terminal-svgrepo-com.svg"/>
-            <h1 class="logo name" id="name">Julian Ranieri</h1><div class="blinking-text"></div>
-          </div>
-          <!-- web nav -->
-          <ul class="web-nav">
-            <li><a onclick="scrollToProjects()"><img class="icon" src="icons/code-fork-symbol-svgrepo-com.svg"/> Projects</a></li>
-            <li><a href="https://github.com/royalsaltmerchant"><img class="icon" src="icons/github-svgrepo-com.svg"/> Github</a></li>
-            <li><a href="resume_compressed.pdf"><img class="icon" src="icons/pdf-svgrepo-com.svg"/> Resume</a></li>
-          </ul>
-          <!-- mobile nav -->
-          <img id="hamburger" class="mobile-nav" src="icons/hamburger-button-svgrepo-com.svg"/>
-        </nav>
-  
-        <div class="showcase-content">
-          <div class="text-container">
-            <h1>Software Development</h1>
-            <p>
-              I provide essential services for full-stack web and mobile app development with languages such as HTML, CSS, JavaScript and Python.
-            </p>
-            <br>
-            <p>
-              For complex applications, I may use popular tools such as:
-            </p>
-            <ul>
-              <li>React/React-Native</li>
-              <li>Node.JS</li>
-              <li>Python-Flask</li>
-              <li>Amazon Web Services</li>
-              <li>PostgreSQL</li>
-              <li>Docker</li>
+        <div class="container">
+          <nav>
+            <div style="display: flex; align-items: center">
+              <img
+                class="name-icon"
+                style="margin-right: 5px; margin-bottom: 5px"
+                src="icons/terminal-svgrepo-com.svg"
+              />
+              <h1 class="logo name" id="name">Julian Ranieri</h1>
+              <div class="blinking-text"></div>
+            </div>
+            <!-- web nav -->
+            <ul class="web-nav">
+              <li>
+                <a onclick="scrollToProjects()"
+                  ><img
+                    class="icon"
+                    src="icons/code-fork-symbol-svgrepo-com.svg"
+                  />
+                  Projects</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/royalsaltmerchant"
+                  ><img class="icon" src="icons/github-svgrepo-com.svg" />
+                  Github</a
+                >
+              </li>
+              <li>
+                <a href="resume_compressed.pdf"
+                  ><img class="icon" src="icons/pdf-svgrepo-com.svg" />
+                  Resume</a
+                >
+              </li>
             </ul>
+            <!-- mobile nav -->
+            <img
+              id="hamburger"
+              class="mobile-nav"
+              src="icons/hamburger-button-svgrepo-com.svg"
+            />
+          </nav>
+
+          <div class="showcase-content">
+            <div class="text-container">
+              <h1>Software Development</h1>
+              <p>
+                I provide essential services for full-stack web and mobile app
+                development with languages such as HTML, CSS, JavaScript and
+                Python.
+              </p>
+              <br />
+              <p>For complex applications, I may use popular tools such as:</p>
+              <ul>
+                <li>React/React-Native</li>
+                <li>Node.JS</li>
+                <li>Python-Flask</li>
+                <li>Amazon Web Services</li>
+                <li>PostgreSQL</li>
+                <li>Docker</li>
+              </ul>
+            </div>
+            <img class="computer-img" src="computer2.webp" />
           </div>
-          <img
-            class="computer-img"
-            src="computer2.webp"
-          />
         </div>
       </div>
-    </div>
-  </section>
-  <section class="projects" id="projects">
-    <div class="projects-content">
-      <h1>Creations</h1>
-      <a href="https://note-spot.com/">Note Spot</a>
-      <a href="https://oracleiching.com/">I-Ching Oracle</a>
-      <a href="https://top.gg/bot/1029113452763037767">DnD 5e Discord Bot</a>
-      <a href="https://musicofforms.net/">Music of Forms</a>
-    </div>
-    <div class="projects-content">
-      <h1>Collaborations</h1>
-      <a href="https://farreachco.com/">Far Reach Co.</a>
-      <a href="https://zenmarrow.com/">Zen Marrow</a>
-      <a href="https://www.audiopile.cloud/">Audiopile</a>
-    </div>
-  </section>
-</body>
+    </section>
+    <section class="projects" id="projects">
+      <div class="projects-content">
+        <h1>Creations</h1>
+        <a href="https://note-spot.com/">Note Spot</a>
+        <a href="https://oracleiching.com/">I-Ching Oracle</a>
+        <a href="https://top.gg/bot/1029113452763037767">DnD 5e Discord Bot</a>
+        <a href="https://musicofforms.net/">Music of Forms</a>
+        <a href="https://leaninministry.com/">Lean In Ministry</a>
+        <a href="https://victoriaharpist.com/">Victoria Harpist</a>
+        <a href="https://www.sfaudioguild.com/">SF Audio Guild</a>
+      </div>
+      <div class="projects-content">
+        <h1>Collaborations</h1>
+        <a href="https://farreachco.com/">Far Reach Co.</a>
+        <a href="https://zenmarrow.com/">Zen Marrow</a>
+        <a href="https://www.audiopile.cloud/">Audiopile</a>
+      </div>
+    </section>
+  </body>
 </html>
