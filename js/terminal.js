@@ -56,30 +56,33 @@ class Terminal {
 
   changeDir = async (newDir) => {
     let filePath;
-
-    if (newDir.startsWith("/")) {
-      filePath = newDir;
-    } else if (newDir.startsWith("./")) {
-      const pathWithoutPrefix = newDir.substring(2);
-      filePath = this.currentDir + pathWithoutPrefix;
-    } else if (newDir === "..") {
-      const lastSlashIndex = this.currentDir.lastIndexOf("/");
-      this.currentDir = this.currentDir.substring(0, lastSlashIndex);
-      filePath = this.currentDir;
-    } else if (newDir.startsWith("../")) {
-      let pathWithoutPrefix = newDir;
-      while (pathWithoutPrefix.startsWith("../")) {
-        this.currentDir = this.currentDir.substring(
-          0,
-          this.currentDir.lastIndexOf("/")
-        );
-        pathWithoutPrefix = pathWithoutPrefix.substring(3);
-      }
-      filePath = this.currentDir + pathWithoutPrefix;
-    } else if (newDir === ".") {
-      return;
+    if (!newDir) {
+      filePath = "/";
     } else {
-      filePath = this.currentDir + newDir;
+      if (newDir.startsWith("/")) {
+        filePath = newDir;
+      } else if (newDir.startsWith("./")) {
+        const pathWithoutPrefix = newDir.substring(2);
+        filePath = this.currentDir + pathWithoutPrefix;
+      } else if (newDir === "..") {
+        const lastSlashIndex = this.currentDir.lastIndexOf("/");
+        this.currentDir = this.currentDir.substring(0, lastSlashIndex);
+        filePath = this.currentDir;
+      } else if (newDir.startsWith("../")) {
+        let pathWithoutPrefix = newDir;
+        while (pathWithoutPrefix.startsWith("../")) {
+          this.currentDir = this.currentDir.substring(
+            0,
+            this.currentDir.lastIndexOf("/")
+          );
+          pathWithoutPrefix = pathWithoutPrefix.substring(3);
+        }
+        filePath = this.currentDir + pathWithoutPrefix;
+      } else if (newDir === ".") {
+        return;
+      } else {
+        filePath = this.currentDir + newDir;
+      }
     }
 
     // get file structure in json
@@ -139,13 +142,15 @@ class Terminal {
   };
 
   handleCat = async (fileLocation) => {
+    if (!fileLocation) return;
+
     let filePath;
 
     if (fileLocation.startsWith("/")) {
       filePath = fileLocation;
     } else if (fileLocation.startsWith("./")) {
       const pathWithoutPrefix = fileLocation.substring(2);
-      filePath = this.currentDir + pathWithoutPrefix;
+      filePath = this.currentDir + "/" + pathWithoutPrefix;
     } else if (fileLocation.startsWith("../")) {
       let pathWithoutPrefix = fileLocation;
       while (pathWithoutPrefix.startsWith("../")) {
@@ -155,10 +160,11 @@ class Terminal {
         );
         pathWithoutPrefix = pathWithoutPrefix.substring(3);
       }
-      filePath = this.currentDir + pathWithoutPrefix;
+      filePath = this.currentDir + "/" + pathWithoutPrefix;
     } else {
-      filePath = this.currentDir + fileLocation;
+      filePath = this.currentDir + "/" + fileLocation;
     }
+    filePath = filePath.replace(/\/\//g, '')
 
     const fileText = await readFile(filePath);
     const inputLine = this.newLine("\n" + fileText);
