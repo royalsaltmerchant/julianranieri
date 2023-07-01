@@ -1,12 +1,4 @@
 
-function scrollToProjects() {
-  var element = document.getElementById('projects')
-  element.scrollIntoView({
-    behavior: 'smooth', // smooth scroll
-    block: 'start' // the upper border of the element will be aligned at the top of the visible part of the window of the scrollable area.
-  })
-}
-
 // name animation
 function namePlay() {
   var nameElem = document.getElementById('name');
@@ -20,7 +12,6 @@ function namePlay() {
     }, 100 * (index + 1))
   })
 }
-namePlay()
 
 // slide out sidebar
 function SideBar(props) {
@@ -32,11 +23,11 @@ function SideBar(props) {
     var html =  /* html */`
       <div class="sidebar" id="sidebar">
         <div class="sidebar-items" id="sidebar-items">
-          <a onclick="scrollToProjects()"><div class="sidebar-items-item">Projects<img class="icon" src="icons/code-fork-symbol-svgrepo-com.svg"/></i></div></a>
+          <a href=""><div class="sidebar-items-item">Terminal<img class="icon" src="icons/code-fork-symbol-svgrepo-com.svg"/></i></div></a>
           <hr>
           <a href="https://github.com/royalsaltmerchant"><div class="sidebar-items-item">Github<img class="icon" src="icons/github-svgrepo-com.svg"/></div></a>    
           <hr>
-          <a href="resume_compressed.pdf"><div class="sidebar-items-item">Resume<img class="icon" src="icons/pdf-svgrepo-com.svg"/></div></a>    
+          <a href="resume.pdf"><div class="sidebar-items-item">Resume<img class="icon" src="icons/pdf-svgrepo-com.svg"/></div></a>    
         </div>
       </div>
     `

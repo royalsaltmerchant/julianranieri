@@ -1,0 +1,108 @@
+{
+  "name": "julianranieri",
+  "type": "directory",
+  "children": [
+    {
+      "name": "CNAME",
+      "type": "file"
+    },
+    {
+      "name": "css",
+      "type": "directory",
+      "children": [
+        {
+          "name": "style.css",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "fileStructure.json",
+      "type": "file"
+    },
+    {
+      "name": "icons",
+      "type": "directory",
+      "children": [
+        {
+          "name": "code-fork-symbol-svgrepo-com.svg",
+          "type": "file"
+        },
+        {
+          "name": "github-svgrepo-com.svg",
+          "type": "file"
+        },
+        {
+          "name": "hamburger-button-svgrepo-com.svg",
+          "type": "file"
+        },
+        {
+          "name": "pdf-svgrepo-com.svg",
+          "type": "file"
+        },
+        {
+          "name": "terminal-svgrepo-com.svg",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "index.html",
+      "type": "file"
+    },
+    {
+      "name": "js",
+      "type": "directory",
+      "children": [
+        {
+          "name": "createElement.js",
+          "type": "file"
+        },
+        {
+          "name": "getBrowser.js",
+          "type": "file"
+        },
+        {
+          "name": "readFile.js",
+          "type": "file"
+        },
+        {
+          "name": "terminal.js",
+          "type": "file"
+        },
+        {
+          "name": "utils.js",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "resume.pdf",
+      "type": "file"
+    },
+    {
+      "name": "text",
+      "type": "directory",
+      "children": [
+        {
+          "name": "asciiart.txt",
+          "type": "file"
+        },
+        {
+          "name": "helpinfo.txt",
+          "type": "file"
+        }
+      ]
+    },
+    {
+      "name": "tools",
+      "type": "directory",
+      "children": [
+        {
+          "name": "generateFileStructure.js",
+          "type": "file"
+        }
+      ]
+    }
+  ]
+}

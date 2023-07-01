@@ -1,0 +1,18 @@
+Available commands:
+  pwd       Print the current directory you are in
+            Example: pwd
+
+  ls        List items in the current directory
+            Example: ls
+
+  cd        Change the directory
+            Example: cd /text
+
+  cat       Display the contents of the file
+            Example: cat myFile.txt
+
+  clear     Clear the screen
+            Example: clear
+  
+  help      Show this menu
+            Example: help
