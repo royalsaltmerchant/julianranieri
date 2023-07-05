@@ -1,9 +1,9 @@
 :root {
-  --bg-color: #1c1c1c;
-  --bg-nav-color: #3a4654;
-  --bg-nav-color-dark: #27303a;
-  --white: #dadada;
-  --green: #39cf6e;
+  --bg-color: #1e232d;
+  --bg-nav-color: #384c62;
+  --bg-nav-color-dark: rgb(40, 50, 65);
+  --white: #e7e7e7;
+  --blue: #80d5ff;
 }
 
 * {
@@ -142,7 +142,7 @@ nav {
 
 .term-head {
   display: inline-block;
-  color: var(--green);
+  color: var(--blue);
 }
 
 .term-input {
