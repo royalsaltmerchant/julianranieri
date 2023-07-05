@@ -7,6 +7,20 @@
       "type": "file"
     },
     {
+      "name": "blog.html",
+      "type": "file"
+    },
+    {
+      "name": "commands",
+      "type": "directory",
+      "children": [
+        {
+          "name": "build.sh",
+          "type": "file"
+        }
+      ]
+    },
+    {
       "name": "css",
       "type": "directory",
       "children": [
@@ -81,6 +95,42 @@
       "type": "file"
     },
     {
+      "name": "templateConfig.json",
+      "type": "file"
+    },
+    {
+      "name": "templates",
+      "type": "directory",
+      "children": [
+        {
+          "name": "blog.html",
+          "type": "file"
+        },
+        {
+          "name": "index.html",
+          "type": "file"
+        },
+        {
+          "name": "inserts",
+          "type": "directory",
+          "children": [
+            {
+              "name": "mobileMenu.html",
+              "type": "file"
+            },
+            {
+              "name": "nav.html",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "the-codeless-code.html",
+          "type": "file"
+        }
+      ]
+    },
+    {
       "name": "text",
       "type": "directory",
       "children": [
@@ -95,11 +145,19 @@
       ]
     },
     {
+      "name": "the-codeless-code.html",
+      "type": "file"
+    },
+    {
       "name": "tools",
       "type": "directory",
       "children": [
         {
           "name": "generateFileStructure.js",
+          "type": "file"
+        },
+        {
+          "name": "templateEngine.js",
           "type": "file"
         }
       ]

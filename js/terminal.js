@@ -21,7 +21,7 @@ class Terminal {
 
   getCmdHistoryIndex = () => {
     return this.cmdHistory.length;
-  }
+  };
 
   init = async () => {
     const asciiart = await readFile("../text/asciiart.txt");
@@ -164,7 +164,7 @@ class Terminal {
     } else {
       filePath = this.currentDir + "/" + fileLocation;
     }
-    filePath = filePath.replace(/\/\//g, '')
+    filePath = filePath.replace(/\/\//g, "");
 
     const fileText = await readFile(filePath);
     const inputLine = this.newLine("\n" + fileText);
@@ -210,7 +210,7 @@ class Terminal {
 
     // push to history
     this.cmdHistory.push(inputText);
-    // update current cmd history index 
+    // update current cmd history index
     this.currentCmdHistoryIndex = this.getCmdHistoryIndex();
 
     // handle new line
@@ -224,6 +224,12 @@ class Terminal {
       return item.trim();
     });
     this.handleArgs(args);
+
+    // scroll to bottom
+    setTimeout(() => {
+      window.scrollTo(0, document.body.scrollHeight);
+
+    }, 100)
   };
 
   handleTermInput = (e) => {

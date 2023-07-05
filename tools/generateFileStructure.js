@@ -32,17 +32,17 @@ function createDirectoryModel(directoryPath) {
   return model;
 }
 
-// Get the current directory
-const currentDirectory = process.cwd();
+// Get the home directory
+const homeDir = path.dirname(__dirname);
 
 // Create the directory model
-const directoryModel = createDirectoryModel(currentDirectory);
+const directoryModel = createDirectoryModel(homeDir);
 
 // Convert the model to JSON
 const jsonModel = JSON.stringify(directoryModel, null, 2);
 
 // Write the JSON model to a file
-const outputFile = path.join(currentDirectory, 'fileStructure.json');
+const outputFile = path.join(homeDir, 'fileStructure.json');
 fs.writeFileSync(outputFile, jsonModel);
 
 console.log(`File structure saved to ${outputFile}`);

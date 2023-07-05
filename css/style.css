@@ -2,7 +2,8 @@
   --bg-color: #1e232d;
   --bg-nav-color: #384c62;
   --bg-nav-color-dark: rgb(40, 50, 65);
-  --white: #e7e7e7;
+  --white: #e2e2e2;
+  --gray: #b8b8b8;
   --blue: #80d5ff;
 }
 
@@ -15,15 +16,20 @@
 body {
   color: var(--white);
   background-color: var(--bg-color);
-  font-family: monospace;
+  font-family: serif;
+  font-size: 20px;
   overscroll-behavior: none;
   display: flex;
   flex-direction: column;
   height: 100vh;
 }
 
+small {
+  font-size: 12px;
+}
+
 a {
-  color: inherit;
+  color: var(--white);
   text-decoration: none;
 }
 
@@ -58,8 +64,15 @@ a:hover {
 }
 
 nav {
+  font-family: monospace;
+  font-size: 15px;
   display: flex;
   background-color: var(--bg-nav-color);
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
 }
 
 .web-nav {
@@ -133,6 +146,9 @@ nav {
 }
 
 .terminal {
+  padding: 2px 7px;
+  font-family: monospace;
+  font-size: 12px;
   display: flex;
   flex: 1;
   width: 100vw;
@@ -152,6 +168,26 @@ nav {
   outline: none;
   /* white-space: nowrap; */
   caret-color: var(--white);
-  caret-width: 10px;
+}
+
+.blog-container {
+  padding: 20px;
+  line-height: 1.6;
+}
+
+.blog-container {
+  color: var(--gray);
+}
+
+.blog-container ul {
+  padding-left: 30px;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 10px;
+  border: 1px solid var(--gray);
 }
 
