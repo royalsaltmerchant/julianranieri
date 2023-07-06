@@ -28,6 +28,8 @@ function SideBar(props) {
           <a href="https://github.com/royalsaltmerchant"><div class="sidebar-items-item">Github<img class="icon" src="icons/github-svgrepo-com.svg"/></div></a>    
           <hr>
           <a href="resume.pdf"><div class="sidebar-items-item">Resume<img class="icon" src="icons/pdf-svgrepo-com.svg"/></div></a>    
+          <hr>
+          <a href="blog.html"><div class="sidebar-items-item">Blog<img class="icon" src="icons/blog-writing-svgrepo-com.svg"/></div></a>    
         </div>
       </div>
     `

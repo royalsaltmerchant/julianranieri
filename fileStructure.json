@@ -39,6 +39,10 @@
       "type": "directory",
       "children": [
         {
+          "name": "blog-writing-svgrepo-com.svg",
+          "type": "file"
+        },
+        {
           "name": "code-fork-symbol-svgrepo-com.svg",
           "type": "file"
         },
