@@ -23,7 +23,7 @@ function SideBar(props) {
     var html =  /* html */`
       <div class="sidebar" id="sidebar">
         <div class="sidebar-items" id="sidebar-items">
-          <a href=""><div class="sidebar-items-item">Terminal<img class="icon" src="icons/code-fork-symbol-svgrepo-com.svg"/></i></div></a>
+          <a href="index.html"><div class="sidebar-items-item">Terminal<img class="icon" src="icons/code-fork-symbol-svgrepo-com.svg"/></i></div></a>
           <hr>
           <a href="https://github.com/royalsaltmerchant"><div class="sidebar-items-item">Github<img class="icon" src="icons/github-svgrepo-com.svg"/></div></a>    
           <hr>
