@@ -10,82 +10,176 @@
   </head>
   <body>
     <!-- slide out side bar -->
-    {mobileMenu}
+    {mobileMenu} {nav}
 
-    {nav}
-
-    <div class="blog-container">
-      <h1>The Codeless Code</h1>
-      <h2>Ordinary code is the way</h2>
-      <br>
-      <p>When the 'client' makes a request, we must parse it</p>
-      <p>We take that information and try to make sense out of it</p>
-      <br>
-      <p>Perphaps the client needs a solution to a common problem, or a bug fixed</p>
-      <p>Our job, as the 'server' is to handle that request and return to them a suitable response</p>
-      <br>
-      <p>But before we write any code, lets just begin by asking a preliminary question...</p>
-      <br>
-      <p>Do we even need to write code?</p>
-      <br>
-      <h3>Code does not always have to be written in progamming languages</h3>
-      <p>Before even considering a solution, you should be absolutely certain what the problem is</p>
-      <p>Finding a way to verify and document the issue is a good way to begin your dialogue with the client</p>
-      <br>
-      <p>Already, through the process of documentation we begin to write the 'codeless code'</p>
-      <p>You may be taking notes, sending emails, writing reports, presenting your discoveries!</p>
-      <br>
-      <p>Gaining a full understanding of the issue and being able to explain the process is gold</p>
-      <p>A well-written document, a tangible token. This response is better than only giving a verbal explanation</p>
-      <br>
-      <h3>There may be 'nothing' to do</h3>
-      <p>The first possibility is that the client could be mistaken</p>
-      <p>While it may be easier to just give the client what they asked for, we want to provide real value</p>
-      <br>
-      <p>Especially when dealing with non-devs, there is often a misunderstanding of a technical problem</p>
-      <p>You may discover that there was actually nothing to solve to begin with</p>
-      <p>Great!</p>
-      <br>
-      <p>However this does not mean that you haven't done anything</p>
-      <p>You will have provided insight which helps to enlighten the client to a new understanding</p>
-      <br>
-      <h3>A non-code solution</h3>
-      <p>Writing and maintaining new code can be a lot of effort and cost</p>
-      <p>Can we find an existing solution, or one that takes less resources?</p>
-      <br>
-      <p>As I was told as a child "Just because you can, that doesn't mean you should"</p>
-      <p>Rather than creating a custom product, there may be one that can be quickly employed</p>
-      <p>Finding a sustainable and reliable solution, may be a simple query search away</p>
-      <br>
-      <p>As they often say in programming culture, "There is no need to reinvent the wheel"</p>
-      <p>Building something completely new should be a last resort unless its for personal development</p>
-      <br>      
-      <h3>A thousand ways to approach writing code</h3>
-      <p>Once a decision has been made to build it, we have to find the right tools for the job</p>
-      <p>The more tools we have, the more complicated the situation becomes</p>
-      <br>
-      <p>Complexity is the mother of all bugs</p>
-      <br>
-      <p>Are the tools reputable? The languages, the packages, the architecture, etc.</p>
-      <p>For how long can this piece of software be easily maintained?</p>
-      <p>Sometimes, even after one month, you find your dependencies have all been deprecated</p>
-      <br>
-      <h3>Ordinary code is maintainable code</h3>
-      <p>One of my favorite design principles has been "Keep it simple stupid" KISS</p>
-      <p>By writing idiomatic code, and upholding common practice, you become the superior programmer</p>
-      <br>
-      <p>Trust your intuition when it feels like you may be headed into the weeds</p>
-      <p>Almost every common task has already been solved in a concise manner</p>
-      <p>To attain this sublime practice, you must completely cut off the way of cleverness</p>
-      <br>
-      <h3>Knowing when to say NO</h3>
-      <p>You may be dealing with a stubborn client, or an unmaintainable legacy code base</p>
-      <p>Know your limits!</p>
-      <p>Before moving forward, take some time to evaluate instead of rushing into an agreement</p>
-      <p>Saying no to this opportunity may free your time for something better</p>
-      <p>Or it may just give you peace of mind, which is priceless</p>
-      <br>
-      <br>
+    <div class="centered-container">
+      <div class="blog-container">
+        <div class="blog-heading-img-container">
+          <img src="/img/pep-monk-nand.jpg" alt="" width="140" height="auto" />
+          <div>
+            <h1>The Codeless Code</h1>
+            <h2>Ordinary code is the way</h2>
+          </div>
+        </div>
+        <br />
+        <p>When the 'client' makes a request, we must parse it</p>
+        <p>We take that information and try to make sense out of it</p>
+        <br />
+        <p>
+          Perphaps the client needs a solution to a common problem, or a bug
+          fixed
+        </p>
+        <p>
+          Our job, as the 'server' is to handle that request and return to them
+          a suitable response
+        </p>
+        <br />
+        <p>
+          But before we write any code, lets just begin by asking a preliminary
+          question...
+        </p>
+        <br />
+        <p>Do we even need to write code?</p>
+        <br />
+        <h3>Code does not always have to be written in progamming languages</h3>
+        <p>
+          Before even considering a solution, you should be absolutely certain
+          what the problem is
+        </p>
+        <p>
+          Finding a way to verify and document the issue is a good way to begin
+          your dialogue with the client
+        </p>
+        <br />
+        <p>
+          Already, through the process of documentation we begin to write the
+          'codeless code'
+        </p>
+        <p>
+          You may be taking notes, sending emails, writing reports, presenting
+          your discoveries!
+        </p>
+        <br />
+        <p>
+          Gaining a full understanding of the issue and being able to explain
+          the process is gold
+        </p>
+        <p>
+          A well-written document, a tangible token. This response is better
+          than only giving a verbal explanation
+        </p>
+        <br />
+        <h3>There may be 'nothing' to do</h3>
+        <p>The first possibility is that the client could be mistaken</p>
+        <p>
+          While it may be easier to just give the client what they asked for, we
+          want to provide real value
+        </p>
+        <br />
+        <p>
+          Especially when dealing with non-devs, there is often a
+          misunderstanding of a technical problem
+        </p>
+        <p>
+          You may discover that there was actually nothing to solve to begin
+          with
+        </p>
+        <p>Great!</p>
+        <br />
+        <p>However this does not mean that you haven't done anything</p>
+        <p>
+          You will have provided insight which helps to enlighten the client to
+          a new understanding
+        </p>
+        <br />
+        <h3>A non-code solution</h3>
+        <p>Writing and maintaining new code can be a lot of effort and cost</p>
+        <p>
+          Can we find an existing solution, or one that takes less resources?
+        </p>
+        <br />
+        <p>
+          As I was told as a child "Just because you can, that doesn't mean you
+          should"
+        </p>
+        <p>
+          Rather than creating a custom product, there may be one that can be
+          quickly employed
+        </p>
+        <p>
+          Finding a sustainable and reliable solution, may be a simple query
+          search away
+        </p>
+        <br />
+        <p>
+          As they often say in programming culture, "There is no need to
+          reinvent the wheel"
+        </p>
+        <p>
+          Building something completely new should be a last resort unless its
+          for personal development
+        </p>
+        <br />
+        <h3>A thousand ways to approach writing code</h3>
+        <p>
+          Once a decision has been made to build it, we have to find the right
+          tools for the job
+        </p>
+        <p>
+          The more tools we have, the more complicated the situation becomes
+        </p>
+        <br />
+        <p>Complexity is the mother of all bugs</p>
+        <br />
+        <p>
+          Are the tools reputable? The languages, the packages, the
+          architecture, etc.
+        </p>
+        <p>For how long can this piece of software be easily maintained?</p>
+        <p>
+          Sometimes, even after one month, you find your dependencies have all
+          been deprecated
+        </p>
+        <br />
+        <h3>Ordinary code is maintainable code</h3>
+        <p>
+          One of my favorite design principles has been "Keep it simple stupid"
+          KISS
+        </p>
+        <p>
+          By writing idiomatic code, and upholding common practice, you become
+          the superior programmer
+        </p>
+        <br />
+        <p>
+          Trust your intuition when it feels like you may be headed into the
+          weeds
+        </p>
+        <p>
+          Almost every common task has already been solved in a concise manner
+        </p>
+        <p>
+          To attain this sublime practice, you must completely cut off the way
+          of cleverness
+        </p>
+        <br />
+        <h3>Knowing when to say NO</h3>
+        <p>
+          You may be dealing with a stubborn client, or an unmaintainable legacy
+          code base
+        </p>
+        <p>Know your limits!</p>
+        <p>
+          Before moving forward, take some time to evaluate instead of rushing
+          into an agreement
+        </p>
+        <p>
+          Saying no to this opportunity may free your time for something better
+        </p>
+        <p>Or it may just give you peace of mind, which is priceless</p>
+        <br />
+        <br />
+      </div>
     </div>
   </body>
 </html>

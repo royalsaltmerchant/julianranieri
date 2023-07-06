@@ -65,6 +65,16 @@
       ]
     },
     {
+      "name": "img",
+      "type": "directory",
+      "children": [
+        {
+          "name": "pep-monk-nand.jpg",
+          "type": "file"
+        }
+      ]
+    },
+    {
       "name": "index.html",
       "type": "file"
     },

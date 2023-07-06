@@ -170,13 +170,16 @@ nav a {
   caret-color: var(--white);
 }
 
-.blog-container {
-  padding: 20px;
-  line-height: 1.6;
+.centered-container {
+  display: flex;
+  justify-content: center;
 }
 
 .blog-container {
   color: var(--gray);
+  width: 800px;
+  padding: 20px;
+  line-height: 1.6;
 }
 
 .blog-container ul {
@@ -189,5 +192,15 @@ nav a {
   width: fit-content;
   padding: 10px;
   border: 1px solid var(--gray);
+}
+
+.blog-heading-img-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.blog-heading-img-container img {
+  margin-right: 20px;
+  /* padding-top: 17px; */
 }
 
