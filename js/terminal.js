@@ -35,13 +35,11 @@ class Terminal {
     // get file structure
     const jsonFileStructData = await readFile("./fileStructure.json");
     this.jsonFileStruct = JSON.parse(jsonFileStructData);
+
     // get ascii art
     const asciiart = await readFile("../text/asciiart.txt");
-    const artlines = asciiart.split("\n");
-    for (const line of artlines) {
-      const firstLine = this.newLinePre(line);
-      this.entryElem.appendChild(firstLine);
-    }
+    const artlines = this.newLinePre("\n" + asciiart);
+    this.entryElem.appendChild(artlines);
     // get help info
     const helpinfo = await readFile("../text/helpinfo.txt");
     const helpLines = this.newLine("\n" + helpinfo);
