@@ -64,6 +64,7 @@ class Terminal {
 
   changeDir = async (newDir) => {
     let filePath;
+
     if (!newDir) {
       filePath = "/";
     } else {
@@ -71,11 +72,13 @@ class Terminal {
         filePath = newDir;
       } else if (newDir.startsWith("./")) {
         const pathWithoutPrefix = newDir.substring(2);
-        filePath = this.currentDir + pathWithoutPrefix;
+        filePath = `${
+          this.currentDir === "/" ? "" : this.currentDir
+        }/${pathWithoutPrefix}`;
       } else if (newDir === "..") {
         const lastSlashIndex = this.currentDir.lastIndexOf("/");
         this.currentDir = this.currentDir.substring(0, lastSlashIndex);
-        filePath = this.currentDir;
+        filePath = this.currentDir === "" ? "/" : this.currentDir;
       } else if (newDir.startsWith("../")) {
         let pathWithoutPrefix = newDir;
         while (pathWithoutPrefix.startsWith("../")) {
@@ -85,11 +88,15 @@ class Terminal {
           );
           pathWithoutPrefix = pathWithoutPrefix.substring(3);
         }
-        filePath = this.currentDir + pathWithoutPrefix;
+        filePath = `${
+          this.currentDir === "/" ? "" : this.currentDir
+        }/${pathWithoutPrefix}`;
       } else if (newDir === ".") {
         return;
       } else {
-        filePath = this.currentDir + newDir;
+        filePath = `${
+          this.currentDir === "/" ? "" : this.currentDir
+        }/${newDir}`;
       }
     }
 
@@ -99,14 +106,12 @@ class Terminal {
     if (filePath === "" || filePath == " ") {
       filePath = "/";
     }
+    console.log(filePath);
     this.currentDir = filePath;
 
     // update head
     const inputHead = document.getElementById("input-head");
-    console.log(this.currentDir, this.getHead());
-    // console.log(inputHead)
     inputHead.innerText = this.getHead();
-    // console.log(inputHead)
   };
 
   findChildrenNames = (directoryModel, absolutePath) => {
