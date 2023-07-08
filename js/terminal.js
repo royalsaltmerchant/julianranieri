@@ -27,7 +27,7 @@ class Terminal {
   };
 
   init = async () => {
-    // init 
+    // init
     // get file structure
     const jsonFileStructData = await readFile("./fileStructure.json");
     this.jsonFileStruct = JSON.parse(jsonFileStructData);
@@ -93,10 +93,12 @@ class Terminal {
       }
     }
 
-
     const list = this.findChildrenNames(this.jsonFileStruct, filePath);
 
     if (!list) return;
+    if (filePath === "" || filePath == " ") {
+      filePath = "/";
+    }
     this.currentDir = filePath;
 
     // update head
@@ -229,8 +231,7 @@ class Terminal {
     // scroll to bottom
     setTimeout(() => {
       window.scrollTo(0, document.body.scrollHeight);
-
-    }, 100)
+    }, 100);
   };
 
   handleTermInput = (e) => {
