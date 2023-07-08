@@ -12,6 +12,9 @@ class Terminal {
     this.cmdHistory = [];
     this.currentCmdHistoryIndex = this.getCmdHistoryIndex();
 
+    // file read data
+    this.jsonFileStruct = null;
+
     this.init();
   }
 
@@ -24,13 +27,18 @@ class Terminal {
   };
 
   init = async () => {
+    // init 
+    // get file structure
+    const jsonFileStructData = await readFile("./fileStructure.json");
+    this.jsonFileStruct = JSON.parse(jsonFileStructData);
+    // get ascii art
     const asciiart = await readFile("../text/asciiart.txt");
     const artlines = asciiart.split("\n");
     for (const line of artlines) {
       const firstLine = this.newLinePre(line);
       this.entryElem.appendChild(firstLine);
     }
-
+    // get help info
     const helpinfo = await readFile("../text/helpinfo.txt");
     const helpLines = this.newLine("\n" + helpinfo);
     this.entryElem.appendChild(helpLines);
@@ -85,11 +93,8 @@ class Terminal {
       }
     }
 
-    // get file structure in json
-    let jsonFileStruct = await readFile("./fileStructure.json");
-    jsonFileStruct = JSON.parse(jsonFileStruct);
 
-    const list = this.findChildrenNames(jsonFileStruct, filePath);
+    const list = this.findChildrenNames(this.jsonFileStruct, filePath);
 
     if (!list) return;
     this.currentDir = filePath;
@@ -129,11 +134,7 @@ class Terminal {
   };
 
   handleList = async () => {
-    // get file structure in json
-    let jsonFileStruct = await readFile("./fileStructure.json");
-    jsonFileStruct = JSON.parse(jsonFileStruct);
-
-    const list = this.findChildrenNames(jsonFileStruct, this.currentDir);
+    const list = this.findChildrenNames(this.jsonFileStruct, this.currentDir);
 
     for (const item of list) {
       const inputLine = this.newLine(item);
