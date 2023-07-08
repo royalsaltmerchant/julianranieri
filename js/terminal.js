@@ -144,11 +144,9 @@ class Terminal {
 
   handleList = async () => {
     const list = this.findChildrenNames(this.jsonFileStruct, this.currentDir);
-
-    for (const item of list) {
-      const inputLine = this.newLine(item);
-      this.entryElem.insertBefore(inputLine, this.inputElem.parentElement);
-    }
+    const joinedList = list.join('\n');
+    const inputLine = this.newLine("\n" + joinedList);
+    this.entryElem.insertBefore(inputLine, this.inputElem.parentElement);
   };
 
   handleCat = async (fileLocation) => {
