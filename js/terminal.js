@@ -19,7 +19,11 @@ class Terminal {
   }
 
   getHead = () => {
-    return `${getBrowser()}@julianranieri.com ${this.currentDir} %`;
+    let dir = this.currentDir;
+    dir = dir.split("/");
+    dir = dir[dir.length - 1];
+    if (dir === "" || dir === " ") dir = "/";
+    return `${getBrowser()}@julianranieri.com ${dir} %`;
   };
 
   getCmdHistoryIndex = () => {
