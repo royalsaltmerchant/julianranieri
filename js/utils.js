@@ -32,6 +32,8 @@ function SideBar(props) {
           <a href="blog.html"><div class="sidebar-items-item">Blog<img class="icon" src="icons/blog-writing-svgrepo-com.svg"/></div></a>    
           <hr>
           <a href="links.html"><div class="sidebar-items-item">Links<img class="icon" src="icons/link-svgrepo-com.svg"/></div></a>    
+          <hr>
+          <a href="software.html"><div class="sidebar-items-item">Software<img class="icon" src="icons/software-svgrepo-com.svg"/></div></a>    
         </div>
       </div>
     `
