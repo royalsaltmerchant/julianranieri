@@ -55,6 +55,10 @@
           "type": "file"
         },
         {
+          "name": "link-svgrepo-com.svg",
+          "type": "file"
+        },
+        {
           "name": "pdf-svgrepo-com.svg",
           "type": "file"
         },
@@ -105,6 +109,10 @@
       ]
     },
     {
+      "name": "links.html",
+      "type": "file"
+    },
+    {
       "name": "resume.pdf",
       "type": "file"
     },
@@ -137,6 +145,10 @@
               "type": "file"
             }
           ]
+        },
+        {
+          "name": "links.html",
+          "type": "file"
         },
         {
           "name": "the-codeless-code.html",
