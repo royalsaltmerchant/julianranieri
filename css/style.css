@@ -28,6 +28,11 @@ small {
   font-size: 12px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   color: var(--white);
   text-decoration: none;
@@ -207,7 +212,7 @@ nav a {
   /* padding-top: 17px; */
 }
 
-.cedit-img {
+.software-img {
   max-width: 80%;
 }
 

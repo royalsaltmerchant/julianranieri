@@ -7,11 +7,11 @@
       "type": "file"
     },
     {
-      "name": "blog.html",
+      "name": "about.html",
       "type": "file"
     },
     {
-      "name": "cedit.dmg",
+      "name": "blog.html",
       "type": "file"
     },
     {
@@ -42,6 +42,10 @@
       "name": "icons",
       "type": "directory",
       "children": [
+        {
+          "name": "about-svgrepo-com.svg",
+          "type": "file"
+        },
         {
           "name": "blog-writing-svgrepo-com.svg",
           "type": "file"
@@ -85,7 +89,15 @@
           "type": "file"
         },
         {
+          "name": "jules_uofo_radio.webp",
+          "type": "file"
+        },
+        {
           "name": "pep-monk-nand.webp",
+          "type": "file"
+        },
+        {
+          "name": "tapesim_screenshot.png",
           "type": "file"
         }
       ]
@@ -140,6 +152,10 @@
       "name": "templates",
       "type": "directory",
       "children": [
+        {
+          "name": "about.html",
+          "type": "file"
+        },
         {
           "name": "blog.html",
           "type": "file"
