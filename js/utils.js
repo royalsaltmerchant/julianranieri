@@ -56,8 +56,10 @@ function SideBar(props) {
       }
     })
     // hide if click anywhere else
-    document.addEventListener('mousedown', function() {
-      self.hide()
+    document.addEventListener('mousedown', function(e) {
+      if (e.target.className !== 'sidebar-items-item') {
+        self.hide()
+      }
     })
   }
 
@@ -65,10 +67,12 @@ function SideBar(props) {
   this.hide = function() {
     this.isVisible = false
     this.items.style.transform = 'translate(200px, 0px)'
+    this.elem.style.zIndex = 1
   }
   // show sidebar
   this.show = function() {
     this.isVisible = true
+    this.elem.style.zIndex = 10
     this.items.style.transform = 'translate(0px, 0px)'
   }
 
