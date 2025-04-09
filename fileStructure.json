@@ -3,15 +3,15 @@
   "type": "directory",
   "children": [
     {
-      "name": "CNAME",
-      "type": "file"
-    },
-    {
       "name": "about.html",
       "type": "file"
     },
     {
       "name": "blog.html",
+      "type": "file"
+    },
+    {
+      "name": "CNAME",
       "type": "file"
     },
     {
@@ -86,6 +86,10 @@
       "children": [
         {
           "name": "cedit_screenshot.png",
+          "type": "file"
+        },
+        {
+          "name": "csv_zero_screenshot.png",
           "type": "file"
         },
         {
