@@ -93,6 +93,10 @@
           "type": "file"
         },
         {
+          "name": "parch_icon.webp",
+          "type": "file"
+        },
+        {
           "name": "pep-monk-nand.webp",
           "type": "file"
         },
