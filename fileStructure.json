@@ -89,6 +89,10 @@
           "type": "file"
         },
         {
+          "name": "csv_zero.png",
+          "type": "file"
+        },
+        {
           "name": "jules_uofo_radio.webp",
           "type": "file"
         },
