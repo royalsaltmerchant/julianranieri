@@ -37,9 +37,9 @@ class Terminal {
     this.jsonFileStruct = JSON.parse(jsonFileStructData);
 
     // get ascii art
-    const asciiart = await readFile("../text/asciiart.txt");
-    const artlines = this.newLinePre("\n" + asciiart);
-    this.entryElem.appendChild(artlines);
+    // const asciiart = await readFile("../text/asciiart.txt");
+    // const artlines = this.newLinePre("\n" + asciiart);
+    // this.entryElem.appendChild(artlines);
     // get help info
     const helpinfo = await readFile("../text/helpinfo.txt");
     const helpLines = this.newLine("\n" + helpinfo);
