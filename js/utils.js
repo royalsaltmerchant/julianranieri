@@ -25,15 +25,11 @@ function SideBar(props) {
         <div class="sidebar-items" id="sidebar-items">
           <a href="index.html"><div class="sidebar-items-item">Terminal<img class="icon" src="icons/code-fork-symbol-svgrepo-com.svg"/></i></div></a>
           <hr>
-          <a href="https://github.com/royalsaltmerchant"><div class="sidebar-items-item">Github<img class="icon" src="icons/github-svgrepo-com.svg"/></div></a>    
-          <hr>
-          <a href="resume.pdf"><div class="sidebar-items-item">Resume<img class="icon" src="icons/pdf-svgrepo-com.svg"/></div></a>    
-          <hr>
           <a href="about.html"><div class="sidebar-items-item">About<img class="icon" src="icons/about-svgrepo-com.svg"/></div></a>
           <hr>
-          <a href="links.html"><div class="sidebar-items-item">Links<img class="icon" src="icons/link-svgrepo-com.svg"/></div></a>    
+          <a href="software.html"><div class="sidebar-items-item">Software<img class="icon" src="icons/software-svgrepo-com.svg"/></div></a>
           <hr>
-          <a href="software.html"><div class="sidebar-items-item">Software<img class="icon" src="icons/software-svgrepo-com.svg"/></div></a>    
+          <a href="links.html"><div class="sidebar-items-item">Links<img class="icon" src="icons/link-svgrepo-com.svg"/></div></a>
         </div>
       </div>
     `
