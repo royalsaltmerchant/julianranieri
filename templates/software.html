@@ -15,60 +15,73 @@
       <div class="blog-container">
         <h1>Software</h1>
         <p>
-          Here is where I keep desktop software I have produced for download.
+          Desktop applications I've built for audio production, data management, and real-time communication.
         </p>
         <br />
-        <div class="blog-list-item">
-          <a
-            href="https://github.com/royalsaltmerchant/tape_sim/raw/main/tape_sim.dmg"
-            >Tape Sim</a
-          >
-          -
-          <small>This DMG file contains a MACOS executable program</small>
-          <br />
-          <p>
-            A multi-track audio recorder to simulate a tape machine experience
+
+        <div class="project-card">
+          <div class="project-header">
+            <h2>Tape Sim</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">C</span>
+              <span class="tech-tag">SwiftUI</span>
+              <span class="tech-tag">PortAudio</span>
+            </div>
+          </div>
+          <img src="img/tapesim_screenshot.png" class="software-img" alt="Tape Sim interface" />
+          <p class="project-description">
+            Multi-track audio recorder that recreates the analog tape machine experience. Features tape-style controls (rewind, fast-forward, RTZ), stereo bounce, and keyboard shortcuts. Records 48kHz 24-bit WAV files with as many simultaneous tracks as your audio interface supports.
           </p>
-          <img src="img/tapesim_screenshot.png" class="software-img" alt="" />
-          <br />
-          <a href="https://github.com/royalsaltmerchant/tape_sim"
-            >Github Repo</a
-          >
+          <div class="project-features">
+            <strong>Key features:</strong> Multi-track recording, tape machine controls, stereo bounce, directory management
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/royalsaltmerchant/tape_sim/raw/main/tape_sim.dmg" class="download-link">Download for macOS</a>
+            <a href="https://github.com/royalsaltmerchant/tape_sim">GitHub</a>
+          </div>
         </div>
-        <div class="blog-list-item">
-          <a
-            href="https://github.com/royalsaltmerchant/csv_apps/raw/main/CSVZeroInstaller_windows.exe"
-            >CSV Zero</a
-          >
-          -
-          <small>A windows EXE installer</small>
-          <br />
-          <p>
-            A fast, minimalist desktop CSV editor and viewer built with Python and Tkinter. Designed for simplicity and clarity, it lets you view, edit, search, and manage CSV files without the bloat of spreadsheets or clunky web tools.
+
+        <div class="project-card">
+          <div class="project-header">
+            <h2>CSV Zero</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Tkinter</span>
+            </div>
+          </div>
+          <img src="img/csv_zero.png" class="software-img" alt="CSV Zero interface" />
+          <p class="project-description">
+            Lightweight desktop CSV editor that strips away spreadsheet bloat. Auto-detects delimiters and encoding, supports search across all data, and provides straightforward insert/edit/remove operations. Dark-themed with monospaced typography.
           </p>
-          <img src="img/csv_zero.png" class="software-img" alt="" />
-          <br />
-          <a href="https://github.com/royalsaltmerchant/csv_apps"
-            >Github Repo</a
-          >
+          <div class="project-features">
+            <strong>Key features:</strong> Auto-detection of CSV formats, search functionality, session memory, keyboard shortcuts
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/royalsaltmerchant/csv_apps/raw/main/CSVZeroInstaller_windows.exe" class="download-link">Download for Windows</a>
+            <a href="https://github.com/royalsaltmerchant/csv_apps">GitHub</a>
+          </div>
         </div>
-        <div class="blog-list-item">
-          <a
-            href="https://github.com/royalsaltmerchant/cedit/raw/master/cedit.dmg"
-            >Parch</a
-          >
-          -
-          <small>Link to the landing page</small>
-          <br />
-          <p>
-            Parch is a real-time chat and voice platform built around
-            decentralization and simplicity. It allows users to run their own
-            servers (hosts), connect through a public relay, and communicate
-            securely via self-hosted infrastructure.
+
+        <div class="project-card">
+          <div class="project-header">
+            <h2>Parch</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Go</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">WebRTC</span>
+              <span class="tech-tag">SQLite</span>
+            </div>
+          </div>
+          <img src="img/parch_icon.webp" class="software-img" alt="Parch icon" />
+          <p class="project-description">
+            Decentralized real-time chat and voice communication platform. Run your own server while connecting through a public relay. Features channel-based messaging, WebRTC voice calls with SFU routing, and local SQLite storage for complete data control.
           </p>
-          <img src="img/parch_icon.webp" class="software-img" alt="" />
-          <br />
-          <a href="https://github.com/royalsaltmerchant/gochat">Github Repo</a>
+          <div class="project-features">
+            <strong>Key features:</strong> Self-hosted architecture, real-time messaging, voice communication, NAT traversal
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/royalsaltmerchant/gochat">GitHub</a>
+          </div>
         </div>
       </div>
     </div>
