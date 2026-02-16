@@ -91,17 +91,17 @@
             <h2>Parch</h2>
             <div class="tech-tags">
               <span class="tech-tag">Go</span>
-              <span class="tech-tag">Wails</span>
               <span class="tech-tag">WebRTC</span>
+              <span class="tech-tag">E2EE</span>
               <span class="tech-tag">SQLite</span>
             </div>
           </div>
           <img src="img/parch_icon.webp" class="software-img" alt="Parch icon" />
           <p class="project-description">
-            Decentralized real-time chat and voice communication platform. Run your own server while connecting through a public relay. Features channel-based messaging, WebRTC voice calls with SFU routing, and local SQLite storage for complete data control.
+            User-hosted messenger and call platform with end-to-end encryption. Microservices architecture: a Go chat relay for WebSocket message routing with public-key identity (Ed25519 auth + ECDH P-256 encryption), a relay server for call auth and Stripe billing, a Linux CLI host client with local SQLite storage, and a React call app for WebRTC video/voice via SFU with TURN-based NAT traversal. Challenge-response authentication with cryptographic signature verification, sliding-window rate limiting, envelope payload validation, and replay attack prevention via idempotent message indexing.
           </p>
           <div class="project-features">
-            <strong>Key features:</strong> Self-hosted architecture, real-time messaging, voice communication, NAT traversal
+            <strong>Key features:</strong> End-to-end encrypted messaging, zero-trust passwordless identity, concurrent state management (mutex hierarchy), WebRTC SFU with JWT auth, automated deployment with systemd
           </div>
           <div class="project-links">
             <a href="https://github.com/royalsaltmerchant/gochat">GitHub</a>
