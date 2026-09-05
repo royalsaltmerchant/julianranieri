@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="An English translation patch for the classic Ukagaka ghost Mayura.">
   <title>Mayura English Patch</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="preload" href="assets/fonts/DotGothic16-Regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="styles.css?v=20260905-2">
 </head>
 <body>
   <main>
@@ -42,6 +43,20 @@
         <h2>Apply the patch</h2>
         <p>Close SSP, unzip our download, and double-click <code>Install-Mayura-English.cmd</code>. It creates a separate English ghost without overwriting the original.</p>
       </article>
+    </section>
+
+    <section class="release" aria-labelledby="release-title">
+      <p class="eyebrow">Preview release</p>
+      <h2 id="release-title">What is in the download?</h2>
+      <p>The current ZIP contains a transparent, script-based Windows patcher—not a conventional signed installer yet.</p>
+      <ul>
+        <li><code>Install-Mayura-English.cmd</code> starts the patcher.</li>
+        <li><code>Install-Mayura-English.ps1</code> verifies Mayura, preserves save data, and creates the English copy.</li>
+        <li><code>patch-manifest.json</code> contains the translation patch data and file checksums.</li>
+        <li><code>README.txt</code> contains installation instructions, permission terms, and credits.</li>
+      </ul>
+      <p class="checksum"><strong>SHA-256</strong><br><code>8AA472D07DFBD525E40591A56703ECB13864852B8AC3982219DB2F8CC60459D1</code></p>
+      <p>A standard Windows installer is planned. Until then, Windows may warn about the unsigned scripts.</p>
     </section>
 
     <section class="process" aria-labelledby="process-title">
