@@ -3,15 +3,15 @@
   "type": "directory",
   "children": [
     {
-      "name": "CNAME",
-      "type": "file"
-    },
-    {
       "name": "about.html",
       "type": "file"
     },
     {
       "name": "blog.html",
+      "type": "file"
+    },
+    {
+      "name": "CNAME",
       "type": "file"
     },
     {
@@ -143,6 +143,40 @@
     {
       "name": "links.html",
       "type": "file"
+    },
+    {
+      "name": "mayura-en",
+      "type": "directory",
+      "children": [
+        {
+          "name": "assets",
+          "type": "directory",
+          "children": [
+            {
+              "name": "mayura-surface-0.png",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "downloads",
+          "type": "directory",
+          "children": [
+            {
+              "name": "Mayura-English-Patch.zip",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "index.html",
+          "type": "file"
+        },
+        {
+          "name": "styles.css",
+          "type": "file"
+        }
+      ]
     },
     {
       "name": "software.html",
