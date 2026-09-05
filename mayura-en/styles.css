@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "DotGothic16";
+  src: url("assets/fonts/DotGothic16-Regular.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   color-scheme: dark;
   --ink: #f4f2f7;
@@ -38,6 +46,7 @@ main, footer { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
 
 .eyebrow, .number, .version {
   color: var(--violet);
+  font-family: "DotGothic16", "MS PGothic", sans-serif;
   font-size: .8rem;
   font-weight: 700;
   letter-spacing: .16em;
@@ -46,7 +55,7 @@ main, footer { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
 
 h1 {
   margin: .8rem 0 1.5rem;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: "DotGothic16", "MS PGothic", sans-serif;
   font-size: clamp(4rem, 9vw, 7.4rem);
   font-weight: 400;
   letter-spacing: -.06em;
@@ -70,6 +79,7 @@ h1 {
 .download:hover { transform: translateY(-2px); background: #bba4ff; }
 .download:focus-visible { outline: 3px solid white; outline-offset: 4px; }
 .download span { font-size: 1.05rem; font-weight: 800; }
+.download { font-family: "DotGothic16", "MS PGothic", sans-serif; }
 .download small { font-size: .8rem; }
 .version { margin-top: 1rem; color: var(--muted); letter-spacing: .08em; }
 
@@ -96,7 +106,7 @@ h1 {
 
 .details article { padding: 0 2rem; border-left: 1px solid var(--line); }
 .details article:first-child { padding-left: 0; border-left: 0; }
-.details h2 { margin: .25rem 0 .7rem; font-family: Georgia, serif; font-size: 1.45rem; font-weight: 400; }
+.details h2 { margin: .25rem 0 .7rem; font-family: "DotGothic16", "MS PGothic", sans-serif; font-size: 1.45rem; font-weight: 400; }
 .details p { color: var(--muted); }
 .details .number { margin: 0; color: var(--violet); }
 code { color: #d5c8ff; font-size: .9em; }
@@ -107,7 +117,7 @@ code { color: #d5c8ff; font-size: .9em; }
   margin: 1rem 0 5rem;
 }
 
-.process h2 { margin: .4rem 0 1rem; font-family: Georgia, serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; }
+.process h2 { margin: .4rem 0 1rem; font-family: "DotGothic16", "MS PGothic", sans-serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; }
 .process p:last-child { color: #bcb7c3; font-size: 1.05rem; }
 
 .notice {
@@ -118,7 +128,7 @@ code { color: #d5c8ff; font-size: .9em; }
   background: rgba(15, 13, 19, .72);
 }
 
-.notice h2 { margin: .4rem 0 1.25rem; font-family: Georgia, serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; }
+.notice h2 { margin: .4rem 0 1.25rem; font-family: "DotGothic16", "MS PGothic", sans-serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; }
 .notice p { color: #bcb7c3; }
 .notice .credit { margin-top: 1.5rem; color: var(--ink); font-weight: 700; }
 .notice a { color: var(--violet); }
