@@ -153,6 +153,20 @@
           "type": "directory",
           "children": [
             {
+              "name": "fonts",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "DotGothic16-OFL.txt",
+                  "type": "file"
+                },
+                {
+                  "name": "DotGothic16-Regular.ttf",
+                  "type": "file"
+                }
+              ]
+            },
+            {
               "name": "mayura-surface-0.png",
               "type": "file"
             }
@@ -177,6 +191,14 @@
           "type": "file"
         }
       ]
+    },
+    {
+      "name": "robots.txt",
+      "type": "file"
+    },
+    {
+      "name": "sitemap.xml",
+      "type": "file"
     },
     {
       "name": "software.html",
