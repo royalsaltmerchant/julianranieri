@@ -461,6 +461,25 @@ nav a {
   background-color: var(--panel-color);
 }
 
+.link-item-with-media {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.link-thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  background-color: #0c0f13;
+  flex: 0 0 auto;
+}
+
+.link-thumb-square {
+  object-position: center 28%;
+}
+
 .link-title {
   font-size: 18px;
   font-weight: bold;
@@ -472,6 +491,17 @@ nav a {
 .link-item p {
   margin: 0;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 500px) {
+  .link-item-with-media {
+    align-items: flex-start;
+  }
+
+  .link-thumb {
+    width: 56px;
+    height: 56px;
+  }
 }
 
 
