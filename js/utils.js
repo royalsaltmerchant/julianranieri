@@ -29,7 +29,11 @@ function SideBar(props) {
           <hr>
           <a href="software.html"><div class="sidebar-items-item">Software<img class="icon" src="icons/software-svgrepo-com.svg"/></div></a>
           <hr>
-          <a href="links.html"><div class="sidebar-items-item">Links<img class="icon" src="icons/link-svgrepo-com.svg"/></div></a>
+          <a href="https://music.julianranieri.com"><div class="sidebar-items-item">Music<img class="icon" src="icons/link-svgrepo-com.svg"/></div></a>
+          <hr>
+          <a href="https://saltymanga.com/"><div class="sidebar-items-item">Manga<img class="icon" src="icons/link-svgrepo-com.svg"/></div></a>
+          <hr>
+          <a href="links.html"><div class="sidebar-items-item">Elsewhere<img class="icon" src="icons/link-svgrepo-com.svg"/></div></a>
         </div>
       </div>
     `

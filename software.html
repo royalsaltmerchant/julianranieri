@@ -34,7 +34,9 @@
   <div class="web-nav">
     <a href="about.html" class="web-nav-item">About</a>
     <a href="software.html" class="web-nav-item">Software</a>
-    <a href="links.html" class="web-nav-item">Links</a>
+    <a href="https://music.julianranieri.com" class="web-nav-item">Music</a>
+    <a href="https://saltymanga.com/" class="web-nav-item">Manga</a>
+    <a href="links.html" class="web-nav-item">Elsewhere</a>
   </div>
   <!-- mobile nav -->
   <img
@@ -43,13 +45,33 @@
     src="icons/hamburger-button-svgrepo-com.svg"
   />
 </nav>
+
     <div class="centered-container">
       <div class="blog-container">
         <h1>Software</h1>
         <p>
-          Desktop applications I've built for audio production, data management, and real-time communication.
+          Small tools, desktop apps, and systems I built because I wanted them to exist or needed them for real work.
         </p>
         <br />
+
+        <div class="project-card">
+          <div class="project-header">
+            <h2>Far Reach Co.</h2>
+            <div class="tech-tags">
+              <span class="tech-tag">Node</span>
+              <span class="tech-tag">Socket.io</span>
+              <span class="tech-tag">PostgreSQL</span>
+              <span class="tech-tag">Redis</span>
+            </div>
+          </div>
+          <p class="project-kicker">A real-time collaborative tabletop platform I developed and helped shape from the ground up.</p>
+          <p class="project-description">
+            I am the developer behind the Far Reach Co. platform: a browser-based virtual tabletop with live collaboration, role-based permissions, asset handling, payments, and tooling for game groups. It is a full-stack product with a lot of moving pieces, built for actual users rather than as a demo.
+          </p>
+          <div class="project-features">
+            <strong>Interesting bits:</strong> WebSocket collaboration, Redis scaling, PostgreSQL migrations, Sharp.js image processing, CloudFront signed URLs, Stripe billing, Discord bot integration
+          </div>
+        </div>
 
         <div class="project-card">
           <div class="project-header">
@@ -60,12 +82,13 @@
               <span class="tech-tag">PortAudio</span>
             </div>
           </div>
+          <p class="project-kicker">A recorder for people who like tape-machine workflows more than busy DAW screens.</p>
           <img src="img/tapesim_screenshot.png" class="software-img" alt="Tape Sim interface" />
           <p class="project-description">
-            Multi-track audio recorder that recreates the analog tape machine experience. Features tape-style controls (rewind, fast-forward, RTZ), stereo bounce, and keyboard shortcuts. Records 48kHz 24-bit WAV files with as many simultaneous tracks as your audio interface supports.
+            Tape Sim is a multitrack audio recorder with rewind, fast-forward, RTZ, stereo bounce, and keyboard shortcuts. It records 48kHz 24-bit WAV files and supports as many simultaneous tracks as your audio interface can handle.
           </p>
           <div class="project-features">
-            <strong>Key features:</strong> Multi-track recording, tape machine controls, stereo bounce, directory management
+            <strong>Interesting bits:</strong> real-time audio in C, SwiftUI controls, PortAudio device handling, simple file/session management
           </div>
           <div class="project-links">
             <a href="https://github.com/royalsaltmerchant/tape_sim/raw/main/tape_sim.dmg" class="download-link">Download for macOS</a>
@@ -81,12 +104,13 @@
               <span class="tech-tag">Tkinter</span>
             </div>
           </div>
+          <p class="project-kicker">A tiny CSV editor for when opening a spreadsheet app feels like too much ceremony.</p>
           <img src="img/csv_zero.png" class="software-img" alt="CSV Zero interface" />
           <p class="project-description">
-            Lightweight desktop CSV editor that strips away spreadsheet bloat. Auto-detects delimiters and encoding, supports search across all data, and provides straightforward insert/edit/remove operations. Dark-themed with monospaced typography.
+            CSV Zero auto-detects delimiters and encoding, searches across all data, and keeps insert/edit/remove operations direct. The interface is intentionally plain: dark theme, monospaced text, and no spreadsheet bloat.
           </p>
           <div class="project-features">
-            <strong>Key features:</strong> Auto-detection of CSV formats, search functionality, session memory, keyboard shortcuts
+            <strong>Interesting bits:</strong> format detection, session memory, keyboard shortcuts, packaged Windows installer
           </div>
           <div class="project-links">
             <a href="https://github.com/royalsaltmerchant/csv_apps/raw/main/CSVZeroInstaller_windows.exe" class="download-link">Download for Windows</a>
@@ -103,12 +127,13 @@
               <span class="tech-tag">Localization</span>
             </div>
           </div>
+          <p class="project-kicker">A careful English patch for a classic Japanese desktop ghost.</p>
           <img src="mayura-en/assets/mayura-surface-0.png" class="software-img" alt="Mayura" />
           <p class="project-description">
             An English localization of the classic Japanese desktop ghost Mayura. The patch preserves the original installation, creates a separate English copy, and includes a guided Windows installer.
           </p>
           <div class="project-features">
-            <strong>Key features:</strong> Context-aware dialogue translation, original behavior preserved, reversible patch installation
+            <strong>Interesting bits:</strong> context-aware dialogue translation, original behavior preserved, reversible patch installation
           </div>
           <div class="project-links">
             <a href="mayura-en/" class="download-link">Mayura English patch and download</a>
@@ -120,17 +145,18 @@
             <h2>Parch</h2>
             <div class="tech-tags">
               <span class="tech-tag">Go</span>
-              <span class="tech-tag">WebRTC</span>
               <span class="tech-tag">E2EE</span>
               <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">Self-hosted</span>
             </div>
           </div>
+          <p class="project-kicker">A self-hosted encrypted chat system built around privacy, ownership, and boringly explicit infrastructure.</p>
           <img src="img/parch_icon.webp" class="software-img" alt="Parch icon" />
           <p class="project-description">
-            User-hosted messenger and call platform with end-to-end encryption. Microservices architecture: a Go chat relay for WebSocket message routing with public-key identity (Ed25519 auth + ECDH P-256 encryption), a relay server for call auth and Stripe billing, a Linux CLI host client with local SQLite storage, and a React call app for WebRTC video/voice via SFU with TURN-based NAT traversal. Challenge-response authentication with cryptographic signature verification, sliding-window rate limiting, envelope payload validation, and replay attack prevention via idempotent message indexing.
+            Parch is a user-hosted messenger with end-to-end encryption, public-key identity, and a Linux CLI host client with local SQLite storage. Earlier versions also explored WebRTC video/voice infrastructure, but the current project is focused on the encrypted messaging and self-hosting model.
           </p>
           <div class="project-features">
-            <strong>Key features:</strong> End-to-end encrypted messaging, zero-trust passwordless identity, concurrent state management (mutex hierarchy), WebRTC SFU with JWT auth, automated deployment with systemd
+            <strong>Interesting bits:</strong> Go relay service, Ed25519 auth, ECDH P-256 encryption, replay prevention, local SQLite storage, systemd deployment
           </div>
           <div class="project-links">
             <a href="https://github.com/royalsaltmerchant/gochat">GitHub</a>

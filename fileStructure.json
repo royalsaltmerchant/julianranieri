@@ -3,15 +3,15 @@
   "type": "directory",
   "children": [
     {
+      "name": "CNAME",
+      "type": "file"
+    },
+    {
       "name": "about.html",
       "type": "file"
     },
     {
       "name": "blog.html",
-      "type": "file"
-    },
-    {
-      "name": "CNAME",
       "type": "file"
     },
     {
@@ -102,6 +102,10 @@
         },
         {
           "name": "pep-monk-nand.webp",
+          "type": "file"
+        },
+        {
+          "name": "salt-serif-pinned.webp",
           "type": "file"
         },
         {
