@@ -171,6 +171,10 @@
               ]
             },
             {
+              "name": "mayura-balloon.png",
+              "type": "file"
+            },
+            {
               "name": "mayura-surface-0.png",
               "type": "file"
             }
