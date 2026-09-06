@@ -56,10 +56,19 @@ main, footer { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
 h1 {
   margin: .8rem 0 1.5rem;
   font-family: "DotGothic16", "MS PGothic", sans-serif;
-  font-size: clamp(4rem, 9vw, 7.4rem);
+  font-size: clamp(2.75rem, 5vw, 4.5rem);
   font-weight: 400;
-  letter-spacing: -.06em;
-  line-height: .86;
+  letter-spacing: -.04em;
+  line-height: 1;
+}
+
+.hero-label {
+  margin: -1rem 0 1.5rem;
+  color: var(--violet);
+  font-family: "DotGothic16", "MS PGothic", sans-serif;
+  font-size: .9rem;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 
 .intro { max-width: 39rem; color: #d0ccd5; font-size: 1.15rem; }
@@ -131,7 +140,18 @@ code { color: #d5c8ff; font-size: .9em; }
 }
 
 .process h2 { margin: .4rem 0 1rem; font-family: "DotGothic16", "MS PGothic", sans-serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; }
-.process p:last-child { color: #bcb7c3; font-size: 1.05rem; }
+.process h2 ~ p { color: #bcb7c3; font-size: 1.05rem; }
+
+.faq {
+  margin: 0 auto 4rem;
+  padding: 2.5rem;
+  border: 1px solid var(--line);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, .025);
+}
+.faq h2 { margin: .4rem 0 1.5rem; font-family: "DotGothic16", "MS PGothic", sans-serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; }
+.faq h3 { margin: 1.5rem 0 .4rem; font-size: 1.05rem; }
+.faq p { color: #bcb7c3; }
 
 .notice {
   max-width: 52rem;
@@ -157,18 +177,20 @@ footer {
 }
 
 footer p { margin: 0; }
+footer a { color: #aaa3b4; text-underline-offset: .2em; }
 
 @media (max-width: 760px) {
   main, footer { width: min(100% - 28px, 640px); }
   .hero { min-height: auto; grid-template-columns: 1fr; gap: 0; padding-top: 2rem; }
   .copy { padding: 3rem 0 1rem; }
-  h1 { font-size: clamp(3.8rem, 19vw, 6rem); }
+  h1 { font-size: clamp(2.4rem, 10vw, 3.4rem); }
   .portrait { grid-row: 2; justify-self: end; }
   .portrait img { width: min(400px, 90vw); }
   .halo { width: 75vw; }
   .details { grid-template-columns: 1fr; padding-block: 2.5rem; }
   .details article, .details article:first-child { padding: 1.5rem 0; border-left: 0; border-top: 1px solid var(--line); }
   .release { margin-bottom: 3rem; padding: 1.5rem; }
+  .faq { margin-bottom: 3rem; padding: 1.5rem; }
   .notice { margin-bottom: 3rem; padding: 1.5rem; }
   footer { flex-direction: column; gap: .5rem; }
 }
