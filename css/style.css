@@ -203,7 +203,7 @@ nav a {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 24px 0 18px;
+  margin: 24px 0 0;
 }
 
 .hero-links a {
@@ -221,9 +221,26 @@ nav a {
   text-decoration: none;
 }
 
+.hero-links-primary a:first-child,
+.hero-links-primary a:last-child {
+  border-color: rgba(167, 227, 109, 0.65);
+  color: var(--green);
+}
+
+.hero-links-secondary {
+  margin-top: 10px;
+}
+
+.hero-links-secondary a {
+  color: var(--gray);
+  font-size: 13px;
+  background-color: rgba(39, 49, 61, 0.42);
+}
+
 .terminal-note {
   color: var(--muted) !important;
   font-size: 16px !important;
+  margin-top: 18px;
 }
 
 @media screen and (max-width: 500px) {
@@ -333,7 +350,8 @@ nav a {
   gap: 10px;
 }
 
-.project-header h2 {
+.project-header h2,
+.project-header h3 {
   margin: 0;
   color: var(--white);
   font-size: 28px;
@@ -462,6 +480,11 @@ nav a {
 
 .experience-details li:last-child {
   margin-bottom: 0;
+}
+
+.contact-note {
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
 }
 
 .links-section {

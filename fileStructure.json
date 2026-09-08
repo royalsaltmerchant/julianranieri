@@ -15,6 +15,268 @@
       "type": "file"
     },
     {
+      "name": "classic-ukagaka",
+      "type": "directory",
+      "children": [
+        {
+          "name": "about",
+          "type": "directory",
+          "children": [
+            {
+              "name": "index.html",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "assets",
+          "type": "directory",
+          "children": [
+            {
+              "name": "chroma-key.js",
+              "type": "file"
+            },
+            {
+              "name": "ghosts",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "54",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "54.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "futaba-and-tadakichi",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "ftb4-screen.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "mayura",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "mayura-v350.gif",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "mikage-sakura",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "surface0000.png",
+                      "type": "file"
+                    },
+                    {
+                      "name": "surface0010.png",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "naru-and-yuuka",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "23-naru.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "raychel",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "vector-screenshot.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "sakura-and-unyuu",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "ninitan-desktop.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "seriko",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "24-seriko.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "taromati",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "Taromati2_SS.jpg",
+                      "type": "file"
+                    },
+                    {
+                      "name": "Taromati_SS.jpg",
+                      "type": "file"
+                    }
+                  ]
+                },
+                {
+                  "name": "the-toxic-waltz",
+                  "type": "directory",
+                  "children": [
+                    {
+                      "name": "surface0000.png",
+                      "type": "file"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "search.js",
+              "type": "file"
+            },
+            {
+              "name": "style.css",
+              "type": "file"
+            }
+          ]
+        },
+        {
+          "name": "ghosts",
+          "type": "directory",
+          "children": [
+            {
+              "name": "54",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "futaba-and-tadakichi",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "mayura",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "mikage-sakura-and-unyuu",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "naru-and-yuuka",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "raychel",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "sakura-and-unyuu",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "seriko",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "taromati-kikka-and-towa",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            },
+            {
+              "name": "the-toxic-waltz",
+              "type": "directory",
+              "children": [
+                {
+                  "name": "index.html",
+                  "type": "file"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "ghosts.json",
+          "type": "file"
+        },
+        {
+          "name": "index.html",
+          "type": "file"
+        }
+      ]
+    },
+    {
       "name": "commands",
       "type": "directory",
       "children": [
