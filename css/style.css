@@ -199,57 +199,11 @@ nav a {
   color: var(--blue);
 }
 
-.hero-pathways {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 0;
-  margin: 28px 0 2px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
-}
-
-.hero-pathways a {
-  display: block;
-  padding: 14px 16px 15px 0;
-  border-right: 1px solid var(--border);
-  color: var(--gray);
-  transition:
-    color 0.2s,
-    background-color 0.2s,
-    padding-left 0.2s;
-}
-
-.hero-pathways a:last-child {
-  border-right: 0;
-}
-
-.hero-pathways a:hover {
-  padding-left: 8px;
-  background-color: rgba(39, 49, 61, 0.28);
-  color: var(--white);
-  text-decoration: none;
-}
-
-.hero-pathways span {
-  display: block;
-  color: var(--green);
-  font-family: monospace;
-  font-size: 15px;
-  margin-bottom: 5px;
-}
-
-.hero-pathways small {
-  display: block;
-  max-width: 22ch;
-  color: inherit;
-  line-height: 1.45;
-}
-
 .hero-links {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 20px 0 0;
+  margin: 24px 0 0;
 }
 
 .hero-links a {
@@ -267,19 +221,20 @@ nav a {
   text-decoration: none;
 }
 
+.hero-links-primary a:first-child,
+.hero-links-primary a:last-child {
+  border-color: rgba(167, 227, 109, 0.65);
+  color: var(--green);
+}
+
 .hero-links-secondary {
-  margin-top: 18px;
+  margin-top: 10px;
 }
 
 .hero-links-secondary a {
   color: var(--gray);
   font-size: 13px;
   background-color: rgba(39, 49, 61, 0.42);
-}
-
-.hero-links-secondary a:first-child {
-  border-color: rgba(167, 227, 109, 0.65);
-  color: var(--green);
 }
 
 .terminal-note {
@@ -299,20 +254,6 @@ nav a {
 
   .hero-section p {
     font-size: 18px;
-  }
-
-  .hero-pathways {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-pathways a {
-    border-right: 0;
-    border-bottom: 1px solid var(--border);
-    padding-right: 0;
-  }
-
-  .hero-pathways a:last-child {
-    border-bottom: 0;
   }
 }
 
