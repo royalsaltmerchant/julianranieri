@@ -728,6 +728,72 @@
           "notes": "Internal metadata lists ghost name 佳由, identifier kayu, characters 佳由 and ふぅ, and creator and shell credit 河合真絵 / KawaiMae. The included readme dates period 8 to 2005-09-20."
         }
       ]
+    },
+    {
+      "slug": "kimuraya-anko",
+      "name": "Kimuraya Anko",
+      "japanese_name": "木村屋安子",
+      "aliases": ["Anko Kimuraya", "安子さん", "Chizuru-san", "千鶴さん"],
+      "author": "川たん14歳",
+      "author_romaji": "Ganges River",
+      "artist": "川たん14歳 / Ganges River",
+      "companion": "Giko (ギコ)",
+      "first_release": "by 2001-07-12",
+      "last_known_release": "2002",
+      "language": ["ja"],
+      "status": "archived",
+      "original_url": "http://www.ops.dti.ne.jp/~nagare/",
+      "current_url": "",
+      "archive_url": "https://web.archive.org/web/20021127131120/http://www.ops.dti.ne.jp/~nagare/Anko.html",
+      "download_status": "creator's Phase 1.01 package preserved by the Wayback Machine",
+      "shiori": "AYA",
+      "technical_context": "A version of Kimuraya Anko was distributed from the creator's site by July 2001. The later Anko_re remake identifies itself as Phase 1.01 and was offered on the creator's dedicated Anko page in 2002.",
+      "description": "An early comic ghost pairing the stern, white-haired maid Anko with the small white cat Giko. Anko is commonly pictured with an anpan held in her mouth, matching the bread-shop wordplay in her name.",
+      "image_pair": {
+        "paths": [
+          {
+            "path": "/assets/ghosts/kimuraya-anko/surface0-transparent.png",
+            "alt": "Kimuraya Anko in a black and white maid outfit with an anpan in her mouth"
+          },
+          {
+            "path": "/assets/ghosts/kimuraya-anko/surface10-transparent.png",
+            "alt": "Giko, Kimuraya Anko's small white cat companion"
+          }
+        ],
+        "source_url": "https://web.archive.org/web/20020805184931id_/http://www.ops.dti.ne.jp/~nagare/anko/Anko_re.nar",
+        "credit": "Default Anko and Giko surfaces from the creator's preserved Phase 1.01 package; the original transparency-key background has been hidden for display"
+      },
+      "download": {
+        "heading": "Archived original package",
+        "url": "https://web.archive.org/web/20020805184931id_/http://www.ops.dti.ne.jp/~nagare/anko/Anko_re.nar",
+        "filename": "Anko_re.nar",
+        "bytes": 1145302,
+        "sha256": "37970D54C610C67D801231AC94D69BBD17A34388DC7D21C0492DF5660278E298",
+        "notes": "Creator-published Phase 1.01 package preserved by the Wayback Machine. It contains the complete ghost, shell, and balloon, including the legacy executable component aya.dll. Treat it as historical software rather than modern supported software."
+      },
+      "sources": [
+        {
+          "url": "https://web.archive.org/web/20021127131120/http://www.ops.dti.ne.jp/~nagare/Anko.html",
+          "title": "Anko_Kimuraya for Ukagaka - archived creator page",
+          "type": "archived_original",
+          "archived": true,
+          "notes": "The creator's page names Anko_Kimuraya, offers Anko_re Phase 1.01, and credits Ganges_River as publisher."
+        },
+        {
+          "url": "https://web.archive.org/web/20020805184931id_/http://www.ops.dti.ne.jp/~nagare/anko/Anko_re.nar",
+          "title": "Kimuraya Anko Phase 1.01 - Anko_re.nar",
+          "type": "archived_original_package",
+          "archived": true,
+          "notes": "Internal metadata lists 安子さん and ギコ, credits Ganges River / 川たん14歳 for the ghost and shell, and identifies the original Harunourei site."
+        },
+        {
+          "url": "https://m-p.sakura.ne.jp/haruna/list-4.html",
+          "title": "Historical Ukagaka link directory",
+          "type": "contemporary_directory",
+          "archived": false,
+          "notes": "Contemporary directory lists 木村屋安子さん with ギコ猫 under the creator's Harunourei site."
+        }
+      ]
     }
   ]
 }
