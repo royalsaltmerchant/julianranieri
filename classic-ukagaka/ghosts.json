@@ -185,13 +185,12 @@
       "technical_context": "Mikage Sakura is the redesigned default ghost bundled with MATERIA-B, beginning with period 534. She is a separate record from the discontinued 2000–2001 Nise-Haruna/Nin'i-tan incarnation. The surviving official download is the complete MATERIA period 583 Windows package, not a standalone ghost archive.",
       "description": "The blue-haired Sakura redesign introduced as MATERIA-B's default shell in March 2002, accompanied by Unyuu. The original site still distributes the period 583 MATERIA package containing this default ghost.",
       "image_pair": {
-        "chroma_key": "#ff0000",
         "paths": [
-          { "path": "/assets/ghosts/mikage-sakura/surface0000.png", "alt": "Official default shell surface of Mikage Sakura" },
-          { "path": "/assets/ghosts/mikage-sakura/surface0010.png", "alt": "Official default shell surface of Unyuu" }
+          { "path": "/assets/ghosts/mikage-sakura/surface0000-transparent.png", "alt": "Official default shell surface of Mikage Sakura" },
+          { "path": "/assets/ghosts/mikage-sakura/surface0010-transparent.png", "alt": "Official default shell surface of Unyuu" }
         ],
         "source_url": "http://usada.sakura.vg/contents/files/materia583.exe",
-        "credit": "Default shell surfaces extracted from the official MATERIA period 583 package; the shell's red transparency key is hidden for browser display; installer not executed"
+        "credit": "Default shell surfaces extracted from the official MATERIA period 583 package; transparent browser copies were made from the shell's red-key originals; installer not executed"
       },
       "download": {
         "url": "http://usada.sakura.vg/contents/files/materia583.exe",
