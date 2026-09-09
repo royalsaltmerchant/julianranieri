@@ -223,6 +223,16 @@ nav a {
   font-style: italic;
 }
 
+.candle-word {
+  color: #e6c86a;
+  text-shadow: 0 0 14px rgba(230, 200, 106, 0.22);
+}
+
+.abyss-word {
+  color: #b86373;
+  text-shadow: 0 0 14px rgba(184, 99, 115, 0.18);
+}
+
 .hero-section code {
   background-color: var(--bg-nav-color);
   padding: 2px 6px;
