@@ -24,9 +24,8 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://julianranieri.com/" />
     <meta property="og:image" content="https://julianranieri.com/img/salt-serif-photo.webp" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css?v=about-transition-removed" />
     <script src="js/utils.js" defer></script>
-    <script src="js/terminal.js" defer type="module"></script>
     <title>Julian Ranieri</title>
   </head>
   <body>
@@ -43,6 +42,7 @@
       class="name-icon"
       style="margin-bottom: 5px"
       src="icons/terminal-svgrepo-com.svg"
+      alt="Home"
     />
   </a>
   <!-- web nav -->
@@ -58,13 +58,15 @@
     id="hamburger"
     class="mobile-nav"
     src="icons/hamburger-button-svgrepo-com.svg"
+    alt="Menu"
   />
 </nav>
 
 
-    <div class="hero-section">
+    <div class="hero-section home-hero">
       <h1>Julian Ranieri</h1>
-      <p>I build software, make music, engineer audio, and shape practical tools for games, artists, and small teams.</p>
+      <p>A personal index of software, music and independent projects.</p>
+      <p class="candle-line">May this be a candle in the dark abyss of the internet.</p>
       <div class="hero-links hero-links-primary" aria-label="Primary paths">
         <a href="about.html">About</a>
         <a href="software.html">Software</a>
@@ -77,9 +79,7 @@
         <a href="mayura-en/">Mayura English Patch</a>
         <a href="links.html">Elsewhere</a>
       </div>
-      <p class="terminal-note">The terminal below is a little map of the site. Try <code>ls</code>, <code>cd</code>, and <code>cat</code>.</p>
+      <p class="home-note">Stay a moment and rest, there is a long journey ahead.</p>
     </div>
-
-    <div class="terminal" id="terminal"></div>
   </body>
 </html>
