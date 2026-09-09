@@ -677,6 +677,57 @@
           "notes": "Internal metadata lists ghost name 深果, identifier mika, characters 深果 and 直子, creator and shell credit 河合真絵 / KawaiMae, release history, and the 2004-04-26 period 9 version."
         }
       ]
+    },
+    {
+      "slug": "kayu",
+      "name": "Kayu",
+      "japanese_name": "佳由",
+      "aliases": ["Nomiya Kayu", "野宮 佳由"],
+      "author": "河合真絵",
+      "author_romaji": "KawaiMae",
+      "artist": "河合真絵 / KawaiMae",
+      "companion": "Fuu (ふぅ)",
+      "first_release": "2003-12-30",
+      "last_known_release": "September 2005",
+      "language": ["ja"],
+      "status": "available",
+      "original_url": "http://www.mapletown.net/~maekawa/",
+      "current_url": "https://efasus.sakura.tv/ukagaka_works.html",
+      "archive_url": "",
+      "download_status": "official period 8 package available from the creator's current site",
+      "shiori": "真絵 (Mae)",
+      "technical_context": "Kayu was first published as a test release on 2003-12-30 and formally released on 2004-02-29. The creator's release history records eight subsequent periods through September 2005. The character originated in LastLies prologue.",
+      "description": "A story-connected ghost featuring the schoolgirl Kayu and her small doll companion Fuu. Kayu originated in LastLies prologue and was adapted into a desktop character at the end of 2003.",
+      "image": {
+        "path": "/assets/ghosts/kayu/uka_kayu-02.png",
+        "alt": "Official character sheet showing Kayu Nomiya in a red school uniform holding her doll companion Fuu",
+        "source_url": "https://efasus.sakura.tv/ukagaka_works.html",
+        "credit": "Official Kayu character sheet published on the creator's current Ukagaka works page"
+      },
+      "download": {
+        "heading": "Official current package",
+        "url": "https://efasus.sakura.tv/persona/kayu0008.nar",
+        "filename": "kayu0008.nar",
+        "bytes": 874928,
+        "sha256": "4719297F1C96B0F38461024D1EB1797B32A6261E69D0D69B99B1CE707736AFFD",
+        "notes": "Official period 8 package from the creator's current site. It contains the complete ghost, shell, and simple talk balloon, including the legacy executable component shiori.dll. Treat it as historical software rather than modern supported software."
+      },
+      "sources": [
+        {
+          "url": "https://efasus.sakura.tv/ukagaka_works.html",
+          "title": "Ukagaka - maemako WORKS",
+          "type": "official_distribution",
+          "archived": false,
+          "notes": "Creator-maintained page hosts the period 8 package, identifies Kayu as a LastLies prologue character, and documents the test release, formal release, and later editions. The page dates period 8 to 2005-09-25."
+        },
+        {
+          "url": "https://efasus.sakura.tv/persona/kayu0008.nar",
+          "title": "Kayu period 8 official package - kayu0008.nar",
+          "type": "official_package",
+          "archived": false,
+          "notes": "Internal metadata lists ghost name 佳由, identifier kayu, characters 佳由 and ふぅ, and creator and shell credit 河合真絵 / KawaiMae. The included readme dates period 8 to 2005-09-20."
+        }
+      ]
     }
   ]
 }
