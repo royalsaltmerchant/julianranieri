@@ -853,6 +853,57 @@
           "notes": "Internal metadata lists 空 and あるゅう, credits 観城はるか / Haruka Misiro, and identifies the creator's current site as the primary distribution source."
         }
       ]
+    },
+    {
+      "slug": "sagiri-and-tama",
+      "name": "Sagiri and Tama",
+      "japanese_name": "砂霧＆タマ",
+      "aliases": ["Kirishima Sagiri", "霧島 砂霧", "Sagiri & Tama"],
+      "author": "ボトル猫＠774447",
+      "author_romaji": "Bottle Cat / 774447",
+      "artist": "ボトル猫＠774447 / Bottle Cat",
+      "companion": "Tama (タマ)",
+      "first_release": "2005-06-30",
+      "last_known_release": "2021-08-03",
+      "language": ["ja"],
+      "status": "available",
+      "original_url": "http://catbottle.sakura.ne.jp/",
+      "current_url": "https://catbottle.sakura.ne.jp/sagiri.html",
+      "archive_url": "",
+      "download_status": "official package available from the creator's active website",
+      "shiori": "里々 (Satori)",
+      "technical_context": "The creator records the first public release on 2005-06-30 and documents continued dialogue, feature, and shell updates for many years. The current downloadable archive was updated on 2021-08-03 and is intended for SSP.",
+      "description": "An occult-comedy ghost starring the withdrawn teenager Kirishima Sagiri and Tama, an animal that claims to be a black cat. Their conversations range across urban legends, cryptids, psychic phenomena, conspiracy theories, and intentionally unreliable paranormal claims.",
+      "image": {
+        "path": "/assets/ghosts/sagiri-and-tama/sagiri32.png",
+        "alt": "Official artwork showing Kirishima Sagiri seated beside her black cat companion Tama",
+        "source_url": "https://catbottle.sakura.ne.jp/sagiri.html",
+        "credit": "Official Sagiri and Tama screenshot published on the creator's current ghost page"
+      },
+      "download": {
+        "heading": "Official current package",
+        "url": "https://catbottle.sakura.ne.jp/ghost/sagiri_tama.nar",
+        "filename": "sagiri_tama.nar",
+        "bytes": 13084273,
+        "sha256": "6879BC40DC0CC7E52E7F5381FEAAC39271D1614F10AE27BB27BB591C7FC5FFDA",
+        "notes": "Official package from the creator's active site. It contains the complete ghost and shell, including legacy executable components. Treat it as historical software and use it with SSP as directed by the creator."
+      },
+      "sources": [
+        {
+          "url": "https://catbottle.sakura.ne.jp/sagiri.html",
+          "title": "Sagiri and Tama - official creator page",
+          "type": "official_distribution",
+          "archived": false,
+          "notes": "The creator's page gives the 2005-06-30 public release date, character profiles, subject matter, long update history, SSP requirement, official screenshot, and current package download."
+        },
+        {
+          "url": "https://catbottle.sakura.ne.jp/ghost/sagiri_tama.nar",
+          "title": "Sagiri and Tama official package - sagiri_tama.nar",
+          "type": "official_package",
+          "archived": false,
+          "notes": "Internal metadata lists 砂霧 and タマ, credits ボトル猫＠774447 / bottlecat_774447 for the ghost and shell, and identifies the creator's site as the primary distribution source."
+        }
+      ]
     }
   ]
 }
