@@ -626,6 +626,57 @@
           "notes": "Third-party preservation item currently retaining the 2006 and 2010 NAR packages and a default surface image."
         }
       ]
+    },
+    {
+      "slug": "mika",
+      "name": "Mika",
+      "japanese_name": "深果",
+      "aliases": ["みか。", "みか。in Asymmetry Epilogue", "Mika in Asymmetry Epilogue"],
+      "author": "河合真絵",
+      "author_romaji": "KawaiMae",
+      "artist": "河合真絵 / KawaiMae",
+      "companion": "Naoko (直子)",
+      "first_release": "2001-05-30",
+      "last_known_release": "2004-04-26",
+      "language": ["ja"],
+      "status": "available",
+      "original_url": "http://www.mapletown.net/~maekawa/",
+      "current_url": "https://efasus.sakura.tv/ukagaka_works.html",
+      "archive_url": "",
+      "download_status": "official period 9 package available from the creator's current site",
+      "shiori": "真絵 (Mae)",
+      "technical_context": "The lineage began as the shell みか。in Asymmetry Epilogue on 2001-04-16 and became a complete ghost on 2001-05-30. The renamed 深果 period 1 followed on 2001-09-10. The package identifier mika and the earlier hiragana title establish Mika as the reading used for this record; Shinka was an unverified literal reading and is not used. The final period 9 release incorporates material from Asymmetry Epilogue.",
+      "description": "A story-connected early ghost featuring Mika and her smaller companion Naoko. Mika began as an Asymmetry Epilogue shell, became a full ghost in May 2001, and continued under the kanji name 深果 through 2004.",
+      "image": {
+        "path": "/assets/ghosts/mika/uka_mika-02s.png",
+        "alt": "Mika and Naoko displayed on a Windows desktop with dialogue balloons",
+        "source_url": "https://efasus.sakura.tv/ukagaka_works.html",
+        "credit": "Official Mika and Naoko desktop screenshot published on the creator's current Ukagaka works page"
+      },
+      "download": {
+        "heading": "Official current package",
+        "url": "https://efasus.sakura.tv/persona/mika0209.nar",
+        "filename": "mika0209.nar",
+        "bytes": 617455,
+        "sha256": "76CD6458B36A4E47C8F8B1D909F8D57EF796108C596F14236EDBD4123E7E6FB1",
+        "notes": "Downloaded from the creator's current site and inspected as an archive without execution. It contains the complete ghost and shell, including the legacy executable component shiori.dll; official provenance does not establish modern safety or compatibility."
+      },
+      "sources": [
+        {
+          "url": "https://efasus.sakura.tv/ukagaka_works.html",
+          "title": "Ukagaka — maemako WORKS",
+          "type": "official_distribution",
+          "archived": false,
+          "notes": "Creator-maintained page hosts the period 9 package and documents the lineage from the April 2001 shell through the May 2001 ghost, the September rename to 深果, and releases through 2004-04-26."
+        },
+        {
+          "url": "https://efasus.sakura.tv/persona/mika0209.nar",
+          "title": "Mika period 9 official package — mika0209.nar",
+          "type": "official_package",
+          "archived": false,
+          "notes": "Archive inspection without execution confirms ghost name 深果, identifier mika, characters 深果 and 直子, creator and shell credit 河合真絵 / KawaiMae, release history, and the 2004-04-26 period 9 version."
+        }
+      ]
     }
   ]
 }
