@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://julianranieri.com/sitemap.xml
+Sitemap: https://julianranieri.com/classic-ukagaka/sitemap.xml
