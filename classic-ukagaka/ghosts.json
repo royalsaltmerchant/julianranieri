@@ -17,9 +17,9 @@
       "original_url": "",
       "current_url": "",
       "archive_url": "",
-      "download_status": "original distribution ended; preservation copies not yet verified",
+      "download_status": "original distribution ended; no preservation download listed",
       "shiori": "",
-      "technical_context": "The 2000-05-25 prototype preceded Unyuu, who was added on 2000-09-15. The character and software names changed repeatedly; this record covers the original Nise-Haruna/Nin'i-tan-era default ghost, not the later Mikage Sakura redesign.",
+      "technical_context": "The 2000-05-25 prototype preceded Unyuu, who was added on 2000-09-15. The character and software names changed repeatedly. This original Nise-Haruna/Nin'i-tan incarnation is distinct from the later Mikage Sakura redesign.",
       "description": "The original default character at the beginning of the lineage that became Ukagaka. Sakura—then known as Nise-Haruna and later Nin'i-tan—was created by 黒衣鯖人; Saxyun supplied the character artwork. Unyuu joined her in September 2000.",
       "image": {
         "path": "/assets/ghosts/sakura-and-unyuu/ninitan-desktop.jpg",
@@ -69,13 +69,13 @@
       "archive_url": "",
       "download_status": "original and 2018 redistribution downloads are currently unavailable",
       "shiori": "the Fake / the Slayer",
-      "technical_context": "Futaba became the bundled default character with 何か period “redo” zero on 2001-08-05. The contemporary redo terminology reference describes two selectable dialogue implementations: the Fake by 閑馬永空 and the Slayer by 橋本孔明. Period 284 replaced Futaba as the default on 2001-11-22. Later shell-only files do not constitute a downloadable copy of the ghost.",
+      "technical_context": "Futaba became the bundled default character with 何か period “redo” zero on 2001-08-05. The contemporary redo terminology reference describes two selectable dialogue implementations: the Fake by 閑馬永空 and the Slayer by 橋本孔明. Period 284 replaced Futaba as the default on 2001-11-22. Surviving later files contain shells only, not the complete ghost.",
       "description": "The second default character pair in the early Ukagaka lineage. Futaba and her creature companion Tadakichi-san were bundled with 何か during the period between the original Sakura incarnation and the later default Sakura redesign.",
       "image": {
         "path": "/assets/ghosts/futaba-and-tadakichi/ftb4-screen.jpg",
         "alt": "Futaba standing beside the yellow creature Tadakichi-san",
         "source_url": "http://saihaihumijyumaho.blog.fc2.com/blog-entry-2.html",
-        "credit": "Futaba and Tadakichi-san screenshot preserved on the 2018 redistribution page; original image date and artist unverified"
+        "credit": "Futaba and Tadakichi-san screenshot preserved on the 2018 redistribution page; original image date and artist undocumented"
       },
       "sources": [
         {
@@ -124,9 +124,9 @@
       "original_url": "http://www.try-net.or.jp/~cla/rein/etwas.html",
       "current_url": "",
       "archive_url": "https://web.archive.org/web/20011006030733/http://www.try-net.or.jp/~cla/rein/etwas.html",
-      "download_status": "no surviving ghost download verified",
+      "download_status": "no surviving ghost download listed",
       "shiori": "偽栞",
-      "technical_context": "Naru began as a PersonaWare persona and was test-released as the ghost 偽奈留 on 2001-01-21. The archived creator site lists Naru m0.15a on 2001-12-06. Contemporary reporting records a development-continuation announcement in July 2002 and a new site that August, but a later downloadable package has not been verified.",
+      "technical_context": "Naru began as a PersonaWare persona and was test-released as the ghost 偽奈留 on 2001-01-21. The archived creator site lists Naru m0.15a on 2001-12-06. Contemporary reporting records a development-continuation announcement in July 2002 and a new site that August. No later package is currently listed.",
       "description": "An early bilingual ghost featuring the gentle Naru and her tiny companion Yuuka. Naru was one of the period's so-called Four Angels and grew from an earlier PersonaWare persona into a recognizable early Ukagaka character.",
       "image": {
         "path": "/assets/ghosts/naru-and-yuuka/23-naru.jpg",
@@ -197,7 +197,7 @@
         "filename": "materia583.exe",
         "bytes": 2101300,
         "sha256": "CBB9724D521E24D99AECBE43E001B5BA1AE5D6FB1A2B2C7F48D43CD6ABFD3941",
-        "notes": "Unsigned legacy Windows executable inspected as an archive without running it. Use an isolated legacy environment if testing it."
+        "notes": "Unsigned legacy Windows executable. Use an isolated legacy environment if testing it."
       },
       "sources": [
         {
@@ -212,7 +212,7 @@
           "title": "MATERIA period 583 official package",
           "type": "official_package",
           "archived": false,
-          "notes": "Package inspection, without execution, confirms the bundled first ghost, its master shell, first.dll, creator credit Araya Kawakami, and shell credit Suka."
+          "notes": "Internal metadata lists the bundled first ghost, its master shell, first.dll, creator Araya Kawakami, and shell artist Suka."
         },
         {
           "url": "https://ameblo.jp/baywing/entry-10559102738.html",
@@ -253,11 +253,11 @@
         "bytes": 152644,
         "sha256": "8AA472D07DFBD525E40591A56703ECB13864852B8AC3982219DB2F8CC60459D1",
         "installation": "Close SSP, unzip the patch, and run Install-Mayura-English.cmd. The patcher verifies Mayura and creates a separate mayura_en ghost without overwriting the original.",
-        "safety": "The ZIP contains unsigned CMD and PowerShell scripts. The archive was inspected for this record without executing them."
+        "safety": "The ZIP contains unsigned CMD and PowerShell scripts. Review the scripts before use."
       },
       "redistributed_on": "2025-03-09",
       "shiori": "",
-      "technical_context": "Created for the desktop accessory then called 何か. The current redistribution has not been tested as part of this catalogue.",
+      "technical_context": "Created for the desktop accessory then called 何か. The creator released the final edition again in 2025.",
       "description": "A historical ghost for the desktop accessory 何か. Its original public run lasted from 9 March 2001 through 9 March 2002, and its creator officially made the final version available again on 9 March 2025.",
       "image": {
         "path": "/assets/ghosts/mayura/mayura-v350.gif",
@@ -305,7 +305,7 @@
       "archive_url": "",
       "download_status": "available from Vector",
       "shiori": "",
-      "technical_context": "The current Vector release is distributed in two forms: a ghost-only archive dated 2015-04-23 and a separate package bundled with SSP 2.3.61f. Earlier packaging and implementation details remain unverified.",
+      "technical_context": "The current Vector release is distributed in two forms: a ghost-only archive dated 2015-04-23 and a separate package bundled with SSP 2.3.61f. Earlier packaging and implementation details are undocumented.",
       "description": "A desktop restaurant ghost featuring the catgirl Raychel and her companion Gauche. A contemporary account documents it by 2006; Vector lists a later release by 水無月 藍 dated 2015-04-23.",
       "image": {
         "path": "/assets/ghosts/raychel/vector-screenshot.jpg",
@@ -353,7 +353,7 @@
       "original_url": "http://es.kdn.jp/",
       "current_url": "",
       "archive_url": "https://web.archive.org/web/20020603071847/http://es.kdn.jp/",
-      "download_status": "full 2004 ghost package preserved by the Wayback Machine; no current official distribution verified",
+      "download_status": "full 2004 ghost package preserved by the Wayback Machine; no current official distribution listed",
       "shiori": "MISAKA",
       "technical_context": "Seriko first appeared as a skin for Nise-Haruna on 2000-12-20 and later developed into a complete ghost. Her animated second shell was described in contemporary coverage as the first animated ghost shell in the scene. The name SERIKO was subsequently adopted for Ukagaka's general shell-animation specification. The preserved 2004 package identifies both the ghost and shell creator as MIY.",
       "description": "A foundational early character featuring the low-energy Seriko and her tiny companion Maruchii. Beginning as a Nise-Haruna skin before becoming a full ghost, Seriko became especially influential through her animated artwork: the Ukagaka shell-animation specification took its name from her.",
@@ -369,7 +369,7 @@
         "filename": "seriko4040620.zip",
         "bytes": 1372094,
         "sha256": "43171D0F8966ABE0135154FE69AA2100286C7C49C682A731566BAE5DF77B95D9",
-        "notes": "Preserved from the creator's original domain. The ZIP was inspected without execution and contains the complete ghost, its shell, scripts, and the executable library misaka.dll. Its historical provenance does not establish modern safety or compatibility."
+        "notes": "Preserved from the creator's original domain. The ZIP contains the complete ghost, shell, scripts, and the legacy executable library misaka.dll. Treat it as historical software rather than modern supported software."
       },
       "sources": [
         {
@@ -398,7 +398,7 @@
           "title": "Seriko 4 preserved package — seriko4040620.zip",
           "type": "archived_original_package",
           "archived": true,
-          "notes": "Package preserved from the creator's es.kdn.jp domain. Archive inspection confirms a full ghost named せりこ, companion まるちい, creator MIY, master shell, scripts, and misaka.dll; no files were executed."
+          "notes": "Package preserved from the creator's es.kdn.jp domain. Internal metadata lists the ghost せりこ, companion まるちい, creator MIY, master shell, scripts, and misaka.dll."
         }
       ]
     },
@@ -417,7 +417,7 @@
       "original_url": "",
       "current_url": "http://unvollendet.web.fc2.com/ukagaka/ukagaka.htm",
       "archive_url": "https://web.archive.org/web/20121017024942/http://unvollendet.web.fc2.com/ukagaka/ukagaka.htm",
-      "download_status": "Taromati2 is available from its long-running proxy distribution page; the original final ZIP was blocked by Windows security during this research and is not linked directly",
+      "download_status": "Taromati2 is available from its long-running proxy distribution page",
       "shiori": "MISAKA in the original; AYA in Taromati2",
       "technical_context": "Taromati is the formal ghost title; Kikka and Towa are its characters. The original Taromati was formally released on 2003-11-10. Taromati2, released on 2007-07-21, is a substantial rewrite rather than merely a replacement shell, but retains the same character pair. The distribution page explicitly states that its administrator is not the ghost creator and credits production to 8.",
       "description": "A long-lived classic ghost pairing the silver-haired Kikka with Towa, a black cat who can also appear in human form. Taromati began in 2003 and received a major second-generation rewrite in 2007, accompanied by revised default artwork and an extensive collection of additional shells.",
@@ -441,7 +441,7 @@
         "filename": "Taromati2.zip",
         "bytes": 2453409,
         "sha256": "22782ABAE621AD1C705CF8A87D513CE3F9100B5B36A9DCB8B5CB4B85D86015B8",
-        "notes": "Downloaded from the proxy distribution page and inspected as a ZIP without execution. Internal metadata names creator 8, Kikka, Towa, and the default shell. It contains executable ghost components including aya5.dll; historical provenance does not establish modern safety or compatibility."
+        "notes": "Distributed by the long-running proxy page. Internal metadata names creator 8, Kikka, Towa, and the default shell. The package contains legacy executable components including aya5.dll."
       },
       "sources": [
         {
@@ -463,14 +463,14 @@
           "title": "Taromati2 surviving package",
           "type": "distributed_package",
           "archived": false,
-          "notes": "Archive inspection without execution confirms ghost title taromati2, characters 橘花 and 斗和, creator and shell credit 8, AYA implementation, and files dated through 2007-07-21."
+          "notes": "Internal metadata lists the title taromati2, characters 橘花 and 斗和, creator and shell credit 8, AYA implementation, and files dated through 2007-07-21."
         },
         {
           "url": "https://jbbs.shitaraba.net/bbs/read.cgi/computer/44300/1433346060/",
           "title": "Taromati（橘花＆斗和） community thread",
           "type": "retrospective_community_record",
           "archived": false,
-          "notes": "The thread's preserved reference material gives formal release dates of 2003-11-10 for the first generation and 2007-07-21 for the second. These dates are retrospective and are labeled accordingly."
+          "notes": "Community reference material records formal release dates of 2003-11-10 for the first generation and 2007-07-21 for the second."
         }
       ]
     },
@@ -482,7 +482,7 @@
       "author": "とわ",
       "author_romaji": "Towa",
       "artist": "D4 北野チェき (original ASCII art); みやま / MIY (bundled color shell)",
-      "companion": "540 (internal companion name; role not yet documented)",
+      "companion": "540 (internal companion name; role undocumented)",
       "first_release": "2002-03-05",
       "last_known_release": "2012-05-13",
       "language": ["ja"],
@@ -492,7 +492,7 @@
       "archive_url": "https://web.archive.org/web/20141126205326/http://priest.so.land.to/54_/54.html",
       "download_status": "complete original ghost package preserved by the Wayback Machine; original host closed in March 2026",
       "shiori": "Kawari",
-      "technical_context": "The original 54 uses an ASCII-art default shell derived from work by D4 北野チェき, with permission recorded in the package readme. The archive also bundles the widely recognizable MIY Color shell by みやま / MIY. Package metadata names the secondary character slot 540, but surviving user-facing documentation found for this record does not establish 540 as a conventional visible companion. No established spoken reading of the numeric title has been verified.",
+      "technical_context": "The original 54 uses an ASCII-art default shell derived from work by D4 北野チェき, with permission recorded in the package readme. The archive also bundles the widely recognizable MIY Color shell by みやま / MIY. Package metadata names the secondary character slot 540, though surviving documentation does not describe 540 as a conventional visible companion.",
       "description": "An unusual classic centered on a quiet girl whose original appearance is drawn as large-scale ASCII art. The later bundled MIY Color shell gave 54 a more conventional illustrated form, and a remarkable number of artists subsequently created alternate shells for her.",
       "image": {
         "path": "/assets/ghosts/54/54.jpg",
@@ -506,7 +506,7 @@
         "filename": "54_set54.nar",
         "bytes": 8405794,
         "sha256": "83EBC672782FD9F2AB5005C8A3B00B8922090CC9558094832FE9F2BEA361FE44",
-        "notes": "Complete package from the archived original distribution page, inspected as an archive without execution. It contains legacy executable components as well as scripts, artwork, and a balloon; historical provenance does not establish modern safety or compatibility."
+        "notes": "Complete package from the archived original distribution page. It contains legacy executable components, scripts, artwork, and a balloon. Treat it as historical software rather than modern supported software."
       },
       "english": {
         "status": "derivative_partial",
@@ -537,7 +537,7 @@
           "title": "54 original preserved package",
           "type": "archived_original_package",
           "archived": true,
-          "notes": "Archive inspection confirms creator とわ, first publication on 2002-03-05, the ghost and internal 540 names, the default and MIY Color shells, and original ghost files updated through 2012-05-13; no files were executed."
+          "notes": "Internal metadata lists creator とわ, first publication on 2002-03-05, the ghost and internal 540 names, the default and MIY Color shells, and files updated through 2012-05-13."
         },
         {
           "url": "https://github.com/ag3601/Project54",
@@ -551,7 +551,7 @@
           "title": "Project54_Eng — Yokiie",
           "type": "derivative_translation",
           "archived": false,
-          "notes": "Documents an incomplete English fan translation of AG36's derivative project, with file-by-file progress. It is evidence of a related translation project, not an English edition of Towa's original ghost."
+          "notes": "Documents an incomplete English fan translation of AG36's derivative project, with file-by-file progress. The translation does not target Towa's original ghost."
         }
       ]
     },
@@ -573,7 +573,7 @@
       "archive_url": "https://web.archive.org/web/20090124233237/http://rottenheaven.jp/diarypro/diary.cgi",
       "download_status": "restored editions preserved by the Internet Archive; original development and support ended",
       "shiori": "Kawari",
-      "technical_context": "The package identifies the ghost as THE TOXIC WALTZ and its characters as 毒子 and ほねゅう. 毒子 is conventionally read Busuko; Doku-ko is retained here as a useful English search alias rather than presented as the package's formal reading. The surviving readmes describe a restored edition based largely on the March 2004 contents, covering work made in 2001–2004 and revived in 2006. A 2010 package replaces one bundled network library but otherwise retains the 2006 restored edition.",
+      "technical_context": "The package identifies the ghost as THE TOXIC WALTZ and its characters as 毒子 and ほねゅう. 毒子 is conventionally read Busuko; Doku-ko also appears as an English-language spelling. The surviving readmes describe a restored edition based largely on the March 2004 contents, covering work made in 2001–2004 and revived in 2006. A 2010 package replaces one bundled network library but otherwise retains the 2006 restored edition.",
       "description": "A metal-themed supernatural-family ghost starring Busuko and her skeletal companion Honeyuu. THE TOXIC WALTZ became known for energetic dialogue and an unusually large, elaborate set of sometimes grotesque character animations that could be demanding on contemporary computers.",
       "image": {
         "path": "/assets/ghosts/the-toxic-waltz/surface0000.png",
@@ -587,7 +587,7 @@
         "filename": "toxic100322.nar",
         "bytes": 9734187,
         "sha256": "C1BE87A23DE9325469059B30EE7FFBCC0D248D394A178785B6C680C0F5638829",
-        "notes": "Third-party preservation copy of the 2010 restored edition. It was inspected as an archive without execution. The package includes legacy executable components; historical provenance and an archive checksum do not establish modern safety or compatibility. Earlier 2006 restored packages are also retained on the item page."
+        "notes": "Third-party preservation copy of the 2010 restored edition. The package includes legacy executable components; treat it as historical software rather than modern supported software. Earlier 2006 restored packages are also retained on the item page."
       },
       "sources": [
         {
@@ -602,7 +602,7 @@
           "title": "THE TOXIC WALTZ restored edition — toxic100322.nar",
           "type": "preserved_package",
           "archived": true,
-          "notes": "Package inspection without execution confirms the formal ghost title, characters 毒子 and ほねゅう, creator identifier wat, later name わた臓, 2001–2004 creation period, 2006 restoration, and 2010 library replacement."
+          "notes": "Internal metadata lists the formal title, characters 毒子 and ほねゅう, creator identifier wat, later name わた臓, 2001–2004 creation period, 2006 restoration, and 2010 library replacement."
         },
         {
           "url": "https://tuguna.info/2002/06/26notes-26/",
@@ -645,7 +645,7 @@
       "archive_url": "",
       "download_status": "official period 9 package available from the creator's current site",
       "shiori": "真絵 (Mae)",
-      "technical_context": "The lineage began as the shell みか。in Asymmetry Epilogue on 2001-04-16 and became a complete ghost on 2001-05-30. The renamed 深果 period 1 followed on 2001-09-10. The package identifier mika and the earlier hiragana title establish Mika as the reading used for this record; Shinka was an unverified literal reading and is not used. The final period 9 release incorporates material from Asymmetry Epilogue.",
+      "technical_context": "The lineage began as the shell みか。in Asymmetry Epilogue on 2001-04-16 and became a complete ghost on 2001-05-30. The renamed 深果 period 1 followed on 2001-09-10. The package identifier mika and the earlier hiragana title establish the reading Mika. The final period 9 release incorporates material from Asymmetry Epilogue.",
       "description": "A story-connected early ghost featuring Mika and her smaller companion Naoko. Mika began as an Asymmetry Epilogue shell, became a full ghost in May 2001, and continued under the kanji name 深果 through 2004.",
       "image": {
         "path": "/assets/ghosts/mika/uka_mika-02s.png",
@@ -659,7 +659,7 @@
         "filename": "mika0209.nar",
         "bytes": 617455,
         "sha256": "76CD6458B36A4E47C8F8B1D909F8D57EF796108C596F14236EDBD4123E7E6FB1",
-        "notes": "Downloaded from the creator's current site and inspected as an archive without execution. It contains the complete ghost and shell, including the legacy executable component shiori.dll; official provenance does not establish modern safety or compatibility."
+        "notes": "Official package from the creator's current site. It contains the complete ghost and shell, including the legacy executable component shiori.dll. Treat it as historical software rather than modern supported software."
       },
       "sources": [
         {
@@ -674,7 +674,7 @@
           "title": "Mika period 9 official package — mika0209.nar",
           "type": "official_package",
           "archived": false,
-          "notes": "Archive inspection without execution confirms ghost name 深果, identifier mika, characters 深果 and 直子, creator and shell credit 河合真絵 / KawaiMae, release history, and the 2004-04-26 period 9 version."
+          "notes": "Internal metadata lists ghost name 深果, identifier mika, characters 深果 and 直子, creator and shell credit 河合真絵 / KawaiMae, release history, and the 2004-04-26 period 9 version."
         }
       ]
     }
