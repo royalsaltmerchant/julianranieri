@@ -501,6 +501,10 @@
           "type": "file"
         },
         {
+          "name": "home.js",
+          "type": "file"
+        },
+        {
           "name": "readFile.js",
           "type": "file"
         },

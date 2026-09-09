@@ -28,6 +28,8 @@ body {
   font-family: Georgia, "Times New Roman", serif;
   font-size: 20px;
   overscroll-behavior: none;
+  overflow-x: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -38,6 +40,55 @@ body {
     linear-gradient(90deg, rgba(232, 225, 229, 0.018) 1px, transparent 1px);
   background-repeat: no-repeat, no-repeat, repeat, repeat;
   background-size: 100% 560px, 100% 420px, 28px 28px, 28px 28px;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: -12vh -8vw;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 50% 10%, rgba(177, 139, 208, 0.18), transparent 38%),
+    radial-gradient(circle at 78% 18%, rgba(217, 148, 164, 0.08), transparent 24%);
+  opacity: 0.45;
+  transform: scale(1);
+  animation: spectral-breath 9s ease-in-out infinite;
+}
+
+body > * {
+  position: relative;
+}
+
+@keyframes spectral-breath {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 0.62;
+    transform: scale(1.045);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before {
+    animation: none;
+  }
+
+  .candle-line.is-typing::after,
+  .candle-line.typing-complete::after {
+    animation: none;
+  }
+
+  .home-note {
+    animation: none;
+    background-image: none;
+    color: var(--muted);
+    -webkit-text-fill-color: currentColor;
+  }
 }
 
 small {
@@ -223,9 +274,27 @@ nav a {
   font-style: italic;
 }
 
+.candle-line.is-typing::after,
+.candle-line.typing-complete::after {
+  content: "";
+  display: inline-block;
+  width: 0.58em;
+  height: 1em;
+  margin-left: 2px;
+  border-right: 1px solid rgba(213, 190, 233, 0.72);
+  transform: translateY(0.16em);
+  animation: caret-blink 0.9s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
 .candle-word {
-  color: #e6c86a;
-  text-shadow: 0 0 14px rgba(230, 200, 106, 0.22);
+  color: #f2d98b;
+  text-shadow: 0 0 14px rgba(242, 217, 139, 0.24);
 }
 
 .abyss-word {
@@ -287,9 +356,34 @@ nav a {
 
 .home-note {
   margin-top: 30px;
-  color: var(--muted) !important;
+  color: var(--muted);
   font-size: 17px !important;
   font-style: italic;
+  background-image: linear-gradient(
+    105deg,
+    var(--muted) 0%,
+    #c8c0c8 28%,
+    #f2edf0 42%,
+    #a99ead 54%,
+    var(--muted) 72%
+  );
+  background-size: 260% 100%;
+  background-position: 100% 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 0 18px rgba(213, 190, 233, 0.08);
+  animation: metal-shimmer 3.8s ease-in-out infinite alternate;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes metal-shimmer {
+  0% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media screen and (max-width: 500px) {
