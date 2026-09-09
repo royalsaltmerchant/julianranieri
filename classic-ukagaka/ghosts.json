@@ -794,6 +794,65 @@
           "notes": "Contemporary directory lists 木村屋安子さん with ギコ猫 under the creator's Harunourei site."
         }
       ]
+    },
+    {
+      "slug": "sora-and-aryuu",
+      "name": "Sora and Aryuu-sensei",
+      "japanese_name": "空とあるゅう先生",
+      "aliases": ["Aoi Sora", "蒼井空", "Kuu", "クー", "Aryuu", "あるゅう"],
+      "author": "観城はるか",
+      "author_romaji": "Haruka Misiro",
+      "artist": "観城はるか / Haruka Misiro",
+      "companion": "Aryuu-sensei (あるゅう先生)",
+      "first_release": "2002-12-08",
+      "last_known_release": "September 2010",
+      "language": ["ja"],
+      "status": "available",
+      "original_url": "https://himaoka.sakura.ne.jp/",
+      "current_url": "https://himaoka.sakura.ne.jp/nanika.htm",
+      "archive_url": "",
+      "download_status": "official package available from the creator's active website",
+      "shiori": "里々 (Satori)",
+      "technical_context": "The creator records a formal release on 2002-12-08 and continued additions through September 2010. The current package retains the complete ghost and its default shell.",
+      "description": "A fantasy school ghost starring Aoi Sora, known as Kuu, and her teacher Aryuu. Sora is a one-winged angel student at the Wing Garden, while Aryuu describes herself as a member of the Unyuu family despite her humanoid appearance.",
+      "image_pair": {
+        "paths": [
+          {
+            "path": "/assets/ghosts/sora-and-aryuu/surface0-transparent.png",
+            "alt": "Aoi Sora in the default Sora and Aryuu-sensei artwork"
+          },
+          {
+            "path": "/assets/ghosts/sora-and-aryuu/surface10-transparent.png",
+            "alt": "Aryuu-sensei holding a book in the default artwork"
+          }
+        ],
+        "source_url": "https://himaoka.sakura.ne.jp/ku-ver06.1.nar",
+        "credit": "Default Sora and Aryuu surfaces from the creator's current package; the original transparency-key background has been hidden for display"
+      },
+      "download": {
+        "heading": "Official current package",
+        "url": "https://himaoka.sakura.ne.jp/ku-ver06.1.nar",
+        "filename": "ku-ver06.1.nar",
+        "bytes": 4982446,
+        "sha256": "EDBE6357B2193D8F60D165ED20EEA270492AB8648AAED6DE5ABC510ACC263C01",
+        "notes": "Official package from the creator's active site. It contains the complete ghost and shell, including the legacy executable component satori.dll. Treat it as historical software rather than modern supported software."
+      },
+      "sources": [
+        {
+          "url": "https://himaoka.sakura.ne.jp/nanika.htm",
+          "title": "Sora and Aryuu-sensei - official creator page",
+          "type": "official_distribution",
+          "archived": false,
+          "notes": "The creator's page gives the 2002-12-08 formal release date, update history through September 2010, character profiles, and the current download. Its visible download label says ku-ver06.0.nar while the linked file is ku-ver06.1.nar."
+        },
+        {
+          "url": "https://himaoka.sakura.ne.jp/ku-ver06.1.nar",
+          "title": "Sora and Aryuu-sensei official package - ku-ver06.1.nar",
+          "type": "official_package",
+          "archived": false,
+          "notes": "Internal metadata lists 空 and あるゅう, credits 観城はるか / Haruka Misiro, and identifies the creator's current site as the primary distribution source."
+        }
+      ]
     }
   ]
 }
