@@ -24,7 +24,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://julianranieri.com/software.html" />
     <meta property="og:image" content="https://julianranieri.com/img/tapesim_screenshot.png" />
-    <link rel="stylesheet" href="css/style.css?v=about-transition-removed" />
+    <link rel="stylesheet" href="css/style.css?v=software-vtt-no-campaign-tools" />
     <script src="js/utils.js" defer></script>
     <title>Julian Ranieri | Software</title>
   </head>
@@ -64,52 +64,66 @@
       <div class="blog-container">
         <h1>Software</h1>
         <p>
-          A selection of software projects spanning web platforms, desktop tools, audio applications, localization work, and self-hosted infrastructure.
+          A small cabinet of software: practical instruments, online platforms, private infrastructure, and preserved curiosities.
         </p>
+        <nav class="section-index" aria-label="Software sections">
+          <a href="#platforms">Platforms</a>
+          <a href="#desktop-tools">Desktop Tools</a>
+          <a href="#archives">Archives</a>
+        </nav>
         <br />
 
-        <h2>Products &amp; Platforms</h2>
+        <h2 id="platforms">Platforms</h2>
 
         <div class="project-card">
           <div class="project-header">
             <h3><a href="https://farreachco.com/">Far Reach Co.</a></h3>
-            <div class="tech-tags">
-              <span class="tech-tag">Real-time Web App</span>
-              <span class="tech-tag">Interactive Canvas</span>
-              <span class="tech-tag">Full-stack</span>
-              <span class="tech-tag">SaaS</span>
-            </div>
           </div>
-          <p class="project-kicker">A fast online tabletop for GMs and players, with campaign tools built around real sessions.</p>
+          <p class="project-meta">Virtual tabletop / real-time web / SaaS</p>
+          <p class="project-kicker">An online tabletop for running role-playing sessions without account friction.</p>
+          <img src="img/far_reach_vtt.png" class="software-img software-img-wide" alt="Far Reach Co. virtual tabletop interface" />
           <p class="project-description">
-            I am the developer behind the <a href="https://farreachco.com/">Far Reach Co.</a> platform: a browser-based virtual tabletop where players can join by link, move through maps, manage tokens, roll dice, and keep the session moving without account friction. Longer campaigns can live in persistent Wyrlds with shared records, calendars, assets, member roles, linked D&amp;D 5E character sheets, and synced Far Reach Radio audio.
+            Players can join by link, move through maps, roll dice, manage tokens, and keep longer campaigns in persistent shared spaces. Far Reach is built around actual table flow: quick entry, campaign records, character sheets, assets, permissions, and synchronized tabletop audio.
           </p>
           <div class="project-features">
-            <strong>Product focus:</strong> instant table invites, persistent campaign spaces, shared asset libraries, D&amp;D 5E sheets, public recruiting controls, synchronized tabletop music
+            <strong>Contains:</strong> real-time maps, persistent Wyrlds, shared assets, recruiting controls, D&amp;D 5E sheets, synced music
           </div>
           <div class="project-links">
             <a href="https://github.com/Far-Reach-Co">GitHub</a>
           </div>
         </div>
 
-        <h2>Audio &amp; Desktop Tools</h2>
+        <div class="project-card">
+          <div class="project-header">
+            <h3><a href="https://parchchat.com/">Parch</a></h3>
+          </div>
+          <p class="project-meta">Encrypted chat / self-hosted / Go / SQLite</p>
+          <p class="project-kicker">A self-hosted messenger for people who want to keep the keys close.</p>
+          <p class="project-description">
+            Parch is built around end-to-end encryption, public-key identity, and user-owned hosting. The current project focuses on encrypted messaging with a Linux CLI host client and local SQLite storage.
+          </p>
+          <div class="project-features">
+            <strong>Contains:</strong> Go relay service, Ed25519 auth, ECDH P-256 encryption, replay prevention, local SQLite storage, systemd deployment
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/royalsaltmerchant/gochat">GitHub</a>
+          </div>
+        </div>
+
+        <h2 id="desktop-tools">Desktop Tools</h2>
 
         <div class="project-card">
           <div class="project-header">
             <h3><a href="https://tapesim.netlify.app/">Tape Sim</a></h3>
-            <div class="tech-tags">
-              <span class="tech-tag">C</span>
-              <span class="tech-tag">SwiftUI</span>
-              <span class="tech-tag">PortAudio</span>
-            </div>
           </div>
-          <p class="project-kicker">A recorder for people who like tape-machine workflows more than busy DAW screens.</p>
+          <p class="project-meta">C / SwiftUI / PortAudio</p>
+          <p class="project-kicker">A multitrack recorder shaped like a small tape machine.</p>
           <img src="img/tapesim_screenshot.png" class="software-img" alt="Tape Sim interface" />
           <p class="project-description">
-            Tape Sim is a multitrack audio recorder with rewind, fast-forward, RTZ, stereo bounce, and keyboard shortcuts. It records 48kHz 24-bit WAV files and supports as many simultaneous tracks as your audio interface can handle.
+            Tape Sim keeps recording direct: rewind, fast-forward, RTZ, stereo bounce, keyboard shortcuts, and 48kHz 24-bit WAV capture. It supports as many simultaneous tracks as the connected audio interface can handle.
           </p>
           <div class="project-features">
-            <strong>Interesting bits:</strong> real-time audio in C, SwiftUI controls, PortAudio device handling, simple file/session management
+            <strong>Contains:</strong> real-time audio in C, SwiftUI controls, PortAudio device handling, simple file/session management
           </div>
           <div class="project-links">
             <a href="https://github.com/royalsaltmerchant/tape_sim/raw/main/tape_sim.dmg" class="download-link">Download for macOS</a>
@@ -120,18 +134,15 @@
         <div class="project-card">
           <div class="project-header">
             <h3>CSV Zero</h3>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Tkinter</span>
-            </div>
           </div>
-          <p class="project-kicker">A tiny CSV editor for when opening a spreadsheet app feels like too much ceremony.</p>
+          <p class="project-meta">Python / Tkinter</p>
+          <p class="project-kicker">A small CSV editor for plain inspection and quick repair.</p>
           <img src="img/csv_zero.png" class="software-img" alt="CSV Zero interface" />
           <p class="project-description">
-            CSV Zero auto-detects delimiters and encoding, searches across all data, and keeps insert/edit/remove operations direct. The interface is intentionally plain: dark theme, monospaced text, and no spreadsheet bloat.
+            CSV Zero detects delimiters and encoding, searches across all data, and keeps insert, edit, and remove operations direct. It is meant for moments when opening a full spreadsheet app feels heavier than the task.
           </p>
           <div class="project-features">
-            <strong>Interesting bits:</strong> format detection, session memory, keyboard shortcuts, packaged Windows installer
+            <strong>Contains:</strong> format detection, session memory, keyboard shortcuts, packaged Windows installer
           </div>
           <div class="project-links">
             <a href="https://github.com/royalsaltmerchant/csv_apps/raw/main/CSVZeroInstaller_windows.exe" class="download-link">Download for Windows</a>
@@ -139,50 +150,23 @@
           </div>
         </div>
 
-        <h2>Independent Systems &amp; Archives</h2>
+        <h2 id="archives">Archives</h2>
 
         <div class="project-card">
           <div class="project-header">
             <h3><a href="mayura-en/">Mayura English Patch</a></h3>
-            <div class="tech-tags">
-              <span class="tech-tag">Windows</span>
-              <span class="tech-tag">Ukagaka</span>
-              <span class="tech-tag">Localization</span>
-            </div>
           </div>
-          <p class="project-kicker">A careful English patch for a classic Japanese desktop ghost.</p>
+          <p class="project-meta">Windows / Ukagaka / localization</p>
+          <p class="project-kicker">An English patch for a classic Japanese desktop ghost.</p>
           <img src="mayura-en/assets/mayura-surface-0.png" class="software-img" alt="Mayura" />
           <p class="project-description">
-            An English localization of the classic Japanese desktop ghost Mayura. The patch preserves the original installation, creates a separate English copy, and includes a guided Windows installer.
+            The Mayura patch preserves the original installation, creates a separate English copy, and includes a guided Windows installer. It treats the old desktop companion as something to be handled carefully, not overwritten.
           </p>
           <div class="project-features">
-            <strong>Interesting bits:</strong> context-aware dialogue translation, original behavior preserved, reversible patch installation
+            <strong>Contains:</strong> context-aware dialogue translation, original behavior preserved, reversible patch installation
           </div>
           <div class="project-links">
             <a href="mayura-en/" class="download-link">Mayura English patch and download</a>
-          </div>
-        </div>
-
-        <div class="project-card">
-          <div class="project-header">
-            <h3><a href="https://parchchat.com/">Parch</a></h3>
-            <div class="tech-tags">
-              <span class="tech-tag">Go</span>
-              <span class="tech-tag">E2EE</span>
-              <span class="tech-tag">SQLite</span>
-              <span class="tech-tag">Self-hosted</span>
-            </div>
-          </div>
-          <p class="project-kicker">A self-hosted encrypted chat system built around privacy, ownership, and boringly explicit infrastructure.</p>
-          <img src="img/parch_icon.webp" class="software-img" alt="Parch icon" />
-          <p class="project-description">
-            Parch is a user-hosted messenger with end-to-end encryption, public-key identity, and a Linux CLI host client with local SQLite storage. Earlier versions also explored WebRTC video/voice infrastructure, but the current project is focused on the encrypted messaging and self-hosting model.
-          </p>
-          <div class="project-features">
-            <strong>Interesting bits:</strong> Go relay service, Ed25519 auth, ECDH P-256 encryption, replay prevention, local SQLite storage, systemd deployment
-          </div>
-          <div class="project-links">
-            <a href="https://github.com/royalsaltmerchant/gochat">GitHub</a>
           </div>
         </div>
       </div>

@@ -355,6 +355,29 @@ nav a {
   margin: 30px 0 12px;
 }
 
+.section-index {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 18px 0 2px;
+  background-color: transparent;
+  border: 0;
+  font-family: var(--ui-font);
+}
+
+.section-index a {
+  color: var(--blue);
+  padding: 0 0 3px;
+  border-bottom: 1px solid rgba(107, 88, 119, 0.7);
+  background-color: transparent;
+  font-size: 13px;
+}
+
+.section-index a:hover {
+  color: var(--green);
+  text-decoration: none;
+}
+
 .about-photo {
   width: min(360px, 100%);
   display: block;
@@ -411,19 +434,11 @@ nav a {
   line-height: 1.05;
 }
 
-.tech-tags {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.tech-tag {
-  background-color: rgba(16, 13, 18, 0.9);
-  color: var(--blue);
-  padding: 4px 8px;
-  border: 1px solid var(--border);
-  font-size: 12px;
+.project-meta {
+  color: var(--muted);
   font-family: var(--ui-font);
+  font-size: 12px;
+  margin: -6px 0 14px;
 }
 
 .project-kicker {
@@ -436,14 +451,20 @@ nav a {
 
 .software-img {
   width: 100%;
-  max-width: 460px;
-  max-height: 260px;
+  max-width: 560px;
+  max-height: 340px;
   height: auto;
   object-fit: contain;
-  margin: 15px 0;
-  border: 1px solid var(--border);
+  margin: 12px 0 18px;
+  border: 1px solid rgba(107, 88, 119, 0.5);
   background-color: #030305;
   display: block;
+  opacity: 0.88;
+}
+
+.software-img-wide {
+  max-width: 720px;
+  max-height: 390px;
 }
 
 .project-description {
@@ -452,11 +473,17 @@ nav a {
 }
 
 .project-features {
-  margin-bottom: 15px;
-  padding: 10px;
-  background-color: var(--panel-color);
-  border-left: 3px solid var(--green);
-  font-size: 17px;
+  margin-bottom: 14px;
+  padding: 0 0 0 12px;
+  background-color: transparent;
+  border-left: 1px solid rgba(217, 148, 164, 0.58);
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.project-features strong {
+  color: var(--gray);
 }
 
 .project-links {
