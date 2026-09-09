@@ -904,6 +904,65 @@
           "notes": "Internal metadata lists 砂霧 and タマ, credits ボトル猫＠774447 / bottlecat_774447 for the ghost and shell, and identifies the creator's site as the primary distribution source."
         }
       ]
+    },
+    {
+      "slug": "beeta",
+      "name": "Beeta",
+      "japanese_name": "β",
+      "aliases": ["Beta", "β with Unyuu G", "βwithうにゅうＧ"],
+      "author": "龍馬",
+      "author_romaji": "Ryo-ma",
+      "artist": "WSplus; based on β-RC2 by つくりものじ",
+      "companion": "Unyuu G (うにゅうＧ)",
+      "first_release": "2001-09-25",
+      "last_known_release": "2002-03-29",
+      "language": ["ja"],
+      "status": "preserved",
+      "original_url": "http://www.geocities.co.jp/Playtown-Yoyo/5981/",
+      "current_url": "",
+      "archive_url": "https://web.archive.org/web/20021019064714/http://isweb35.infoseek.co.jp/computer/kuro_nin/beeta.html",
+      "download_status": "preserved locally under the package's explicit redistribution permission",
+      "shiori": "Kawari and KEEPS",
+      "technical_context": "Beeta is a derivative of β-RC2, an unfinished surface designed by Tsukurimonoji as a proposed default character for Nanika. The distributed edition uses redrawn artwork by WSplus. Its readme credits WS plus and Ryo-ma for the port, identifies an earlier ghost file by 閑馬永空, and places distribution responsibility with Ryo-ma.",
+      "description": "A brightly colored early ghost based on an abandoned candidate for Nanika's default character artwork. Beeta appears in a yellow and black outfit with the small companion Unyuu G and became a separately distributed character in September 2001.",
+      "image": {
+        "path": "/assets/ghosts/beeta/Top_Beeta.png",
+        "alt": "Official artwork of Beeta in a yellow and black outfit posing beside Unyuu G",
+        "source_url": "https://web.archive.org/web/20021019064714/http://isweb35.infoseek.co.jp/computer/kuro_nin/beeta.html",
+        "credit": "Character artwork preserved from the original Beeta distribution page"
+      },
+      "download": {
+        "heading": "Preserved redistributable package",
+        "url": "https://julianranieri.com/classic-ukagaka/downloads/Beeta.nar",
+        "filename": "Beeta.nar",
+        "bytes": 1200760,
+        "sha256": "22BD77151F2A8C11298002183D7A1A2D7F7C06DEAFC98ED5EDC3C7AFCF395880",
+        "mirrored": true,
+        "notes": "Preservation copy of the 2002-03-29 edition. The included readme permits redistribution at the distributor's own responsibility. The package contains legacy executable components; treat it as historical software rather than modern supported software."
+      },
+      "sources": [
+        {
+          "url": "https://web.archive.org/web/20021019064714/http://isweb35.infoseek.co.jp/computer/kuro_nin/beeta.html",
+          "title": "Beeta - archived original distribution page",
+          "type": "archived_original",
+          "archived": true,
+          "notes": "The distribution page gives the 2001-09-25 public release date, identifies Beeta as a derivative of Tsukurimonoji's unfinished β-RC2 surface, credits WSplus for the redrawn shell, and assigns distribution responsibility to Ryo-ma."
+        },
+        {
+          "url": "https://julianranieri.com/classic-ukagaka/downloads/Beeta.nar",
+          "title": "Beeta preserved package - Beeta.nar",
+          "type": "preserved_package",
+          "archived": false,
+          "notes": "The included readme identifies version 020329, credits WS plus and Ryo-ma for the port, names 閑馬永空 as creator of the earlier ghost file, and explicitly permits redistribution at the distributor's own responsibility."
+        },
+        {
+          "url": "https://m-p.sakura.ne.jp/haruna/list-4.html",
+          "title": "Historical Ukagaka link directory",
+          "type": "contemporary_directory",
+          "archived": false,
+          "notes": "Contemporary directory lists β among the ghosts distributed by Ryo-ma's site."
+        }
+      ]
     }
   ]
 }

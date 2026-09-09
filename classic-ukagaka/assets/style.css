@@ -21,6 +21,7 @@ h2 { margin: 24px 0 8px; padding: 4px 7px; border-left: 5px solid #b57597; backg
 .download-button:active { border-style: inset; }
 .download-official { background: #386b62; }
 .download-archived { background: #9a6428; }
+.download-preserved { background: #5a478e; }
 label { display: block; margin: 20px 0 5px; font-weight: bold; }
 input[type='search'] { width: min(360px, 100%); padding: 4px; border: 2px inset #ddd; font: inherit; }
 .result-count { color: #625c70; }
