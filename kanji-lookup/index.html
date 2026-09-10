@@ -33,6 +33,22 @@
         <span id="kanji-count">4 unique</span>
       </div>
       <section id="kanji-results" class="kanji-results" aria-live="polite"></section>
+
+      <details class="translator">
+        <summary>Web translation <span>optional · requires internet</span></summary>
+        <div class="translator-controls">
+          <button id="source-language" type="button">Japanese</button>
+          <button id="swap-languages" type="button" aria-label="Swap translation languages">⇄</button>
+          <span id="target-language">English</span>
+        </div>
+        <label for="translate-input">Text to translate</label>
+        <textarea id="translate-input" lang="ja" spellcheck="false" placeholder="翻訳するテキスト…"></textarea>
+        <div class="translate-actions">
+          <span id="translation-status"></span>
+          <button id="translate-button" type="button">Translate</button>
+        </div>
+        <div id="translation-output" class="translation-output" aria-live="polite"></div>
+      </details>
     </main>
 
     <footer>

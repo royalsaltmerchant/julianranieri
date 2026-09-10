@@ -134,6 +134,55 @@ button:focus-visible { color: var(--text); }
 .kanji-info span { display: block; overflow-wrap: anywhere; color: var(--muted); font-size: 13px; line-height: 1.7; }
 .empty { grid-column: 1 / -1; padding: 28px 0; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 14px; }
 
+.translator {
+  margin-top: 48px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.translator summary {
+  padding: 16px 0;
+  cursor: pointer;
+  font: 13px/1.4 ui-monospace, monospace;
+}
+
+.translator summary span { float: right; color: var(--muted); }
+.translator[open] summary { border-bottom: 1px solid var(--line); }
+
+.translator-controls {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  color: var(--muted);
+  font: 13px/1.4 ui-monospace, monospace;
+}
+
+.translator-controls button:first-child { justify-self: start; color: var(--text); }
+.translator-controls span { justify-self: end; }
+.translator textarea { min-height: 110px; font-size: 20px; }
+
+.translate-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 52px;
+  color: var(--muted);
+  font: 13px/1.4 ui-monospace, monospace;
+}
+
+#translate-button { color: var(--text); }
+#translate-button:disabled { color: var(--muted); cursor: wait; }
+
+.translation-output {
+  min-height: 58px;
+  padding: 16px 0;
+  border-top: 1px solid var(--line);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
 footer {
   width: min(860px, calc(100% - 32px));
   margin: 0 auto;

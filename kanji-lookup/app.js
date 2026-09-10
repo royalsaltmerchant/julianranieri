@@ -7,9 +7,16 @@ const kanjiCount = document.querySelector("#kanji-count");
 const characterCount = document.querySelector("#character-count");
 const wordResults = document.querySelector("#word-results");
 const wordCount = document.querySelector("#word-count");
+const translateInput = document.querySelector("#translate-input");
+const translateButton = document.querySelector("#translate-button");
+const translationOutput = document.querySelector("#translation-output");
+const translationStatus = document.querySelector("#translation-status");
+const sourceLanguage = document.querySelector("#source-language");
+const targetLanguage = document.querySelector("#target-language");
 let kanjiRenderVersion = 0;
 let wordRenderVersion = 0;
 let wordTimer;
+let translationDirection = "ja|en";
 const wordDataCache = new Map();
 
 function uniqueKanji(text) {
@@ -188,6 +195,38 @@ async function renderWords() {
   return words;
 }
 
+async function translateText() {
+  const text = translateInput.value.trim();
+  if (!text) {
+    translationOutput.textContent = "";
+    translationStatus.textContent = "Enter text";
+    return { translation: null, source: "empty" };
+  }
+
+  translateButton.disabled = true;
+  translationStatus.textContent = "Translating…";
+  try {
+    const url = new URL("https://api.mymemory.translated.net/get");
+    url.searchParams.set("q", text);
+    url.searchParams.set("langpair", translationDirection);
+    url.searchParams.set("de", "jumpingafterrain@gmail.com");
+    const response = await fetch(url);
+    if (!response.ok) throw new Error("Translation request failed");
+    const data = await response.json();
+    const translation = data?.responseData?.translatedText;
+    if (!translation) throw new Error("No translation returned");
+    translationOutput.textContent = translation;
+    translationStatus.textContent = "MyMemory";
+    return { translation, source: "mymemory" };
+  } catch (error) {
+    translationOutput.textContent = "Translation unavailable.";
+    translationStatus.textContent = "Request failed";
+    return { translation: null, source: "error" };
+  } finally {
+    translateButton.disabled = false;
+  }
+}
+
 function analyzeInput() {
   renderKanji();
   clearTimeout(wordTimer);
@@ -199,6 +238,17 @@ document.querySelector("#clear-kanji").addEventListener("click", () => {
   kanjiInput.value = "";
   kanjiInput.focus();
   analyzeInput();
+});
+translateButton.addEventListener("click", translateText);
+translateInput.addEventListener("keydown", (event) => {
+  if ((event.ctrlKey || event.metaKey) && event.key === "Enter") translateText();
+});
+document.querySelector("#swap-languages").addEventListener("click", () => {
+  translationDirection = translationDirection === "ja|en" ? "en|ja" : "ja|en";
+  const japaneseFirst = translationDirection === "ja|en";
+  sourceLanguage.textContent = japaneseFirst ? "Japanese" : "English";
+  targetLanguage.textContent = japaneseFirst ? "English" : "Japanese";
+  translateInput.lang = japaneseFirst ? "ja" : "en";
 });
 
 renderKanji();
@@ -229,6 +279,34 @@ function registerModelTools() {
         words: words.map(({ word, item }) => ({ word, ...(item || { meaning: "Lookup unavailable" }) })),
         kanji: uniqueKanji(input.text).map((character) => ({ character, ...(kanjiData[character] || { meaning: "Lookup unavailable" }) }))
       };
+    }
+  });
+
+  register({
+    name: "translate_text",
+    title: "Translate text",
+    description: "Use the optional web translator to translate between Japanese and English.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        text: { type: "string", minLength: 1, maxLength: 5000 },
+        direction: { type: "string", enum: ["ja-en", "en-ja"] }
+      },
+      required: ["text", "direction"],
+      additionalProperties: false
+    },
+    annotations: { readOnlyHint: true, untrustedContentHint: true },
+    async execute(input) {
+      if (!input || typeof input.text !== "string" || !input.text.trim() || input.text.length > 5000) throw new Error("text must be 1–5000 characters");
+      if (!["ja-en", "en-ja"].includes(input.direction)) throw new Error("direction must be ja-en or en-ja");
+      translationDirection = input.direction === "ja-en" ? "ja|en" : "en|ja";
+      const japaneseFirst = translationDirection === "ja|en";
+      sourceLanguage.textContent = japaneseFirst ? "Japanese" : "English";
+      targetLanguage.textContent = japaneseFirst ? "English" : "Japanese";
+      translateInput.lang = japaneseFirst ? "ja" : "en";
+      translateInput.value = input.text;
+      document.querySelector(".translator").open = true;
+      return translateText();
     }
   });
 
