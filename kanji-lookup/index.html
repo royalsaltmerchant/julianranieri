@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b0b0b" />
+    <meta name="description" content="Look up Japanese kanji readings and meanings." />
+    <title>Kanji</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header>
+      <span lang="ja">漢字</span>
+      <span>KANJI LOOKUP</span>
+    </header>
+
+    <main>
+      <label for="kanji-input">Japanese text</label>
+      <textarea id="kanji-input" lang="ja" spellcheck="false" autofocus placeholder="日本語を入力…">日本語を勉強しています</textarea>
+      <div class="input-meta">
+        <span id="character-count">11 characters</span>
+        <button id="clear-kanji" type="button">Clear</button>
+      </div>
+
+      <div class="results-heading">
+        <span>Words</span>
+        <span id="word-count">2 found</span>
+      </div>
+      <section id="word-results" class="word-results" aria-live="polite"></section>
+
+      <div class="results-heading">
+        <span>Kanji</span>
+        <span id="kanji-count">4 unique</span>
+      </div>
+      <section id="kanji-results" class="kanji-results" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      Dictionary data from
+      <a href="https://www.edrdg.org/" rel="license">EDRDG</a>,
+      licensed under
+      <a href="https://www.edrdg.org/edrdg/licence.html" rel="license">CC BY-SA 4.0</a>.
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>

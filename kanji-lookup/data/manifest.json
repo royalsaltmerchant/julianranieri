@@ -1,0 +1,10 @@
+{
+  "generated": "2026-09-10",
+  "source": "EDRDG KANJIDIC2 and JMdict_e_NG",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://www.edrdg.org/edrdg/licence.html",
+  "kanjidic_source": "http://ftp.edrdg.org/pub/Nihongo/kanjidic2.xml.gz",
+  "jmdict_source": "http://ftp.edrdg.org/pub/Nihongo/JMdict_e_NG.gz",
+  "shards": 256,
+  "bytes": 22399200
+}
