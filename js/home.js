@@ -42,4 +42,21 @@ const runTypewriter = () => {
   }, 44);
 };
 
-document.addEventListener("DOMContentLoaded", runTypewriter);
+const setupCandle = () => {
+  const candle = document.querySelector(".home-candle");
+
+  if (!candle) return;
+
+  candle.addEventListener("click", () => {
+    const isSnuffed = candle.classList.toggle("is-snuffed");
+    candle.setAttribute(
+      "aria-label",
+      isSnuffed ? "Light the candle" : "Snuff out the candle",
+    );
+  });
+};
+
+document.addEventListener("DOMContentLoaded", () => {
+  runTypewriter();
+  setupCandle();
+});
