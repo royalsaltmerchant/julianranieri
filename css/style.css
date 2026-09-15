@@ -959,6 +959,116 @@ nav a {
   border-top: 1px solid var(--border);
 }
 
+.working-page {
+  max-width: 860px;
+}
+
+.working-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(140px, 180px);
+  gap: clamp(24px, 5vw, 48px);
+  align-items: start;
+  padding-bottom: clamp(26px, 4vw, 42px);
+  border-bottom: 1px solid var(--border);
+}
+
+.working-intro h1 {
+  font-size: clamp(38px, 5vw, 58px);
+}
+
+.working-contact {
+  max-width: 560px;
+  color: var(--gray);
+  font-size: clamp(18px, 2vw, 22px);
+  line-height: 1.42;
+  margin-top: 16px;
+}
+
+.working-contact a,
+.working-section a {
+  color: var(--green);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.working-contact a:hover,
+.working-section a:hover {
+  color: var(--blue);
+}
+
+.working-index {
+  margin: 18px 0 0;
+  padding: 0 0 clamp(22px, 4vw, 34px);
+  border-bottom: 1px solid var(--border);
+}
+
+.working-index a {
+  line-height: 1.35;
+}
+
+.working-photo {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(107, 88, 119, 0.5);
+  background-color: #030305;
+  opacity: 0.9;
+  filter: grayscale(12%) sepia(8%) contrast(0.96) brightness(0.9);
+  box-shadow:
+    0 0 34px rgba(213, 190, 233, 0.08),
+    0 0 80px rgba(4, 3, 4, 0.68);
+}
+
+.working-section {
+  padding: clamp(28px, 5vw, 46px) 0 0;
+  scroll-margin-top: 24px;
+}
+
+.working-section h2 {
+  margin-top: 0;
+  margin-bottom: 14px;
+  font-size: clamp(27px, 4.4vw, 38px);
+}
+
+.section-note {
+  max-width: 680px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+.section-note a {
+  color: var(--blue);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 4px;
+}
+
+.value-row {
+  display: block;
+  padding: 18px 0;
+  border-top: 1px solid rgba(107, 88, 119, 0.74);
+}
+
+.value-row h3 {
+  color: var(--white);
+  font-family: var(--display-font);
+  font-size: clamp(20px, 2.2vw, 24px);
+  font-weight: 600;
+  line-height: 1.12;
+}
+
+.value-row p {
+  max-width: 680px;
+  margin-top: 8px;
+  color: var(--gray);
+  font-size: 18px;
+  line-height: 1.58;
+}
+
 .links-section {
   margin-bottom: 30px;
 }
@@ -1003,6 +1113,19 @@ nav a {
 }
 
 @media screen and (max-width: 500px) {
+  .working-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .working-photo {
+    width: min(220px, 100%);
+    order: -1;
+  }
+
+  .value-row {
+    display: block;
+  }
+
   .link-item-with-media {
     align-items: flex-start;
   }
