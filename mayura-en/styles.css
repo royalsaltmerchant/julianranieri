@@ -136,7 +136,7 @@ h1 {
 .details p { color: var(--muted); }
 .details .number { margin: 0; color: var(--violet); }
 code { color: #d5c8ff; font-size: .9em; }
-.details a, .process a { color: #c7b7f5; text-underline-offset: .2em; }
+.details a, .history a, .process a { color: #c7b7f5; text-underline-offset: .2em; }
 
 .release {
   max-width: 52rem;
@@ -151,12 +151,15 @@ code { color: #d5c8ff; font-size: .9em; }
 .release li + li { margin-top: .55rem; }
 .release .checksum code { overflow-wrap: anywhere; }
 
+.history,
 .process {
   max-width: 52rem;
   margin: 1rem 0 5rem;
 }
 
+.history h2,
 .process h2 { margin: .4rem 0 1rem; font-family: "DotGothic16", "MS PGothic", sans-serif; font-size: clamp(1.8rem, 4vw, 2.7rem); font-weight: 400; }
+.history p,
 .process h2 ~ p { color: #bcb7c3; font-size: 1.05rem; }
 
 .notice {
