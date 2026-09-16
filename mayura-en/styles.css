@@ -39,6 +39,7 @@ main, footer { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
   grid-template-columns: 1.05fr .95fr;
   align-items: center;
   gap: 3rem;
+  overflow: hidden;
   border-bottom: 1px solid var(--line);
 }
 
@@ -93,7 +94,23 @@ h1 {
 .version { margin-top: 1rem; color: var(--muted); letter-spacing: .08em; }
 
 .portrait { position: relative; align-self: end; justify-self: center; padding-top: 10rem; }
-.mayura-surface { position: relative; z-index: 1; display: block; width: min(471px, 42vw); height: auto; }
+.mayura-surface {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(471px, 42vw);
+  height: auto;
+  filter: drop-shadow(0 1.5rem 2.5rem rgba(0, 0, 0, .34));
+}
+.unyuu-surface {
+  position: absolute;
+  z-index: 2;
+  right: -1rem;
+  bottom: 1.5rem;
+  width: min(148px, 13vw);
+  height: auto;
+  filter: drop-shadow(0 .8rem 1.2rem rgba(0, 0, 0, .3));
+}
 .mayura-dialogue {
   position: absolute;
   z-index: 3;
@@ -195,6 +212,7 @@ footer a { color: #aaa3b4; text-underline-offset: .2em; }
   h1 { font-size: clamp(2.4rem, 10vw, 3.4rem); }
   .portrait { grid-row: 2; justify-self: end; padding-top: 10rem; }
   .mayura-surface { width: min(400px, 90vw); }
+  .unyuu-surface { right: 0; bottom: 1rem; width: min(126px, 28vw); }
   .mayura-dialogue {
     width: min(300px, 78vw);
     top: 0;

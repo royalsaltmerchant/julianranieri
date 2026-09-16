@@ -24,7 +24,11 @@
   <meta name="twitter:image" content="https://julianranieri.com/mayura-en/assets/mayura-surface-0.png">
   <title>English Translation Patch for Mayura – Ukagaka Ghost Download</title>
   <link rel="preload" href="assets/fonts/DotGothic16-Regular.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=20260906-1">
+  <link rel="preload" href="assets/mayura-surface-5.png" as="image">
+  <link rel="preload" href="assets/mayura-surface-6.png" as="image">
+  <link rel="preload" href="assets/unyuu-surface-10.png" as="image">
+  <link rel="preload" href="assets/unyuu-surface-11.png" as="image">
+  <link rel="stylesheet" href="styles.css?v=20260916-2">
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -66,7 +70,18 @@
         <blockquote class="mayura-dialogue">
           <p>Sleeping at night and waking up in the morning isn't normal.</p>
         </blockquote>
-        <img class="mayura-surface" src="assets/mayura-surface-0.png" alt="Mayura, the classic Ukagaka desktop ghost">
+        <img
+          class="mayura-surface"
+          src="assets/mayura-surface-0.png"
+          alt="Mayura, the classic Ukagaka desktop ghost"
+          data-surfaces="assets/mayura-surface-0.png,assets/mayura-surface-5.png,assets/mayura-surface-6.png,assets/mayura-surface-5.png"
+        >
+        <img
+          class="unyuu-surface"
+          src="assets/unyuu-surface-10.png"
+          alt="Unyuu, Mayura's companion"
+          data-surfaces="assets/unyuu-surface-10.png,assets/unyuu-surface-11.png"
+        >
       </div>
     </section>
 
@@ -134,5 +149,28 @@
     <p>Mayura English translation project by <a href="/">Julian Ranieri</a>.</p>
     <p>Found an issue or want to help? <a href="mailto:jumpingafterrain@gmail.com">jumpingafterrain@gmail.com</a></p>
   </footer>
+  <script>
+    (() => {
+      const surfaces = document.querySelectorAll("[data-surfaces]");
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+      if (!surfaces.length || reduceMotion.matches) return;
+
+      surfaces.forEach((surface) => {
+        const frames = surface.dataset.surfaces.split(",");
+        let frameIndex = 0;
+
+        frames.slice(1).forEach((src) => {
+          const image = new Image();
+          image.src = src;
+        });
+
+        window.setInterval(() => {
+          frameIndex = (frameIndex + 1) % frames.length;
+          surface.src = frames[frameIndex];
+        }, 2800);
+      });
+    })();
+  </script>
 </body>
 </html>

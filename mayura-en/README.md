@@ -13,4 +13,4 @@ After editing the source copy, sync it into this directory from the
 ```
 
 That script copies `site/` into this `mayura-en/` directory and excludes the
-Mayura repo's standalone `site/CNAME` file.
+Mayura repo's standalone `site/CNAME` file and this local README.
