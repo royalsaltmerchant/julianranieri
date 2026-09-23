@@ -97,18 +97,18 @@ body > * {
 }
 
 .home-candle {
-  --candle-center: 33%;
+  --candle-center: 50%;
   position: fixed;
-  left: clamp(14px, 3vw, 34px);
-  bottom: clamp(24px, 6vh, 54px);
-  width: 112px;
-  height: 166px;
+  left: clamp(10px, 2vw, 24px);
+  bottom: clamp(16px, 4vh, 36px);
+  width: 82px;
+  height: 112px;
   padding: 0;
   border: 0;
   background: transparent;
   z-index: 3;
   cursor: pointer;
-  filter: drop-shadow(0 0 34px rgba(242, 194, 111, 0.24));
+  filter: drop-shadow(0 0 12px rgba(242, 194, 111, 0.12));
 }
 
 .home-candle:focus-visible {
@@ -119,13 +119,12 @@ body > * {
 .home-candle-glow {
   position: absolute;
   left: var(--candle-center);
-  top: -96px;
-  width: 260px;
-  height: 260px;
+  top: -50px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  background:
-    radial-gradient(circle, rgba(255, 218, 87, 0.5) 0 9%, rgba(220, 144, 42, 0.3) 24%, rgba(135, 70, 34, 0.16) 42%, transparent 70%);
-  opacity: 0.95;
+  background: radial-gradient(circle, rgba(245, 196, 103, 0.28), rgba(179, 111, 54, 0.09) 34%, transparent 70%);
+  opacity: 0.65;
   transform: translateX(-50%);
   animation: candle-glow 6.8s ease-in-out infinite;
 }
@@ -133,17 +132,14 @@ body > * {
 .home-candle-flame {
   position: absolute;
   left: var(--candle-center);
-  top: 21px;
-  width: 20px;
-  height: 47px;
+  top: 12px;
+  width: 14px;
+  height: 32px;
   border-radius: 52% 48% 44% 56% / 78% 74% 26% 22%;
   background:
     radial-gradient(ellipse at 51% 68%, rgba(255, 238, 157, 0.92) 0 12%, transparent 13%),
     linear-gradient(165deg, rgba(255, 238, 132, 0.96) 0 22%, #e79c36 43%, #9f3f35 76%, #321616 100%);
-  box-shadow:
-    0 0 12px rgba(255, 198, 77, 0.66),
-    0 0 30px rgba(201, 87, 73, 0.3),
-    0 10px 16px rgba(34, 12, 8, 0.34);
+  box-shadow: 0 0 10px rgba(255, 198, 77, 0.4);
   clip-path: polygon(50% 0%, 66% 18%, 82% 48%, 69% 83%, 51% 100%, 31% 82%, 18% 52%, 34% 20%);
   transform: translateX(-50%) rotate(-1deg);
   transform-origin: 50% 92%;
@@ -155,15 +151,15 @@ body > * {
   position: absolute;
   left: 50%;
   bottom: 6px;
-  width: 7px;
-  height: 25px;
+  width: 5px;
+  height: 18px;
   background: linear-gradient(180deg, rgba(255, 231, 112, 0.74), rgba(255, 186, 61, 0.28) 52%, transparent);
   clip-path: polygon(50% 0%, 68% 34%, 60% 100%, 38% 100%, 31% 36%);
   transform: translateX(-50%);
 }
 
 .home-candle.is-snuffed {
-  cursor: default;
+  cursor: pointer;
   filter: drop-shadow(0 0 18px rgba(70, 56, 48, 0.18));
 }
 
@@ -198,9 +194,9 @@ body > * {
 .home-candle-wick {
   position: absolute;
   left: var(--candle-center);
-  top: 60px;
-  width: 3px;
-  height: 16px;
+  top: 40px;
+  width: 2px;
+  height: 12px;
   border-radius: 999px;
   background: #1a1210;
   transform: translateX(-50%);
@@ -209,62 +205,34 @@ body > * {
 .home-candle-body {
   position: absolute;
   left: var(--candle-center);
-  bottom: 12px;
-  width: 44px;
-  height: 72px;
+  bottom: 8px;
+  width: 32px;
+  height: 52px;
   border: 1px solid rgba(242, 217, 139, 0.22);
   border-radius: 7px 7px 5px 5px;
-  background:
-    linear-gradient(90deg, rgba(255, 247, 216, 0.26), transparent 24% 67%, rgba(68, 48, 50, 0.3)),
-    linear-gradient(180deg, #f0dcc7 0%, #d2b6a2 48%, #957070 100%);
+  background: linear-gradient(90deg, #e5d0bf, #cbb09f 58%, #a38682);
   box-shadow:
-    inset 0 7px 8px rgba(255, 255, 255, 0.18),
-    inset 0 -18px 18px rgba(72, 39, 46, 0.18),
-    0 0 24px rgba(242, 181, 77, 0.09);
+    inset 0 5px 7px rgba(255, 255, 255, 0.1),
+    inset 0 -14px 14px rgba(72, 39, 46, 0.12);
   transform: translateX(-50%);
 }
 
 .home-candle-body::before {
   content: "";
   position: absolute;
-  inset: -7px -1px auto;
-  height: 14px;
+  inset: -5px -1px auto;
+  height: 10px;
   border-radius: 50%;
-  background:
-    radial-gradient(ellipse at 50% 42%, rgba(87, 57, 57, 0.25) 0 26%, transparent 27%),
-    linear-gradient(90deg, #f7e8d2, #d5b59c 58%, #9c7771);
+  background: linear-gradient(90deg, #f0ddca, #d5b9a5 58%, #af9088);
   border: 1px solid rgba(242, 217, 139, 0.2);
-}
-
-.home-candle-body::after {
-  content: "";
-  position: absolute;
-  left: 5px;
-  right: 5px;
-  bottom: -4px;
-  height: 14px;
-  border-radius: 999px 999px 7px 7px;
-  background:
-    radial-gradient(circle at 18% 48%, rgba(248, 224, 196, 0.58) 0 5px, transparent 6px),
-    radial-gradient(circle at 43% 60%, rgba(202, 166, 144, 0.5) 0 7px, transparent 8px),
-    radial-gradient(circle at 74% 44%, rgba(239, 214, 185, 0.54) 0 5px, transparent 6px),
-    linear-gradient(180deg, rgba(255, 239, 213, 0.35), rgba(139, 99, 92, 0.28));
-  box-shadow:
-    -11px 1px 0 0 rgba(197, 157, 135, 0.42),
-    13px 0 0 1px rgba(235, 209, 181, 0.38),
-    21px 3px 0 -2px rgba(151, 107, 97, 0.34),
-    -21px 4px 0 -3px rgba(234, 207, 179, 0.34),
-    8px -46px 0 -5px rgba(255, 244, 213, 0.32),
-    -13px -33px 0 -6px rgba(255, 238, 203, 0.26),
-    2px 3px 7px rgba(45, 25, 26, 0.24);
 }
 
 .home-candle-shadow {
   position: absolute;
   left: var(--candle-center);
   bottom: 0;
-  width: 78px;
-  height: 16px;
+  width: 50px;
+  height: 10px;
   border-radius: 50%;
   background: radial-gradient(ellipse, rgba(0, 0, 0, 0.38), transparent 68%);
   transform: translateX(-50%);
@@ -274,49 +242,27 @@ body > * {
   0%,
   100% {
     opacity: 0.96;
-    filter: brightness(0.95);
-    transform: translateX(-50%) rotate(-1deg) scale(1, 1);
+    filter: brightness(0.98);
+    transform: translateX(-50%) rotate(-0.5deg);
   }
 
-  18% {
+  45% {
     opacity: 1;
-    filter: brightness(1.08);
-    transform: translateX(-50.5%) rotate(1.5deg) scale(0.98, 1.04);
-  }
-
-  44% {
-    opacity: 0.88;
-    filter: brightness(0.86);
-    transform: translateX(-49.5%) rotate(-2deg) scale(1.02, 0.97);
-  }
-
-  49% {
-    opacity: 1;
-    filter: brightness(1.16);
-  }
-
-  72% {
-    opacity: 0.92;
-    filter: brightness(0.9);
-    transform: translateX(-50%) rotate(0.8deg) scale(0.99, 1.02);
+    filter: brightness(1.04);
+    transform: translateX(-50%) rotate(0.6deg) scale(0.98, 1.02);
   }
 }
 
 @keyframes candle-glow {
   0%,
   100% {
-    opacity: 0.68;
-    transform: translateX(-50%) scale(0.98);
+    opacity: 0.55;
+    transform: translateX(-50%) scale(0.99);
   }
 
-  45% {
-    opacity: 0.96;
-    transform: translateX(-50%) scale(1.06);
-  }
-
-  68% {
-    opacity: 0.78;
-    transform: translateX(-50%) scale(1.01);
+  50% {
+    opacity: 0.7;
+    transform: translateX(-50%) scale(1.02);
   }
 }
 
@@ -514,6 +460,15 @@ nav a {
   content: "";
 }
 
+.home-hero h1 {
+  max-width: 780px;
+  font-family: var(--ui-font);
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 500;
+  letter-spacing: -0.055em;
+  line-height: 1.15;
+}
+
 .hero-section p {
   font-size: 22px;
   color: var(--gray);
@@ -645,32 +600,31 @@ nav a {
 @media screen and (max-width: 500px) {
   .home-candle {
     left: 10px;
-    bottom: 22px;
-    width: 78px;
-    height: 118px;
-    opacity: 0.78;
+    bottom: 16px;
+    width: 70px;
+    height: 98px;
   }
 
   .home-candle-glow {
-    top: -70px;
-    width: 180px;
-    height: 180px;
+    top: -42px;
+    width: 130px;
+    height: 130px;
   }
 
   .home-candle-flame {
-    width: 15px;
-    height: 34px;
-    top: 19px;
+    width: 12px;
+    height: 28px;
+    top: 10px;
   }
 
   .home-candle-wick {
-    top: 50px;
-    height: 12px;
+    top: 35px;
+    height: 10px;
   }
 
   .home-candle-body {
-    width: 32px;
-    height: 52px;
+    width: 28px;
+    height: 46px;
   }
 
   .hero-section {
